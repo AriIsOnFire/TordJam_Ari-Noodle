@@ -1,1 +1,2 @@
-This is where you'll put the readme for your shell. It provides a little extra information on it, just like a Ghost readme.
+Heyyy What are ya doing here? haha
+Anyways, this is the shell for the Tord ghost made for the 2026 week long ghost jam. The art was done by Noodle!

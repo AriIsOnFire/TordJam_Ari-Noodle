@@ -11,7 +11,7 @@ option,DisableNoDefineSurfaces
 //The scope is which character these belong to, with 0 being the main character/Sakura, 1 being the side character/Kero, 3 + being other arbitrary characters (called with the \p SakuraScript tag). 
 //Finally, after that, each line has the surface's number (as defined in surfaces.txt) and the nickname you'd like to set for it.
 
-group,Saku
+group,Tord
 {
 scope,0
 
@@ -29,20 +29,11 @@ scope,0
 
 //You can set multiple groups if you'd like.
 
-group,Kero
+group,DONOTTHETOUCH
 {
 scope,1
 
 10,Default
-11,Embarassed
-12,Shocked
-13,Worried
-14,Sad
-15,Happy
-16,Content
-17,Angry
-18,Thinking
-19,Bored
 }
 
 //You can also disable certain surfaces from appearing by using the '__disabled' group.

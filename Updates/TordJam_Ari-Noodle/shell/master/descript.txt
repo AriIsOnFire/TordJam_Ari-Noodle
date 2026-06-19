@@ -9,8 +9,8 @@ charset,UTF-8
 type,shell
 
 name,Master
-craftman,Okuajub
-craftmanurl,https://okuajub-netspace.neocities.org
+craftman,Noodle
+craftmanurl,https://noodlethegay.tumblr.com
 
 //--Use_self_alpha
 //Originally, Ghosts didn't naturally support transparent PNGs, and instead required a set of PNA files to define transparency per surface. Thankfully, now, shells can use this option to use their own transparency instead of PNA files. You can leave this as it is.
@@ -20,8 +20,8 @@ seriko.use_self_alpha,1
 //--Alignment
 //This controls whether the characters snap to the top or bottom of the screen, or if they can be freely put anywhere. The master shell for CHIPS has this set to 'bottom' because the characters are cut off at the thighs. But many English ghosts use 'free', which allows them to be placed anywhere. Consider which works best for your shell.
 
-seriko.alignmenttodesktop,bottom
-//seriko.alignmenttodesktop,free
+//seriko.alignmenttodesktop,bottom
+seriko.alignmenttodesktop,free
 
 //--Menu Font Color
 //This is the font color for the right-click SSP menu. r g b stands for red blue green, adjust the values to get the color you want. This'll probably take some trial and error. Keep in mind readability for your users!
