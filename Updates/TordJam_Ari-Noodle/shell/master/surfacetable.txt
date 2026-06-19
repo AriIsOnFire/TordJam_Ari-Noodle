@@ -17,9 +17,9 @@ scope,0
 
 0,Default
 1,Embarassed
-2,Shocked
+2,Deadpan
 3,Worried
-4,Sad
+4,Pouting
 5,Happy
 6,Content
 7,Angry

@@ -85,7 +85,7 @@ block_2 : ("This is the first line."
 # These tags are often put together, because you need to switch focus to a character to change their surface. 
 # With these tags added, a dialogue entry will look something like this.
 
-tags_1 : "\0\s[0]Hey. This is the main character.\1\s[10]I'm the side character."
+tags_1 : "\0\s[0]Hey. This is the main character.\0\s[0]I'm the side character."
 
 # With multiple characters, clarity of who is talking and in what order is important. 
 # The tag \n is used to add in a line break, which can be used to format dialogue for clarity.
@@ -97,9 +97,9 @@ tags_1 : "\0\s[0]Hey. This is the main character.\1\s[10]I'm the side character.
 
 tags_2 : (
 	"\0\s[0]The first line of dialogue doesn't need a new line."
-	"\1\s[10]Not for me either."
+	"\0\s[0]Not for me either."
 	"\0\s[0]\n\n[half]But a character's second line and beyond should use them."
-	"\1\s[10]\n\n[half]For the Kero as well."
+	"\0\s[0]\n\n[half]For the Kero as well."
 	"\0\s[0]\n\n[half]Especially in back-and-forth conversations."
 )
 
@@ -112,7 +112,7 @@ tags_2 : (
 # \_w[400] is 400ms, \_w[1000] is 1000ms, or one second. These can be used to control the cadence of what a Ghost is saying. 
 # It can also make dialogue feel more natural, as rarely do people talk continuously at the same pace. Where you use \w or \_w[*] is up to your discretion.
 
-tags_3 : "\1\s[10]I know who the murderer is.\_w[2000] It was\w4.\w4.\w4. Mr. Plum,\w2 in the kitchen,\w2 with a candlestick.\0\s[0]Sorry,\w2 that's not it."
+tags_3 : "\0\s[0]I know who the murderer is.\_w[2000] It was\w4.\w4.\w4. Mr. Plum,\w2 in the kitchen,\w2 with a candlestick.\0\s[0]Sorry,\w2 that's not it."
 
 # \f is a tag that lets one apply more rigorous formatting. It has a lot of variants, so we will only cover a few. The complete list can be found here:
 # https://ukagakadreamteam.github.io/ukadoc/manual/list_sakura_script.html#_f_align,%E5%AF%84%E3%81%9B%E3%82%8B%E5%81%B4_
@@ -125,8 +125,8 @@ tags_3 : "\1\s[10]I know who the murderer is.\_w[2000] It was\w4.\w4.\w4. Mr. Pl
 
 tags_4 : (
 	"\0\s[0]Hey, say something spooky."
-	"\1\s[10]\f[italic,true]Something spooOOooky!\f[italic,default]"
-	"\0\s[10]That is \f[bold,true]not\f[bold,default] what I meant."
+	"\0\s[0]\f[italic,true]Something spooOOooky!\f[italic,default]"
+	"\0\s[0]That is \f[bold,true]not\f[bold,default] what I meant."
 )
 
 # Now, these last two are more relevant for if you peek inside other Ghosts for reference.
@@ -144,8 +144,8 @@ tags_4 : (
 # This entry is 'sentence', and it works just like any other entry. Any definitions of sentence will have a chance for the Ghost to say while idle.
 # Entries can also have multiple definitions written on different lines, so long as the entry is specified.
 
-sentence : "\0\s[0]So, what's going on out there?\1\s[10]Not much, it seems."
-sentence : "\1\s[10]Let's see.. What do I need to do after work today..."
+sentence : "\0\s[0]So, what's going on out there?\0\s[0]Not much, it seems."
+sentence : "\0\s[0]Let's see.. What do I need to do after work today..."
 
 # One could write an entire Ghost with what we know now. However, a unique feature of Ghosts is their ability to randomize dialogue pieces.
 # In Kawari, we do this by calling entries within an entry. To perform an entry call, we use the syntax ${entryName}.
@@ -154,7 +154,7 @@ sentence : "\1\s[10]Let's see.. What do I need to do after work today..."
 pets1 : dogs, rats, mice
 pets2 : cats, rabbits, hedgehogs
 
-sentence : "\1\s[10]I think "${pets1}" are totally better than "${pets2}"."
+sentence : "\0\s[0]I think "${pets1}" are totally better than "${pets2}"."
 
 # This dialogue should choose a random animal from pets1 and pets2, and replace them accordingly.
 # Entries like these are what really allow Ghosts to be more varied and life-like, when used well.
@@ -188,7 +188,7 @@ sentence : "\1\s[10]I think "${pets1}" are totally better than "${pets2}"."
 # That probably sounds complicated but it's actually pretty easy to write! Take a look.
 sentence : (
     # 'username' calls the user's name. The user is the subject of the sentence.
-    "\1\s[10] Hey, Sentinel. Do you think "${username}" should use pronouns to refer to the User?"
+    "\0\s[0] Hey, Sentinel. Do you think "${username}" should use pronouns to refer to the User?"
     # Here, the entry 'their' is called. It'll choose an appropriate possessive determiner, such as "their", for the subject.
     "\0\s[0]I think it's "${their}" choice. "
     # The function 'SP' is used to determine if a word should be singular or plural relative to the last pronoun. 
@@ -211,17 +211,17 @@ sentence : (
 
 sentence : "\0\s[5]You can replace our lines with whatever you'd like."
 
-sentence : "\1\s[19]Have you tried turning it off and on again?"
+sentence : "\0\s[0]Have you tried turning it off and on again?"
 
-sentence : "\1\s[13]My hovercraft is full of eels."
+sentence : "\0\s[0]My hovercraft is full of eels."
 
 sentence : (
-    "\0\s[8]Chip, have you heard of a person called 'Melinda the Mental Marvel'?\w8\w8"
-    "\1\s[19]No, why?\w8"
-    "\0\s[0]\n\n[half]Oh, nothing.. You just remind me of this kid I met once. Chip McCallahan."
-    "\1\s[13]\n\n[half]Oh, \f[italic,true]him\f[italic,default]? No way! I \f[italic,true]test\f[italic,false] chips, not collect them to get into some lame club.\w8"
-    "\0\s[0]\n\n[half]Bummer."
-    "\1\s[19]\n\n[half]\f[size,9]Chip's Challenge... Huh!\f[size,default]"
+    "\0\s[1]Chip, have you heard of a person called 'Melinda the Mental Marvel'?\w8\w8"
+    "\0\s[2]No, why?\w8"
+    "\0\s[3]\n\n[half]Oh, nothing.. You just remind me of this kid I met once. Chip McCallahan."
+    "\0\s[5]\n\n[half]Oh, \f[italic,true]him\f[italic,default]? No way! I \f[italic,true]test\f[italic,false] chips, not collect them to get into some lame club.\w8"
+    "\0\s[9]\n\n[half]Bummer."
+    "\0\s[0]\n\n[half]\f[size,9]Chip's Challenge... Huh!\f[size,default]"
 )
 
 # Lets set up some entries...
@@ -236,9 +236,9 @@ mediaDefense   : "I think that the music really sells it. C'mon, I'll set up a h
 
 # Putting them all together, this one dialogue has a possibility of 360 different variations. Isn't that helpful? Even discounting the media entry call, that's still 60 different variations!
 sentence : (
-    "\1\s[18]So, Sentinel, what'd you think of "${media}"?\n\n[half]"
+    "\0\s[0]So, Sentinel, what'd you think of "${media}"?\n\n[half]"
     "\0\s[8]Hmm. I liked it. But.. "${mediaCritiques}"\n\n[half]"
-    "\1\s[13]"${mediaDefense}
+    "\0\s[0]"${mediaDefense}
     "\0\s[6]Suit yourself."
 )
 
