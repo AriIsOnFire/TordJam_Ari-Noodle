@@ -13,7 +13,7 @@ craftmanurl,https://ariisonfire.tumblr.com/ and https://noodlethegay.tumblr.com
 
 //This is the URL the Ghost checks for updates with when closed (such as through the explorer).
 //If you're not doing network updates, you can leave it as is.
-homeurl,https://raw.githubusercontent.com/AriIsOnFire/TordJam_Ari-Noodle/refs/heads/main/Updates/TordJam_Ari-Noodle
+homeurl,https://raw.githubusercontent.com/AriIsOnFire/TordJam_Ari-Noodle/main/Updates/TordJam_Ari-Noodle/
 //Here's hoping it works... - Ari, 06/18
 //i swear to god i'm not doing anything different from what it says sobs -Ari, 06/18 (again)
 //Testing updates...
