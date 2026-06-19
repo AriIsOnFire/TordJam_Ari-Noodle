@@ -112,7 +112,7 @@ tags_2 : (
 # \_w[400] is 400ms, \_w[1000] is 1000ms, or one second. These can be used to control the cadence of what a Ghost is saying. 
 # It can also make dialogue feel more natural, as rarely do people talk continuously at the same pace. Where you use \w or \_w[*] is up to your discretion.
 
-tags_3 : "\0\s[0]I know who the murderer is.\_w[2000] It was\w4.\w4.\w4. Mr. Plum,\w2 in the kitchen,\w2 with a candlestick.\0\s[0]Sorry,\w2 that's not it."
+tags_3 : "\0\s[9]I know who the murderer is.\_w[2000] It was\w4.\w4.\w4. Mr. Plum,\w2 in the kitchen,\w2 with a candlestick.\0\s[0]Sorry,\w2 that's not it."
 
 # \f is a tag that lets one apply more rigorous formatting. It has a lot of variants, so we will only cover a few. The complete list can be found here:
 # https://ukagakadreamteam.github.io/ukadoc/manual/list_sakura_script.html#_f_align,%E5%AF%84%E3%81%9B%E3%82%8B%E5%81%B4_
@@ -220,7 +220,7 @@ sentence : (
     "\0\s[2]No, why?\w8"
     "\0\s[3]\n\n[half]Oh, nothing.. You just remind me of this kid I met once. Chip McCallahan."
     "\0\s[5]\n\n[half]Oh, \f[italic,true]him\f[italic,default]? No way! I \f[italic,true]test\f[italic,false] chips, not collect them to get into some lame club.\w8"
-    "\0\s[9]\n\n[half]Bummer."
+    "\0\s[9]\n\n[half]Bummer.\w8\w8"
     "\0\s[0]\n\n[half]\f[size,9]Chip's Challenge... Huh!\f[size,default]"
 )
 

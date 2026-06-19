@@ -6,7 +6,7 @@ file,readme.txt949ed92fa2450e3011526f95b02c6221size=201date=2026-06-19T06:05:
 file,thumbnail.pna4bc728a8cbf3899e0860324a3760d1f8size=4503date=2026-06-19T06:05:30
 file,thumbnail.png51e3a42f61715c7bcea065a1840c578csize=38841date=2026-06-19T06:05:30
 file,ghost/master/descript.txt12b307ab365e548d23694f7c53c375b4size=1390date=2026-06-19T18:07:00
-file,ghost/master/ghost-aitalk.kisa27621c5769ebd0fc87e34bfbaa54c84size=18718date=2026-06-19T19:03:17
+file,ghost/master/ghost-aitalk.kisd71cdda5cc65c90a9b2921f54cd8d03bsize=18724date=2026-06-19T19:07:09
 file,ghost/master/ghost-bootend.kis45034e9745270b7b14bb92325d696aabsize=3876date=2026-06-19T06:05:29
 file,ghost/master/ghost-etc.kis4cfc414d2479b4057fb59ec29e99da30size=2681date=2026-06-19T18:07:00
 file,ghost/master/ghost-menu.kisbabe768cf1addc3898d17c62292b298esize=18314date=2026-06-19T06:05:29
