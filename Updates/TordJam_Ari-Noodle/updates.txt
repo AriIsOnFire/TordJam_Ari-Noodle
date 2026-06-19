@@ -5,10 +5,10 @@ file,install.txte7ab05d19a3ab65ac22155f2ccafecd5size=344date=2026-06-18T19:09
 file,readme.txt949ed92fa2450e3011526f95b02c6221size=201date=2026-06-18T19:59:10
 file,thumbnail.pna4bc728a8cbf3899e0860324a3760d1f8size=4503date=2026-06-18T19:09:48
 file,thumbnail.png51e3a42f61715c7bcea065a1840c578csize=38841date=2026-06-18T19:09:48
-file,ghost/master/descript.txt8dcbf23565cd8bfad84fdc2bed76179bsize=1479date=2026-06-18T21:00:09
+file,ghost/master/descript.txt12b307ab365e548d23694f7c53c375b4size=1390date=2026-06-19T08:43:39
 file,ghost/master/ghost-aitalk.kisb3d9a77dbab4464be17d022e7e15f76bsize=18735date=2026-06-18T19:42:14
 file,ghost/master/ghost-bootend.kis45034e9745270b7b14bb92325d696aabsize=3876date=2026-06-18T18:40:38
-file,ghost/master/ghost-etc.kisd1885a028b63651a001f9f08aabcdeefsize=2494date=2026-06-18T18:40:38
+file,ghost/master/ghost-etc.kis4cfc414d2479b4057fb59ec29e99da30size=2681date=2026-06-19T09:06:01
 file,ghost/master/ghost-menu.kisbabe768cf1addc3898d17c62292b298esize=18314date=2026-06-18T18:40:38
 file,ghost/master/ghost-mouse.kisa49c0bade8f3ba63eadd0c28e172a15asize=2531date=2026-06-18T18:40:38
 file,ghost/master/ghost-resource.kise96f53f291324e14941b6813852021e3size=2460date=2026-06-18T20:55:28
