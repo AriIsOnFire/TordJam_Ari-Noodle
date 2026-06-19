@@ -2,7 +2,7 @@
 # IMPORTANT
 #--
 Please note: The included character illustrations are not intended for redistribution and should be replaced with your own images. They are for example purposes only.
-
+//Just gonna leave this here for Noodle until we're done -Ari, 06/18
 #-- Introduction
 Hello! This is the CHIPS Kawari Template, version '1.0.1'.
 

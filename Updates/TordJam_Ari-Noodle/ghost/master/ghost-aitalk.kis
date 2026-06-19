@@ -19,7 +19,7 @@
 
 # Here's an example entry. Entry names can't use spaces, but underscores make a good substitute. 
 # Entry names are also case sensitive, so keep that in mind.
-
+//I AIN'T TOUCHING THIS YET DEAR GOD -Ari, 06/18
 animals_1 : cat
 
 # This is as about as simple as an entry can get, aside from being empty. Defining an entry at its core looks like "[entryName] : [definition]".
