@@ -5,6 +5,7 @@ descript
 
 //IMPORTANT:
 //The illustrations provided are intended to be replaced. They are for example purposes only. Please do not redistribute them without permission.
+//We're gonna replace them, don't worry. - Ari, 06/18
 
 //--
 //Surfaces.txt
@@ -31,6 +32,7 @@ descript
 
 //A surface definition can be used to give the baseware more specific instructions for each surface.
 //This is the definition for surface0. You don't need to define your surfaces unless you want to add onto them.
+//I can't mess with most of these until noodle is done with the surfaces -Ari, 06/18
 surface0
 {
 
@@ -81,8 +83,9 @@ animation4.pattern1,overlay,-1,100,0,0
 
 //--The Kero (Side Character)
 //Coding for both the Sakura and Kero is the same, just different numbers!
-
-surface10
+//I wonder what happens if i just... disable this whole section? -Ari, 06/18
+//Aha! Just means theres nothing to touch and nothing to play lol -Ari, 06/18
+/*surface10
 {
 collision0,121,20,246,70,Head
 collision1,174,61,238,133,Face
@@ -109,4 +112,4 @@ animation13.pattern1,overlay,-1,100,0,0
 animation14.interval,never
 animation14.pattern0,overlay,2102,140,0,0
 animation14.pattern1,overlay,-1,100,0,0
-}
+}*/
