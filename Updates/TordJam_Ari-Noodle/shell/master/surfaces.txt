@@ -41,7 +41,7 @@ surface0
 //Here, the Sakura has three collisions: Head, Face and Bust. (Sorry, I just find the bust collision very funny with this shell.) 
 //You can name these whatever you want, and make as many of them as you want, but you will have to change the code in the Ghost to match! You can also remove any of them, or all of them by simply deleting the line.
 
-collision0,86,18,120,97,Head
+collision0,236,67,360,121,Head
 collision1,251,114,334,203,Face
 collision2,220,261,351,339,Bust
 
