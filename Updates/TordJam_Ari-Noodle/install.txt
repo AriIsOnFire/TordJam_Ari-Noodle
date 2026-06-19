@@ -3,6 +3,6 @@ charset,UTF-8
 type,ghost
 
 //Change the name to the name you'd like them to have when being selected in the menu. 
-name,CHIPS Template
+name,Tord
 //Change the directory name to the name of the folder you'd like them to install to.
-directory,CHIPS_Template
+directory,TordJam_Ari-Noodle
