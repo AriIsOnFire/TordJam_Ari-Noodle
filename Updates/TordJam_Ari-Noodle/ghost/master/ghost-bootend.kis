@@ -18,14 +18,14 @@ talk.OnFirstBoot   : (
     "\![*]\q[No thanks,script:\e]"
 )
 talk.OnReinstall   : "\0\s[2]Reinstalling?"
-talk.OnLotsInstall : "\0\s[4]You sure are reinstalling me a lot."
+talk.OnLotsInstall : "\0\s[2]You sure are reinstalling me a lot."
 
 # When switching to another Ghost
-talk.OnGhostChanging : "\0\s[0]Switching to another Ghost?\0\s[5]Say hi for me!"
+talk.OnGhostChanging : "\0\s[2]Switching to another Ghost?\0\s[4]Tell them I said hello!"
 # You can specify a specific Ghost by specifying the Sakura name (as in descript.txt) and if the switch was manual or automatic. For example:
 talk.OnGhostChangingSnakemanual : "\0\s[0]Snake and Otacon, huh?\0\s[1]I've heard Snake's a real mercenary. Be careful!"
 # If you want specific dialogue for the User manually reloading them, put it here.
-talk.OnGhostReloading : "\0\s[0]Reloading us?\0\s[0]Hopefully we're working alright."
+talk.OnGhostReloading : "\0\s[8]Reloading?\0\s[2]Can\'t wait to be back"
 
 # When the Ghost is called by or changed to from another Ghost.
 talk.OnGhostChanged      : "\0\s[0]Hey,\w4 it's me.\e"
@@ -35,7 +35,7 @@ talk.OnGhostChangedAngel : "\0\s[0]Oh, hey, are you new to SSP? Or just learning
 # And, for if the user reloaded them.
 talk.OnGhostReloaded     : "\0\s[0]Reloaded. Everything right now?"
 
-talk.OnGhostCalling      : "\0\s[0]Welcome," $(Reference 0)"!\0\s[5]\w4Hey."
+talk.OnGhostCalling      : "\0\s[0]Welcome," $(Reference 0)"!\0\s[5]\w4Hello."
 
 # Additional responses are called by the shell name. Case sensitive.
 talk.OnShellChanged       : "\0\s[2]Huh, a new look."
@@ -46,16 +46,19 @@ talk.OnShellChangedBasic  : (
 )
 
 # This happens when the Ghost is unminimized.
-talk.OnWindowStateRestore : \0\s[0]Feels good to be out in the open again.
+talk.OnWindowStateRestore : "\0\s[0]I can finally stretch my back again!"
 
 # You can set multiple responses to the same event, if you want. Just like the sentence entry.
 
 talk.OnBoot : "\0\s[0]Hey."
-talk.OnBoot : "\0\s[0]Hey, again!"
-talk.OnBoot : "\0\s[4]Just another day in a war without end.\_w[500]\n\n[half]On your desktop again?"
+talk.OnBoot : "\0\s[0]Hello,\w4\w4 old friend."
+talk.OnBoot : "\0\s[0]Hello, again!"
+talk.OnBoot : "\0\s[2]This better be quick! \w4\w4\w4\s[9]I have unfinished business."
+talk.OnBoot : "\0\s[2]Just another day in a war without end.\_w[500]\n\n[half]\s[9]On your desktop again?"
 
 talk.OnClose : "\0\s[0]Be seeing you."
 talk.OnClose : "\0\s[0]Another time."
+talk.OnClose : "\0\s[0]Goodbye, old friend\w4.\w4.\w4."
 talk.OnClose : "\0\s[0]Time to wrap things up."
 talk.OnClose : "\0\s[0]Leaving so soon? \_w[500]See you."
 
