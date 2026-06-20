@@ -53,6 +53,7 @@ talk.OnWindowStateRestore : "\0\s[0]I can finally stretch my back again!"
 talk.OnBoot : "\0\s[0]Hey."
 talk.OnBoot : "\0\s[0]Hello,\w4\w4 old friend."
 talk.OnBoot : "\0\s[0]Hello, again!"
+talk.OnBoot : "\0\s[7]Hva faen!\w12\s[2]\n\n[half]oh."
 talk.OnBoot : "\0\s[2]This better be quick! \w4\w4\w4\s[9]I have unfinished business."
 talk.OnBoot : "\0\s[2]Just another day in a war without end.\_w[500]\n\n[half]\s[9]On your desktop again?"
 
