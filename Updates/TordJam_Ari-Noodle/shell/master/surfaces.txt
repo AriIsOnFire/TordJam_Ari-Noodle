@@ -6,6 +6,7 @@ descript
 //IMPORTANT:
 //The illustrations provided are intended to be replaced. They are for example purposes only. Please do not redistribute them without permission.
 //We're gonna replace them, don't worry. - Ari, 06/18
+//They've been replaced! -Noodle 6/20
 
 //--
 //Surfaces.txt
@@ -33,6 +34,7 @@ descript
 //A surface definition can be used to give the baseware more specific instructions for each surface.
 //This is the definition for surface0. You don't need to define your surfaces unless you want to add onto them.
 //I can't mess with most of these until noodle is done with the surfaces -Ari, 06/18
+//I've begun messing with them knowing DAMN well that i might have to change these later -Noodle 06/20
 surface0
 {
 
@@ -44,6 +46,64 @@ surface0
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
+}
+
+
+
+
+
+//im doing a few of these for now, bc i want to play around with him a bit, let a guy have some joy and whimsy, ill remove these once i start working on coloring the surfaces -Noodle 06/20
+
+surface3
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+surface4
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+surface6
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+surface7
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+surface8
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+surface9
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+surface11
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+surface12
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+
+
 
 //--Blinking animation
 //Because this is the first animation, I will explain it.
@@ -51,7 +111,8 @@ collision2,142,264,224,318,Pocket
 //If that does not make sense, that is OK. This shell is designed to have the images replaced. Just change the collisions above and replace the images and it will be alright.
 //The next line is saying: "The 10th animation". "First image is", "Overlaid and clipped to the character", "it is surface1002", "it will be held for 50 miliseconds", "0 offset on the X", "0 offset on the Y". 
 //With that information, you should be able to infer what the other 2 patterns are.
-
+surface0
+{
 animation10.interval,random,4
 animation10.pattern0,overlayfast,1002,50,0,0
 animation10.pattern1,overlayfast,1001,100,0,0

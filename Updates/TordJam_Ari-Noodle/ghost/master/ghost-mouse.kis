@@ -17,7 +17,7 @@ MouseDoubleClick0Head : "\0\s[2]No touching."
 
 MouseDoubleClick0Face : "\0\s[2]Ow\w4.\w4.\w4.?"
 MouseDoubleClick0Face : "\0\s[7]what do you want???"
-
+# At this point im just having fun -Noodle 06/20
 MouseDoubleClick0Pocket : "\0\s[0]Oh, this? \0\s[2]If Noodle drew this, I would pull out my guns,\n\n[half]\w4but\s[12]\w4\w4 see, Noodle is doing other things \s[11]and is \s[7]PROCRASTINATING"
 
 
