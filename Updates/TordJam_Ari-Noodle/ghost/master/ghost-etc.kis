@@ -14,7 +14,7 @@
 
 # These dialogues occur for Network updates, where your Ghost finds update files from the web.
 # Reference 0 is the name of your Ghost. You don't have to use it, though.
-talk.OnUpdateBegin    : "\0\s[4]Fine,\w4 Fine,\w4 I'm updating.\w4.\w4.\w8 \s[9]Let's see what we've got."$(Reference 0)"..."
+talk.OnUpdateBegin    : "\0\s[4]Fine,\w4 Fine,\w4 I'm updating.\w4.\w4.\w8 \s[9]Let's see what we've got."
 # Reference 0 is the number of new files.
 talk.OnUpdateReady    : "\0\s[9]"$(Reference 0)" new files,\w4 eh?\w8 \s[5]\f[sub,true]Looks like the others have been working.\w4.\w4.\f[default]"
 # On successful update.
