@@ -146,11 +146,11 @@ animation4.pattern1,overlay,-1,100,0,0
 //Coding for both the Sakura and Kero is the same, just different numbers!
 //I wonder what happens if i just... disable this whole section? -Ari, 06/18
 //Aha! Just means theres nothing to touch and nothing to play lol -Ari, 06/18
-/*surface10
-{
-collision0,123,12,261,97,Head
-collision1,143,81,229,152,Face
-}*/
+//surface10
+//{
+//collision0,123,12,261,97,Head
+//collision1,143,81,229,152,Face
+//}
 //Blinking
 animation10.interval,random,4
 animation10.pattern0,overlayfast,2002,50,0,0
