@@ -53,7 +53,15 @@ collision2,142,264,224,318,Pocket
 
 
 //im doing a few of these for now, bc i want to play around with him a bit, let a guy have some joy and whimsy, ill remove these once i start working on coloring the surfaces -Noodle 06/20
-
+//added these Surfaces 1, 2, and 5 so they stopped bringing up notices. Noodle Do that Thang when you can -Ari 6/20
+surface1
+{
+	
+}
+surface2
+{
+	
+}
 surface3
 {
 collision0,123,12,261,97,Head
@@ -65,6 +73,10 @@ surface4
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
+}
+surface5
+{
+	
 }
 surface6
 {

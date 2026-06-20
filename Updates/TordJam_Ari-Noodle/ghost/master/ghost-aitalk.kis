@@ -211,9 +211,9 @@ sentence : (
 
 sentence : "\0\s[5]You can replace our lines with whatever you'd like."
 
-sentence : "\0\s[0]Have you tried turning it off and on again?"
+sentence : "\0\s[1]Have you tried turning it off and on again?"
 
-sentence : "\0\s[0]My hovercraft is full of eels."
+sentence : "\0\s[2]My hovercraft is full of eels."
 
 sentence : (
     "\0\s[1]Chip, have you heard of a person called 'Melinda the Mental Marvel'?\w8\w8"
