@@ -22,10 +22,10 @@ talk.OnGhostChangingAriFAAFOmanual : "\0\s[8]Ari,\w4 eh?\w8 \s[11]Hah,\w4 That's
 talk.OnGhostReloading : "\0\s[8]Reloading?\w8 \s[2]Wait hold on-"
 
 # When the Ghost is called by or changed to from another Ghost.
-talk.OnGhostChanged      : "\0\s[0]Hey,\w4 it's me.\e"
+talk.OnGhostChanged      : "\0\s[1]Hey,\w4 it's me.\e"
 # Just like GhostChanging, you can specify if the Ghost is a specific character.
-talk.OnGhostChangedSnake : "\0\s[0]guh"
-talk.OnGhostChangedAngel : "\0\s[0]Oh, hey, are you new to SSP? Or just learning some new tips? Good luck either way!"
+talk.OnGhostChangedSnake : "\0\s[2]guh"
+talk.OnGhostChangedAngel : "\0\s[5]Oh, hey, are you new to SSP? Or just learning some new tips? Good luck either way!"
 # And, for if the user reloaded them.
 talk.OnGhostReloaded     : "\0\s[0]Reloaded. Everything right now?"
 
