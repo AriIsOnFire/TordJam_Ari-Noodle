@@ -150,7 +150,7 @@ animation4.pattern1,overlay,-1,100,0,0
 {
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
-
+}*/
 //Blinking
 animation10.interval,random,4
 animation10.pattern0,overlayfast,2002,50,0,0
@@ -173,4 +173,3 @@ animation13.pattern1,overlay,-1,100,0,0
 animation14.interval,never
 animation14.pattern0,overlay,2102,140,0,0
 animation14.pattern1,overlay,-1,100,0,0
-}*/
