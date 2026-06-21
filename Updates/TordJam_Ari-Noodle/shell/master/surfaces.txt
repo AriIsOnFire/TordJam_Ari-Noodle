@@ -80,7 +80,7 @@ animation3.pattern0,overlay,1400,140,0,0
 animation3.pattern1,overlay,-1,100,0,0
 
 animation4.interval,never
-animation4.pattern0,overlay,1101,140,0,0
+animation4.pattern0,overlay,1401,140,0,0
 animation4.pattern1,overlay,-1,100,0,0
 }
 
