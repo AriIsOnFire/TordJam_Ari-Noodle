@@ -163,25 +163,5 @@ animation4.pattern1,overlay,-1,100,0,0
 //collision0,123,12,261,97,Head
 //collision1,143,81,229,152,Face
 //}
-//Blinking
-animation10.interval,random,4
-animation10.pattern0,overlayfast,2002,50,0,0
-animation10.pattern1,overlayfast,2001,100,0,0
-animation10.pattern2,overlay,-1,30,0,0
 
-//Talking
-animation11.interval,talk,4
-animation11.pattern0,alternativestart,[12.13.14]
-
-animation12.interval,never
-animation12.pattern0,overlay,2102,100,0,0
-animation12.pattern1,overlay,2101,130,0,0
-animation12.pattern2,overlay,-1,100,0,0
-
-animation13.interval,never
-animation13.pattern0,overlay,2101,140,0,0
-animation13.pattern1,overlay,-1,100,0,0
-
-animation14.interval,never
-animation14.pattern0,overlay,2102,140,0,0
-animation14.pattern1,overlay,-1,100,0,0
+//removed the animations for the side character bc like... they dont do anything, the side character is one blank pixel LOL
