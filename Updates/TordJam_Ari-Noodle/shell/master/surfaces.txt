@@ -35,17 +35,53 @@ descript
 //This is the definition for surface0. You don't need to define your surfaces unless you want to add onto them.
 //I can't mess with most of these until noodle is done with the surfaces -Ari, 06/18
 //I've begun messing with them knowing DAMN well that i might have to change these later -Noodle 06/20
+
 surface0
 {
 
-//--Collisions
-//Collisions are what allow the user to touch and prod and interact with the Ghost's shell. They're coordinates describing a box on the Ghost and a name for that box. When the user does certain actions within that box (such as clicking, using the scrollwheel), the program will send that information to the Ghost and they'll respond accordingly.
-//Here, the Sakura has three collisions: Head, Face and Bust. (Sorry, I just find the bust collision very funny with this shell.) 
-//You can name these whatever you want, and make as many of them as you want, but you will have to change the code in the Ghost to match! You can also remove any of them, or all of them by simply deleting the line.
+element0,overlay,surface1003.png,0,0
+element1,overlay,surface1200.png,0,0
+element2,overlay,surface1301.png,0,0
+element4,overlay,surface1500.png,0,0
+element5,overlay,surface1600.png,0,0
+element6,overlay,surface1700.png,0,0
 
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
+}
+
+
+//--Blinking animation
+//Because this is the first animation, I will explain it.
+//The first line tells the program what this is. To translate from code to plain language: 'animation10' "The 10th animation". "which has an interval of", "randomly choose every second", "with a 1 in 4 chance to play".
+//If that does not make sense, that is OK. This shell is designed to have the images replaced. Just change the collisions above and replace the images and it will be alright.
+//The next line is saying: "The 10th animation". "First image is", "Overlaid and clipped to the character", "it is surface1002", "it will be held for 50 miliseconds", "0 offset on the X", "0 offset on the Y". 
+//With that information, you should be able to infer what the other 2 patterns are.
+surface0
+{
+animation10.interval,random,4
+animation10.pattern0,overlayfast,1402,50,0,0
+animation10.pattern1,overlayfast,1403,100,0,0
+animation10.pattern2,overlay,-1,30,0,0
+
+//--Talking Animation
+
+animation1.interval,talk,4
+animation1.pattern0,alternativestart,[2.3.4]
+
+animation2.interval,never
+animation2.pattern0,overlay,1400,100,0,0
+animation2.pattern1,overlay,1401,130,0,0
+animation2.pattern2,overlay,-1,100,0,0
+
+animation3.interval,never
+animation3.pattern0,overlay,1400,140,0,0
+animation3.pattern1,overlay,-1,100,0,0
+
+animation4.interval,never
+animation4.pattern0,overlay,1101,140,0,0
+animation4.pattern1,overlay,-1,100,0,0
 }
 
 
@@ -114,54 +150,3 @@ collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 }
-
-
-
-//--Blinking animation
-//Because this is the first animation, I will explain it.
-//The first line tells the program what this is. To translate from code to plain language: 'animation10' "The 10th animation". "which has an interval of", "randomly choose every second", "with a 1 in 4 chance to play".
-//If that does not make sense, that is OK. This shell is designed to have the images replaced. Just change the collisions above and replace the images and it will be alright.
-//The next line is saying: "The 10th animation". "First image is", "Overlaid and clipped to the character", "it is surface1002", "it will be held for 50 miliseconds", "0 offset on the X", "0 offset on the Y". 
-//With that information, you should be able to infer what the other 2 patterns are.
-surface0
-{
-animation10.interval,random,4
-animation10.pattern0,overlayfast,1002,50,0,0
-animation10.pattern1,overlayfast,1001,100,0,0
-animation10.pattern2,overlay,-1,30,0,0
-
-//--Talking Animation
-
-animation1.interval,talk,4
-animation1.pattern0,alternativestart,[2.3.4]
-
-animation2.interval,never
-animation2.pattern0,overlay,1102,100,0,0
-animation2.pattern1,overlay,1101,130,0,0
-animation2.pattern2,overlay,-1,100,0,0
-
-animation3.interval,never
-animation3.pattern0,overlay,1101,140,0,0
-animation3.pattern1,overlay,-1,100,0,0
-
-animation4.interval,never
-animation4.pattern0,overlay,1102,140,0,0
-animation4.pattern1,overlay,-1,100,0,0
-}
-//surface0 is the default Sakura surface, and surface10 is the default Kero surface.
-//To give you an idea of what expressions one might use for humanoid characters, I drew the traditional 9 expressions used in older Ghosts.
-//But you can have as few or as little as you'd like.
-//You might consider adding comments to denote what emotion/action a surface is.
-//There's also surfacetable.txt which defines the names of surfaces in the developer menu.
-
-//--The Kero (Side Character)
-//Coding for both the Sakura and Kero is the same, just different numbers!
-//I wonder what happens if i just... disable this whole section? -Ari, 06/18
-//Aha! Just means theres nothing to touch and nothing to play lol -Ari, 06/18
-//surface10
-//{
-//collision0,123,12,261,97,Head
-//collision1,143,81,229,152,Face
-//}
-
-//removed the animations for the side character bc like... they dont do anything, the side character is one blank pixel LOL
