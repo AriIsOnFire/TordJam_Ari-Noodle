@@ -17,13 +17,13 @@ homeurl : https://raw.githubusercontent.com/AriIsOnFire/TordJam_Ari-Noodle/main/
 #--
 # These sites show up in the right click menu under 'Portal' and 'Recommendations'.
 # You can set a banner image in the third URL (as shown in the link to my Neocities). Three dashes creates a divider in the menu.
-resource.sakura.portalbuttoncaption : (
-	"Creator Sites"
-)
+//resource.sakura.portalbuttoncaption : (
+//	"Creator Sites"
+//)
 resource.sakura.portalsites : $(urllist
 	"Ari's Strawpage" 
 	"https://ariisonfire.straw.page/" 
-	"-" "-" "-"
+	"-" 
 	"Noodle's Carrd"
 	"https://noodlethegay.carrd.co/"
 	"-" "-" "-" 
