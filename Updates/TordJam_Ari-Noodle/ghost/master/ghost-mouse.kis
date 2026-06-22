@@ -12,13 +12,13 @@ MouseDoubleClick0     : ${OnSakuraMenu}
 # In some Ghosts, this is used to hit them. It might also be used to ask about an accessory, or as a button. But in this example dialogue it doesn't mean anything in particular.
 MouseDoubleClick0Head : "\0\s[3]Something wrong?"
 MouseDoubleClick0Head : "\0\s[0]Looking for something?"
-MouseDoubleClick0Head : "\0\s[4]Don't ruin my hair-do"
+MouseDoubleClick0Head : "\0\s[4]Don't ruin my hair-do!"
 MouseDoubleClick0Head : "\0\s[2]No touching."
 
-MouseDoubleClick0Face : "\0\s[2]Ow\w4.\w4.\w4.?"
+MouseDoubleClick0Face : "\0\s[2]Ow.\w4.\w4.\w8?"
 MouseDoubleClick0Face : "\0\s[7]what do you want???"
 # At this point im just having fun -Noodle 06/20
-MouseDoubleClick0Pocket : "\0\s[0]Oh, this? \0\s[2]If Noodle drew this, I would pull out my guns,\n\n[half]\w4but\s[12]\w4\w4 see, Noodle is doing other things \s[11]and is \s[7]PROCRASTINATING"
+MouseDoubleClick0Pocket : "\0\s[0]Oh, this?\w8 \0\s[2]If Noodle drew this,\w4 I would pull out my guns,\n\n[half]\w4 but\s[12] see, Noodle is doing other things\w4 \s[11]and\w4 is\w4 \s[7]PROCRASTINATING!!"
 
 
 # The favorite part of any Ghost, petting.
@@ -28,14 +28,14 @@ MouseDoubleClick0Pocket : "\0\s[0]Oh, this? \0\s[2]If Noodle drew this, I would 
 # That doesn't mean you need to have it (one of my favorite Ghosts doesn't include petting at all), just that users may expect it. Hence it being included.
 
 # Waiting time for petting response. You can adjust this if you feel it is too long or too short.
-strokeLimit : 50
+strokeLimit : 40
 
 MouseMove0Head : "\0\s[2]Hey,\w8\w8\s[7] cut that out."
-MouseMove0Head : "\0\s[2]I know my hair is great\w4.\w4.\w4.\n\n[half]\s[3]But do you know how much hair gel i need to keep this up?\w_[400]\n\n[half]\s[5]None!"
+MouseMove0Head : "\0\s[2]I know my hair is great.\w4.\w4.\w8\n\n[half]\s[3]But do you know how much hair gel I need to keep this up?\w_[400]\n\n[half]\s[5]None!"
 MouseMove0Head : "\0\s[12]Back off."
 
 MouseMove0Face : "\0\s[2]Eh?"
-MouseMove0Face : "\0\s[1]heh"
+MouseMove0Face : "\0\s[1]Heh."
 
 
-MouseMove0Pocket : "\0\s[11]Many interesting things in that pocket, eh?"
+MouseMove0Pocket : "\0\s[11]Many interesting things in that pocket,\w4 eh?"

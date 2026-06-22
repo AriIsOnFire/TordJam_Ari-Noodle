@@ -17,30 +17,36 @@ homeurl : https://raw.githubusercontent.com/AriIsOnFire/TordJam_Ari-Noodle/main/
 #--
 # These sites show up in the right click menu under 'Portal' and 'Recommendations'.
 # You can set a banner image in the third URL (as shown in the link to my Neocities). Three dashes creates a divider in the menu.
-
+resource.sakura.portalbuttoncaption : (
+	"Creator Sites!"
+)
 resource.sakura.portalsites : $(urllist
-	"Okuajub's Netspace" 
-	"https://okuajub-netspace.neocities.org/ukagaka" 
-	"https://okuajub-netspace.neocities.org/eva_button.png"
+	"Ari's Strawpage!" 
+	"https://ariisonfire.straw.page" 
 	"-" "-" "-"
-	"CHIPS Github"
-	"https://github.com/Okuajub/CHIPS/"
+	"Noodle's Carrd!"
+	"https://noodlethegay.carrd.co/"
+	"-" "-" "-" 
+	"Tord Github"
+	"https://github.com/AriIsOnFire/TordJam_Ari-Noodle"
 	"-"
 )
-
+resource.sakura.recommendbuttoncaption:(
+	"Extra Credits"
+)
 resource.sakura.recommendsites : $(urllist
-	"Kawari Landing Page (JP)"
-	"https://kawari.github.io/"
+	"Github of Template Used (CHIPS)"
+	"https://github.com/Okuajub/CHIPS/"
 	"-" 
-	"Kawari Documentation (EN)"
-	"https://okuajub-netspace.neocities.org/Kawari/"
+	"Template Creator and Kawari Pro"
+	"https://okuajub-netspace.neocities.org/ukagaka"
 	"-"
 	"-" "-" "-"
-	"SakuraScript Documentation (EN)"
-	"https://ukagakadreamteam.github.io/ukadoc/manual/list_sakura_script.html"
+	"Ukagaka Dream Team Wiki"
+	"https://ukagakadreamteam.com/wiki/home"
 	"-"
-	"SHIORI Event Documentation (EN)"
-	"https://ukagakadreamteam.github.io/ukadoc/manual/list_shiori_event.html"
+	"Ukagaka Dream Team"
+	"https://ukagakadreamteam.tumblr.com/"
 	"-"
 )
 
