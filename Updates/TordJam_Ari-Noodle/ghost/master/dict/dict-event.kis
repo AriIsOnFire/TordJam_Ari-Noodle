@@ -435,11 +435,12 @@ OnSurfaceRestore : "\1\s[10]\0\s[0]"
 # And, the response entries would look something like this:
 # This is the poke event from Needle. 
 # The number after the event name designates which character is being poked. 0 is the Sakura, 1 is the Kero, and so on.
-talk.OnNeedlePoke0 : "\0\s[2]Ow,\w4 hey!"
-talk.OnNeedlePoke0 : "\0\s[3]Huh?!"
+talk.OnNeedlePoke0 : "\0\s[2]Can you.\w4.\w4.\w8 Not?\w8 Do that?"
+talk.OnNeedlePoke0 : "\0\s[3]What are you doing."
 
 # You can write events for if Needle is wearing a certain shell, too, by appending the shell name after the character number.
 talk.OnNeedlePoke0Syringe : "\0\s[7]DO NOT,\w4 alright?!"
+talk.OnNeedlePoke0Harpoon : "\0\s[7]HEY!\w8 \s[2]Get that away from me,\w4 alright?" 
 
 # OnNeedlePoke
 # Reacts to overlap with the Ghost "Needle".
