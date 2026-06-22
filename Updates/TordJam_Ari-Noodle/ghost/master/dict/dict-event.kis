@@ -440,7 +440,8 @@ talk.OnNeedlePoke0 : "\0\s[3]What are you doing."
 
 # You can write events for if Needle is wearing a certain shell, too, by appending the shell name after the character number.
 talk.OnNeedlePoke0Syringe : "\0\s[7]DO NOT,\w4 alright?!"
-talk.OnNeedlePoke0Harpoon : "\0\s[7]HEY!\w8 \s[2]Get that away from me,\w4 alright?" 
+talk.OnNeedlePoke0HARPOON : "\0\s[7]HEY!\w8 \s[2]Get that away from me,\w4 alright?" 
+talk.OnNeedlePoke0HARPOON : "\0\s[7]YO!\w8 \s[2]GET that THING out of my FACE!!" 
 
 # OnNeedlePoke
 # Reacts to overlap with the Ghost "Needle".
