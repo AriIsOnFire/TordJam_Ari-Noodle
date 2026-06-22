@@ -427,3 +427,27 @@ notify.OnNotifyShellInfo : $(
 # SurfaceRestore is intended to reset the Ghost's surfaces after a little while, if needed.
 # If you'd like to edit these to be appropriate to other modes, or to remove the Kero, it is entirely possible through here.
 OnSurfaceRestore : "\1\s[10]\0\s[0]"
+
+#-- OnNeedlePoke
+# This is an interaction between this Ghost and another English Ghost called Needle.
+# Needle is a Ghost which, among other features, sends an event called "OnNeedlePoke" to other Ghosts when overlapping them. This event is implied to be annoying or painful.
+
+# And, the response entries would look something like this:
+# This is the poke event from Needle. 
+# The number after the event name designates which character is being poked. 0 is the Sakura, 1 is the Kero, and so on.
+talk.OnNeedlePoke0 : "\0\s[2]Ow,\w4 hey!"
+talk.OnNeedlePoke0 : "\0\s[3]Huh?!"
+
+# You can write events for if Needle is wearing a certain shell, too, by appending the shell name after the character number.
+talk.OnNeedlePoke0Syringe : "\0\s[7]DO NOT,\w4 alright?!"
+
+# OnNeedlePoke
+# Reacts to overlap with the Ghost "Needle".
+# No arguments. reference0 is who Needle is poking (0 Sakura, 1 Kero, etc..), reference1 is the Shell that Needle is wearing.
+# Returns appropriate dialogue.
+OnNeedlePoke : $(
+    if $[$(length ${talk.OnNeedlePoke$(Reference 0)$(Reference 1)} > 0)] ${talk.OnNeedlePoke$(Reference 0)$(Reference 1)}
+	else ${talk.OnNeedlePoke$(Reference 0)};
+	)
+	
+//hehe -Ari 6/22
