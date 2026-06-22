@@ -11,7 +11,7 @@ file,ghost/master/ghost-bootend.kis8d56af58b1cfd01910b31327b8794a46size=3214d
 file,ghost/master/ghost-etc.kis12340002db80fff6796ae383d70fef3bsize=3209date=2026-06-19T20:20:26
 file,ghost/master/ghost-menu.kis4530f983b404fa266d55f3db4f6e30ebsize=18282date=2026-06-20T10:21:15
 file,ghost/master/ghost-mouse.kis3efadcf3e367bf446994a1074a0fb43asize=2467date=2026-06-22T08:50:51
-file,ghost/master/ghost-resource.kise3f6c689214adefc53c26fbb165debb2size=2519date=2026-06-22T08:53:37
+file,ghost/master/ghost-resource.kis0160a1dab0ddb4516c54260237181d8dsize=2520date=2026-06-22T08:55:18
 file,ghost/master/icon.ico0343ade716a0ae27ba4f560831df2b89size=2462date=2026-06-18T19:09:44
 file,ghost/master/kawarirc.kisf970be008bb857de6ebf72fb07443979size=754date=2026-06-18T19:09:44
 file,ghost/master/shiori.dll118d5bb9e5d917d66c97722bc970edb9size=268800date=2026-06-18T19:09:44

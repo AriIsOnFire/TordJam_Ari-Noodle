@@ -22,7 +22,7 @@ resource.sakura.portalbuttoncaption : (
 )
 resource.sakura.portalsites : $(urllist
 	"Ari's Strawpage" 
-	"https://ariisonfire.straw.page" 
+	"https://ariisonfire.straw.page/" 
 	"-" "-" "-"
 	"Noodle's Carrd"
 	"https://noodlethegay.carrd.co/"
