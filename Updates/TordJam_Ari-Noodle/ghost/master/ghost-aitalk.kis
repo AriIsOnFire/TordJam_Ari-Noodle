@@ -55,9 +55,9 @@ sentence : (
 movies : "'Spider-Edd'", "'Pink Kong'", "'The Day the Earth Stood Still'", "'The Evil Dead'", "'Scooby Doo'", "'Godzilla'", "'King Kong'", "'Jurassic Park'", "'Tom's Tales Of Awesome'", "'The Big Named Monster'"
 games : "'House of the Lead'", "'Fap Fap Revolution'", "'Dunkee Punch'", "'Super Mario Bros'", "'Maniac Mansion'"
 
-food : "some Pizza Butt", "a Monster", "a cigarette", "a cigar"
+food : "'some Pizza Butt'", "'a Monster'", "'a cigarette'", "'a cigar'"
 
-miss : "my robot", "my hat"
+miss : "'my robot'", "'my hat'"
 
 #mediaCritiques : "I thought the pacing was too slow.", "The music was so bland. I don't get why it's praised all the time.", "It was totally just a jab at the fans.", "It looked so cheap!"
 #mediaCritiques : "Genuinely unpleasant to watch. Couldn't some of the effects budget gone to the writing instead?", "The main character didn't have any chemistry at all."
@@ -106,6 +106,12 @@ sentence : "\0\s[2]And he wanted me to stay, pfft! As if! Im glad i left because
 sentence : "\0\s[2]If only I could have ${food}... mmmmmm..."
 
 sentence : "\0\s[2]I need ${food}."
+
+sentence : "\0\s[2]I wonder where my copy of ${games}"
+
+sentence : "\0\s[2]Are they really planning to make a new ${movies} movie?"
+
+sentence : "\0\s[2]I thought that ${movies} was better than ${movies} just something about it hit harder."
 
 sentence : "\0\s[2]Snakker du norsk?"
 

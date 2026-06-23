@@ -42,10 +42,6 @@ surface0
 element0,overlay,surface1001.png,0,0
 element1,overlay,surface1200.png,0,0
 
-}
-
-surface0
-{
 
 //--Collision 
 
@@ -61,7 +57,7 @@ element5,overlay,surface1600.png,0,0
 element6,overlay,surface1700.png,0,0
 
 //--Neutral face
-animation9.interval,never
+animation9.interval,runonce
 animation9.pattern0,overlay,1301,0,0,0
 
 //--Smiling face
@@ -119,9 +115,9 @@ collision2,130,259,190,311,Pocket
 
 //--Embarassed pose base
 animation5.interval,always
-animation5.pattern2,overlay,1702,0,0,0
+animation5.pattern1,overlay,1702,0,0,0
 animation5.pattern0,overlay,1701,1000,0,0
-animation5.pattern2,overlay,1702,1000,0,0
+animation5.pattern1,overlay,1702,1000,0,0
 
 element0,overlay,surface1001.png,0,0
 element1,overlay,surface1201.png,0,0  
@@ -185,6 +181,16 @@ surface5
 collision0,169,7,299,77,Head
 collision1,179,82,270,160,Face
 collision2,166,268,233,315,Pocket	
+
+animation5,interval,runonce
+animation5.pattern0,overlay,1205
+animation5.pattern1,overlay,1206
+animation5.pattern2,overlay,1207
+animation5.pattern3,overlay,1208
+animation5.pattern4,overlay,1209
+animation5.pattern5,overlay,1210
+animation5.pattern5,overlay,1211
+
 }
 
 
