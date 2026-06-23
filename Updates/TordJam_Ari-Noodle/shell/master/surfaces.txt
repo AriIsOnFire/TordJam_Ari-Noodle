@@ -110,21 +110,22 @@ collision2,130,259,190,311,Pocket
 
 //--Embarassed pose base
 animation5.inverval,always
-animation5.pattern0,bind,1701,100,0,0
-animation5.pattern1,bind,1702,100,0,0
+animation5.pattern0,overlay,1701,100,0,0
+animation5.pattern1,overlay,-1,0,0,0
+animation5.pattern2,overlay,1702,100,0,0
 
 element0,overlay,surface1001.png,0,0
-element1,overlay,surface1200.png,0,0  
+element1,overlay,surface1201.png,0,0  
 element5,overlay,surface1601.png,0,0
 
 //--Awkward mouth
 animation6.interval,never
-element2,overlay,surface1305.png,0,0
+animation6.pattern0,overlay,1305,0,0
 
 
 //Pursed lips
 animation7.interval,never
-element2,overlay,surface1305.png,0,0
+animation7,pattern0,overlay,1303,0,0
 
 //--Eyes looking away
 element3,overlay,surface1401.png,0,0
