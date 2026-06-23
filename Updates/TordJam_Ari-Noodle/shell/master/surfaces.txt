@@ -81,15 +81,15 @@ animation1.pattern0,alternativestart,[2.3.4]
 animation2.interval,never
 animation2.pattern0,overlay,1500,100,0,0
 animation2.pattern1,overlay,1501,130,0,0
-animation2.pattern2,bind,1301,0,0,0
+animation2.pattern2,overlay,1301,0,0,0
 
 animation3.interval,never
 animation3.pattern0,overlay,1500,140,0,0
-animation3.pattern1,bind,1300,0,0,0
+animation3.pattern1,overlay,1300,0,0,0
 
 animation4.interval,never
 animation4.pattern0,overlay,1501,140,0,0
-animation4.pattern1,bind,1300,0,0,0
+animation4.pattern1,overlay,1300,0,0,0
 
 }
 
