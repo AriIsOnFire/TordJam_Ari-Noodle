@@ -57,11 +57,11 @@ element6,overlay,surface1700.png,0,0
 
 //--Neutral face
 animation9.interval,runonce
-animation9.pattern0,replace,1301,0,0,0
+animation9.pattern0,overlay,1301,0,0,0
 
 //--Smiling face
 animation8.interval,never
-animation8.pattern0,replace,1300,0,0,0
+animation8.pattern0,overlay,1300,0,0,0
 
 
 //--Blinking animation
@@ -201,8 +201,8 @@ animation11.pattern12,overlay,1211,0,0,0
 
 //hopefull eyes animation LMAO
 animation12.interval,runonce+always
-animation12.pattern5,overlay,1433,40,0,0
-animation12.pattern5,overlay,1434,0,0,0
+animation12.pattern5,overlay,1433,1000,0,0
+animation12.pattern5,overlay,1434,1000,0,0
 
 
 //--Elements
