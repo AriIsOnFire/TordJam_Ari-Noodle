@@ -36,33 +36,35 @@ descript
 //I can't mess with most of these until noodle is done with the surfaces -Ari, 06/18
 //I've begun messing with them knowing DAMN well that i might have to change these later -Noodle 06/20
 
+//standing surface base
+surface0
+{
+element0,overlay,surface1001.png,0,0
+element1,overlay,surface1200.png,0,0
+
+}
+
 surface0
 {
 
-element0,overlay,surface1003.png,0,0
-element1,overlay,surface1200.png,0,0
-element2,overlay,surface1301.png,0,0
-element4,overlay,surface1500.png,0,0
+//ill make these into intervals, i just need to have this out rn -noodle 23/6
+element2,overlay,surface1301.png,0,0 
+element3,overlay,surface1400.png,0,0 
 element5,overlay,surface1600.png,0,0
 element6,overlay,surface1700.png,0,0
+
+//--Collision 
 
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
-}
-
 
 //--Blinking animation
-//Because this is the first animation, I will explain it.
-//The first line tells the program what this is. To translate from code to plain language: 'animation10' "The 10th animation". "which has an interval of", "randomly choose every second", "with a 1 in 4 chance to play".
-//If that does not make sense, that is OK. This shell is designed to have the images replaced. Just change the collisions above and replace the images and it will be alright.
-//The next line is saying: "The 10th animation". "First image is", "Overlaid and clipped to the character", "it is surface1002", "it will be held for 50 miliseconds", "0 offset on the X", "0 offset on the Y". 
-//With that information, you should be able to infer what the other 2 patterns are.
-surface0
-{
+
 animation10.interval,random,4
-animation10.pattern0,overlayfast,1402,50,0,0
-animation10.pattern1,overlayfast,1403,100,0,0
+animation10.pattern0,overlayfast,1502,50,0,0
+animation10.pattern1,overlayfast,1503,100,0,0
+animation10.pattern1,overlayfast,1504,100,0,0
 animation10.pattern2,overlay,-1,30,0,0
 
 //--Talking Animation
@@ -71,18 +73,25 @@ animation1.interval,talk,4
 animation1.pattern0,alternativestart,[2.3.4]
 
 animation2.interval,never
-animation2.pattern0,overlay,1400,100,0,0
-animation2.pattern1,overlay,1401,130,0,0
+animation2.pattern0,overlay,1500,100,0,0
+animation2.pattern1,overlay,1501,130,0,0
 animation2.pattern2,overlay,-1,100,0,0
 
 animation3.interval,never
-animation3.pattern0,overlay,1400,140,0,0
+animation3.pattern0,overlay,1500,140,0,0
 animation3.pattern1,overlay,-1,100,0,0
 
 animation4.interval,never
-animation4.pattern0,overlay,1401,140,0,0
+animation4.pattern0,overlay,1501,140,0,0
 animation4.pattern1,overlay,-1,100,0,0
+
 }
+
+//The first line tells the program what this is. To translate from code to plain language: 'animation10' "The 10th animation". "which has an interval of", "randomly choose every second", "with a 1 in 4 chance to play".
+//The next line is saying: "The 10th animation". "First image is", "Overlaid and clipped to the character", "it is surface1002", "it will be held for 50 miliseconds", "0 offset on the X", "0 offset on the Y". 
+//With that information, you should be able to infer what the other 2 patterns are.
+
+
 
 
 
@@ -90,62 +99,132 @@ animation4.pattern1,overlay,-1,100,0,0
 
 //im doing a few of these for now, bc i want to play around with him a bit, let a guy have some joy and whimsy, ill remove these once i start working on coloring the surfaces -Noodle 06/20
 //added these Surfaces 1, 2, and 5 so they stopped bringing up notices. Noodle Do that Thang when you can -Ari 6/20
+
 surface1
 {
-	
+//--Collision 
+
+collision0,64,24,189,86,Head
+collision1,92,95,174,158,Face
+collision2,130,259,190,311,Pocket	
+
+//--Embarassed pose base
+animation5.inverval,always
+animation5.pattern0,bind,1701,100,0,0
+animation5.pattern1,bind,1702,100,0,0
+
+element0,overlay,surface1001.png,0,0
+element1,overlay,surface1200.png,0,0  
+element5,overlay,surface1601.png,0,0
+
+//--Awkward mouth
+animation6.interval,never
+element2,overlay,surface1305.png,0,0
+
+
+//Pursed lips
+animation7.interval,never
+element2,overlay,surface1305.png,0,0
+
+//--Eyes looking away
+element3,overlay,surface1401.png,0,0
+
 }
+
 surface2
 {
-	
+
+//--Collision 
+
+collision0,53,43,218,111,Head
+collision1,87,126,187,193,Face
+collision2,128,277,199,328,Pocket	
+
+//base standing pose that i will change partially into intervals later i just need to have surface2 things in here rn -noodle 23/6
+
+element0,overlay,surface1002.png,0,0
+element1,overlay,surface1202.png,0,0
+element2,overlay,surface1304.png,0,0
+element3,overlay,surface1402.png,0,0
+element5,overlay,surface1602.png,0,0
+element6,overlay,surface1703.png,0,0
+
 }
+
+
+
+
 surface3
 {
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 }
+
+
 surface4
 {
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 }
+
+
 surface5
 {
-	
+collision0,169,7,299,77,Head
+collision1,179,82,270,160,Face
+collision2,166,268,233,315,Pocket	
 }
+
+
 surface6
 {
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 }
+
+
 surface7
 {
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 }
+
+
 surface8
 {
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 }
+
+
 surface9
 {
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 }
+
+
 surface11
 {
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 }
+
+
 surface12
 {
+element2,overlay,surface1300.png,0,0
+element3,overlay,surface1400.png,0,0
+element5,overlay,surface1600.png,0,0
+element6,overlay,surface1700.png,0,0
+
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
