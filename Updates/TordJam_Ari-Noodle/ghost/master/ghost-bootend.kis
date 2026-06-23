@@ -31,6 +31,7 @@ talk.OnGhostReloaded     : "\0\s[0]Reloaded. Everything right now?"
 
 talk.OnGhostCalling      : "\0\s[0]Welcome, " $(Reference 0) "."
 talk.OnGhostCallingNeedle : "\0\s[3] What are you planning on doing with that.\w4.\w4.\w4?"
+talk.OnGhostCallingNeedle : "\0\s[3].\w4.\w4.\w4?"
 
 # Additional responses are called by the shell name. Case sensitive.
 talk.OnShellChanged       : "\0\s[2]Huh, a new look."

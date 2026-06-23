@@ -1,160 +1,13 @@
-#--
-# AI TALK / SENTENCE
-#--
-# Hello! This is the dialogue pool file for your Ghost. It should also be the first file you start with if you've not written a Ghost before.
-# Once most of this is learned, writing all the other files will seem easy. 
-# The goal is to know the basics of writing dialogue in Kawari, some programming features which aid writing, and tools specific to CHIPS. 
-# This is going to seem like a big information dump at first, but it drops off significantly. 
-# Don't be discouraged if you need to reread or circle back to something. It's all part of learning a new skill!
 
-#-- Getting started
-# It's time to introduce some programming. 
-# Entries are the building blocks of any Ghost in Kawari. They will hold all of your values, including dialogue, code, and other information that needs to be stored. 
-# An entry can store multiple values, and values of different types. They are a unique feature of Kawari.
-# A definition is a value from an entry. Any one piece of dialogue is a definition inside of its entry. 
-# Definitions are analogous to "elements" in an array in other programming languages, if you're familiar.
-# A dictionary is all the entries and their definitions as read, collected, and categorized by the Ghost. 
-# It can refer to a single dictionary file, such as this file, or all dictionary files for a given Ghost.
-# While it's good to know these terms, it's unlikely they will come up while writing. They're most useful in explaining the coding side of things.
-
-# Here's an example entry. Entry names can't use spaces, but underscores make a good substitute. 
-# Entry names are also case sensitive, so keep that in mind.
-//I AIN'T TOUCHING THIS YET DEAR GOD -Ari, 06/18
-animals_1 : cat
-
-# This is as about as simple as an entry can get, aside from being empty. Defining an entry at its core looks like "[entryName] : [definition]".
-# Maintaining proper form while typing code is important in programming. The computer can't parse code unless it's written according to the language's grammar.
-# Kawari was designed with writing dialogue in Japanese when it was first created, so it had no reason to avoid using English grammar as parts of its syntax.
-# This can make it more difficult to write English ghosts in Kawari compared to a Japanese ghost. But, it is still not hard.
-
-# Entries can hold multiple values, and these values are separated by commas.
-
-animals_2 : dog, bird
-
-# This entry has two values, "dog" and "bird". The comma splits them, and Kawari ignores spaces unless told otherwise. 
-# If we want it to have one value of "dog, bird", we need to add syntax to declare that. 
-# The apostrophe (') and double quote (") are used to ignore any syntax inside of them when in matching pairs. These encased sections are known as string literals.
-# This is how we write around most pieces of Kawari syntax that conflict with English grammar. Let's write a normal English sentence instead of singular words.
-
-quote_1 : "Hey! Are you listening to me? C'mon, step it up!"
-
-# Without our double quotes, that sentence's apostrophes and commas would cause errors.
-# But, an apostrophe or double quote without its pair can cause odd behavior or syntax errors by breaking up the string literal.
-# Because of this, if the same type is used multiple times, it won't be parsed correctly. 
-# There are some situations where you'd want to, like quoting someone.
-# To get around this, backslashes tell the computer which of the same type to ignore. 
-# Using backslashes to indicate which apostrophes or double quotes to ignore is called "escaping" them.
-
-quote_2 : 'Isn\'t it "Alas, poor Yorick"? Not whatever you said.'
-quote_3 : "I remember, you said \"I'll take care of it.\" when we talked last week."
-
-# We can also write on multiple lines if a dialogue begins to get long. 
-# To do this, we use parentheses to denote a code block. Blocks are parsed from top to bottom.
-# With code blocks, it's also important for readability to indent your lines properly. 
-# For each time we use multiple lines inside parentheses, we should indent with tab once.
-
-block_1 : (
-	"This line will be read first."
-	"This line comes next."
-)
-
-# Blocks can also be written with the parentheses on the same line as a piece of dialogue.
-
-block_2 : ("This is the first line."
-"This is the second line."
-"This is the third line.")
-
-# Both work, and it's up to personal preference. Just be consistent in how you use it. 
-# We'll be using the first type in our examples for consistency.
-
-# Writing dialogue continues to build on this simple format.
-# Ghosts use their own unique language of tags called "SakuraScript" in dialogue to perform various actions.
-# We'll briefly touch on SakuraScript, however if you would like to learn more in-depth uses of it, please check:
-# https://ukagakadreamteam.github.io/ukadoc/manual/list_sakura_script.html The SakuraScript documentation translated to English
-# https://okuajub-netspace.neocities.org/CHIPS_write_sakura My external guide to SakuraScript
-
-#-- SakuraScript
-# SakuraScript is actually not part of Kawari. It's a set of standardized tags that the baseware (such as SSP) parses and acts on. 
-# These tags can do things such as format text, move the Ghost, play sounds, and more. 
-# But for now, we will focus on the most common tags.
-
-# The tags \0 and \1 control focus on your characters, being the Sakura and Kero respectively. 
-# The focus changes which character says a given dialogue, and some tags only affect the character in focus.
-# The \s[x] tag, where x is a number, controls which surface a character uses. 
-# Surface numbering depends on the shell, and can be viewed in the developer palette of SSP under Surface Test.
-# These tags are often put together, because you need to switch focus to a character to change their surface. 
-# With these tags added, a dialogue entry will look something like this.
-
-tags_1 : "\0\s[0]Hey. This is the main character.\0\s[0]I'm the side character."
-
-# With multiple characters, clarity of who is talking and in what order is important. 
-# The tag \n is used to add in a line break, which can be used to format dialogue for clarity.
-# \n also has a modifier of \n[half], which creates space equal to half a line break. 
-# \n with \n[half] is a traditional spacing for dialogue, so they are commonly seen together as \n\n[half]. 
-# Two \n tags, \n\n, will also give dialogue plenty of space as you see fit. 
-# Whether you choose \n\n[half] or \n\n is up to personal preference! (CHIPS uses \n\n[half] as it is easier for me to read.)
-# Combining this into a code block, you can make your code more readable to you as well.
-
-tags_2 : (
-	"\0\s[0]The first line of dialogue doesn't need a new line."
-	"\0\s[0]Not for me either."
-	"\0\s[0]\n\n[half]But a character's second line and beyond should use them."
-	"\0\s[0]\n\n[half]For the Kero as well."
-	"\0\s[0]\n\n[half]Especially in back-and-forth conversations."
-)
-
-# With those tags down, we've learned a majority of the tags used in Ghosts by volume. 
-# There are a couple more which will be useful for writers, but not necessary by any means.
-
-# \w is a tag to tell the Ghost to wait and pause what they're saying. 
-# \w uses an integer to calculate how long to wait, an integer of 1-9. It uses the number multiplied by 50 milliseconds.
-# \w1 is 50ms, \w8 is 400ms. The tag \_w[*] can be used to more finely control the wait period, as * represents milliseconds. Its upper limit is much larger, too. 
-# \_w[400] is 400ms, \_w[1000] is 1000ms, or one second. These can be used to control the cadence of what a Ghost is saying. 
-# It can also make dialogue feel more natural, as rarely do people talk continuously at the same pace. Where you use \w or \_w[*] is up to your discretion.
-
-tags_3 : "\0\s[9]I know who the murderer is.\_w[2000] It was\w4.\w4.\w4. Mr. Plum,\w2 in the kitchen,\w2 with a candlestick.\0\s[0]Sorry,\w2 that's not it."
-
-# \f is a tag that lets one apply more rigorous formatting. It has a lot of variants, so we will only cover a few. The complete list can be found here:
-# https://ukagakadreamteam.github.io/ukadoc/manual/list_sakura_script.html#_f_align,%E5%AF%84%E3%81%9B%E3%82%8B%E5%81%B4_
 # Italics, bolding, strike-throughs, sub/superscript, and underlining are all options that can be turned on with \f[(style),(parameter)]. 
 # The parameter indicates if it should turn it on, off, or set it to the balloon's default.
 # To turn on italics, for example, it would be \f[italic,true]. To return to the balloon's default, \f[italic,default] would be used. 
-# 'false' is the parameter to turn an effect completely off. However, some balloons use these effects for style purposes. 
-# So, 'default' should be used unless you want to turn off an effect on all balloons.
-# Remember to add the tag to end formatting, as it will format all characters in a definition until dictated otherwise. That includes across the Sakura and Kero!
+# 'false' is the parameter to turn an effect completely off.  
 
-tags_4 : (
-	"\0\s[0]Hey, say something spooky."
-	"\0\s[0]\f[italic,true]Something spooOOooky!\f[italic,default]"
-	"\0\s[0]That is \f[bold,true]not\f[bold,default] what I meant."
-)
-
-# Now, these last two are more relevant for if you peek inside other Ghosts for reference.
-# The tag \i[*] is very similar to \s[*], except it activates a surface's animation instead of changing a whole surface. 
-# These animations can vary greatly, from changing arm positions to making a character jump, and more.
-# These animations are part of the shell, and are numbered just as uniquely as surfaces are. 
-# CHIPS does not, by default, include any animations normally used in this way, although any animation can be called with \i[*].
-
-# The tag \e is a tag you may see commonly in older Ghosts, as in the past it was necessary to end every dialogue with. 
 # \e stops the current event and script, and any script written after it won't be run.
-# While it's here to support old specification, it also still sees occasional use, as stopping script is useful in certain programming situations.
 
-# -- Putting it all Together
-# Now it's time to add dialogue to our Ghost. While you can name entries anything, there is a specific entry used for random dialogue in CHIPS.
-# This entry is 'sentence', and it works just like any other entry. Any definitions of sentence will have a chance for the Ghost to say while idle.
-# Entries can also have multiple definitions written on different lines, so long as the entry is specified.
 
-sentence : "\0\s[0]So, what's going on out there?\0\s[0]Not much, it seems."
-sentence : "\0\s[0]Let's see.. What do I need to do after work today..."
 
-# One could write an entire Ghost with what we know now. However, a unique feature of Ghosts is their ability to randomize dialogue pieces.
-# In Kawari, we do this by calling entries within an entry. To perform an entry call, we use the syntax ${entryName}.
-# Remember from earlier, though, that string literals ignore syntax. We have to write around any entry calls so they're not ignored.
-
-pets1 : dogs, rats, mice
-pets2 : cats, rabbits, hedgehogs
-
-sentence : "\0\s[0]I think "${pets1}" are totally better than "${pets2}"."
 
 # This dialogue should choose a random animal from pets1 and pets2, and replace them accordingly.
 # Entries like these are what really allow Ghosts to be more varied and life-like, when used well.
@@ -162,30 +15,23 @@ sentence : "\0\s[0]I think "${pets1}" are totally better than "${pets2}"."
 # They're the main draw of Kawari and are supposed to make writing ghosts fun and easy. Play around with them, see what unique things you can come up with.
 # If you would like to learn more, I suggest taking a look at https://okuajub-netspace.neocities.org/CHIPS_code_basics.html
 
-#--
-# CHIPS Specific
-#--
-# There are some unique entries which I've built in to CHIPS to help with information which would otherwise be difficult to write around.
-# They should help with referring to the user, if that's what you want to do.
-# Of interest to you may be: 
 
 #-- User-centric Entries 
 # The entries 'username', 'userfull', 'tempname', 'usergender', and 'birthdate' are entries that keep information on the User. 
-# username holds the user's name as set in the Ghost, which is their nickname in SSP's preferences by default. If they don't have a name set, they will be called "User".
-# userfull is similar, except that the User can't change it inside the Ghost. It's always their full name as described in the SSP preferences.
 # tempname holds the user's nickname as set in SSP and can't be changed within the Ghost. I don't see much use for this besides some fourth-wall break type stuff, but, I wanted to put it out there!
 # usergender is the user's gender as set by the SSP preferences. "male", "female" and "undef" are the three values it can have.
-# birthdate is the user's birthday! Also set by the SSP preferences. It takes the form of "yyyy,mm,dd", such as "1972,10,31" for "October 31st, 1972" (Sentinel's birthday, haha).
+
+# birthdate is the user's birthday! Also set by the SSP preferences. It takes the form of "yyyy,mm,dd", such as "1972,10,31" for "October 31st, 1972".
+
 # There's fun things you could do with these, such as using a user's full name when a Ghost is upset, making gender-specific comments, or giving the user a happy birthday message.
 
 #-- Pronouns
-# A unique aspect of CHIPS is its pronouns system. The user can have multiple sets, and mix them or have them used consistently in a conversation.
-# Since this is unique to CHIPS, I'll go ahead and go over it. It's not as hard as you might think!
 
 # There are five entries which control pronouns. The entries are: 'they','them','their','theirs', and 'themself'.
 # There's also one function that should help you in making correct subject-pronoun-verb agreement. It's called 'SP'. It stands for "Singular/Plural".
 # SP is written as $(SP "singular" "plural"), with the parts in quotes being the singular and plural versions of a word respectively.
 # That probably sounds complicated but it's actually pretty easy to write! Take a look.
+
 sentence : (
     # 'username' calls the user's name. The user is the subject of the sentence.
     "\0\s[0] Hey, Sentinel. Do you think "${username}" should use pronouns to refer to the User?"
@@ -194,6 +40,7 @@ sentence : (
     # The function 'SP' is used to determine if a word should be singular or plural relative to the last pronoun. 
     "I've got no idea what "${they}$(SP "'s" "'ve")" got planned."
 )
+
 # If you don't plan on acknowledging the User at all in your writing, you don't have to use this. It's just an option, not an expectation!
 # Not all Ghost users actually like being acknowledged in a Ghost. So, maybe consider what kind of Ghost you're writing and who it would appeal to.
 
@@ -203,44 +50,78 @@ sentence : (
 # This will set 'devmode' to be ON. Be aware, any user can also do this, so don't put any sensitive information behind devmode. 
 # It's better used to do things like hide debug menus, or neatly turn off a buggy function you're still working on.
 
-# That's all I wanted to cover in this file, and you should have a lot of tools in your arsenal, now. I've written some examples of less bland dialogues here.
-# Play and have fun when writing dialogue!
+#-- Dictionary
 
-#-- Example dialogue
-# 
+movies : "'Spider-Edd'", "'Pink Kong'", "'The Day the Earth Stood Still'", "'The Evil Dead'", "'Scooby Doo'", "'Godzilla'", "'King Kong'", "'Jurassic Park'", "'Tom's Tales Of Awesome'", "'The Big Named Monster'"
+games : "'House of the Lead'", "'Fap Fap Revolution'", "'Dunkee Punch'", "'Super Mario Bros'", "'Maniac Mansion'"
 
-sentence : "\0\s[5]You can replace our lines with whatever you'd like."
+food : "some Pizza Butt", "a Monster", "a cigarette", "a cigar"
 
-sentence : "\0\s[1]Have you tried turning it off and on again?"
+miss : "my robot", "my hat"
 
-sentence : "\0\s[2]My hovercraft is full of eels."
+#mediaCritiques : "I thought the pacing was too slow.", "The music was so bland. I don't get why it's praised all the time.", "It was totally just a jab at the fans.", "It looked so cheap!"
+#mediaCritiques : "Genuinely unpleasant to watch. Couldn't some of the effects budget gone to the writing instead?", "The main character didn't have any chemistry at all."
 
-sentence : (
-    "\0\s[1]Chip, have you heard of a person called 'Melinda the Mental Marvel'?\w8\w8"
-    "\0\s[2]No, why?\w8"
-    "\0\s[3]\n\n[half]Oh, nothing.. You just remind me of this kid I met once. Chip McCallahan."
-    "\0\s[5]\n\n[half]Oh, \f[italic,true]him\f[italic,default]? No way! I \f[italic,true]test\f[italic,false] chips, not collect them to get into some lame club.\w8"
-    "\0\s[9]\n\n[half]Bummer.\w8\w8"
-    "\0\s[0]\n\n[half]\f[size,9]Chip's Challenge... Huh!\f[size,default]"
+#mediaDefense   : "Oh, come on, it wasn't \f[italic,true]that\f[italic,default] bad.", "How can you say that, when the subtext was so good?", "Clearly you just don't understand it."
+#mediaDefense   : "I think that the music really sells it. C'mon, I'll set up a home theater and you can see it! Or, hear it.", "Oh, that's not fair. It's totally subjective."
+
+
+
+#--Dialogue
+
+sentence : "\0\s[0]Coke is awful, i dont know how Edd can stand to drink that stuff."
+
+sentence : "\0\s[0]Whatever!"
+
+sentence : "\0\s[0]What should i have for dinner today... Pork...? No, I think I ate all my bacon this morning... Soda? Eugh."
+
+sentence : "\0\s[0]On Fridays, Its funny shirt day! ... I can't remember who i got that from."
+
+sentence : "\0\s[0]\f[sub,true]I wonder if he ever got rid of that stupid bear.\f[default]"
+
+sentence : "\0\s[0]Where did i leave my revolver..."
+
+sentence : "\0\s[0]I was in the army once, did you know?"
+
+sentence : "\0\s[0]\f[sub,true]I don't know what I've been told... Stainless steel is hard to fold...\f[default]"
+
+sentence : "\0\s[0]Let's see.. What do I need to do after work today..."
+
+sentence : "\0\s[5]\f[sub,true] ...Crazy English...\f[default]"
+
+sentence : "\0\s[1]Hmm... I miss ${miss}..."
+
+sentence : "\0\s[2]I'm in your car, Edward!"
+
+sentence : "\0\s[2]I should play Maniac Mansion... I still have the deluxe edition..."
+
+sentence : "\0\s[2]Ugh. That song."
+
+sentence : "\0\s[2]I have to go to work....."
+
+sentence : "\0\s[2]I'M EMPLOYED!!!"
+
+sentence : "\0\s[2]And he wanted me to stay, pfft! As if! Im glad i left because, Ikke faen!"
+
+sentence : "\0\s[2]If only I could have ${food}... mmmmmm..."
+
+sentence : "\0\s[2]I need ${food}."
+
+sentence : "\0\s[2]Snakker du norsk?"
+
+sentence : ( 
+    "\0\s[1]I should watch The Return if the Insane Zombie Pirates from Hell\w8.\w8.\w8.\w8\w8\n\n[half]"  
+    "\0\s[1]\f[italic,true]Hell,\f[italic,false] maybe I should just rewatch the whole trilogy! I heard that they're making a new movie, might as well."
 )
 
-# Lets set up some entries...
-media : "'The End of Evangelion'", "'Pacific Rim'", "'Robin Hood'", "'Aliens'", "'Citizen Kane'", "'John Wick'", "'Johnny Mnemonic'", "'Metal Gear Solid 4: Guns of the Patriots'"
-media : "'Uncharted'", "'Bram Stoker's Dracula'", "'Resident Evil'"
-
-mediaCritiques : "I thought the pacing was too slow.", "The music was so bland. I don't get why it's praised all the time.", "It was totally just a jab at the fans.", "It looked so cheap!"
-mediaCritiques : "Genuinely unpleasant to watch. Couldn't some of the effects budget gone to the writing instead?", "The main character didn't have any chemistry at all."
-
-mediaDefense   : "Oh, come on, it wasn't \f[italic,true]that\f[italic,default] bad.", "How can you say that, when the subtext was so good?", "Clearly you just don't understand it."
-mediaDefense   : "I think that the music really sells it. C'mon, I'll set up a home theater and you can see it! Or, hear it.", "Oh, that's not fair. It's totally subjective."
 
 # Putting them all together, this one dialogue has a possibility of 360 different variations. Isn't that helpful? Even discounting the media entry call, that's still 60 different variations!
-sentence : (
-    "\0\s[0]So, Sentinel, what'd you think of "${media}"?\n\n[half]"
-    "\0\s[8]Hmm. I liked it. But.. "${mediaCritiques}"\n\n[half]"
-    "\0\s[0]"${mediaDefense}
-    "\0\s[6]Suit yourself."
-)
+#sentence : (
+    #"\0\s[0]So, Sentinel, what'd you think of "${media}"?\n\n[half]"
+    #"\0\s[8]Hmm. I liked it. But.. "${mediaCritiques}"\n\n[half]"
+   # "\0\s[0]"${mediaDefense}
+   # "\0\s[6]Suit yourself."
+#)
 
 # Also, here's the hour roll-over event. It's in the 24-hour format. Be aware it doesn't always go off exactly on the hour. If you don't want it, just erase it or comment it.
 talk.OnHourTimeSignal : $(setstr @minute $(date %M)) "\0\s[0]It's %hour:"${@minute}"."

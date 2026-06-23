@@ -11,7 +11,7 @@ MouseDoubleClick0     : ${OnSakuraMenu}
 # You can specify a hotspot/collision (as defined in surfaces.txt) of the character, so that they say something unique when the user double clicks there.
 # In some Ghosts, this is used to hit them. It might also be used to ask about an accessory, or as a button. But in this example dialogue it doesn't mean anything in particular.
 MouseDoubleClick0Head : "\0\s[3]Something wrong?"
-MouseDoubleClick0Head : "\0\s[0]Looking for something?"
+MouseDoubleClick0Head : "\0\s[0]\i[9]Looking for something?"
 MouseDoubleClick0Head : "\0\s[4]Don't ruin my hair-do!"
 MouseDoubleClick0Head : "\0\s[2]No touching."
 

@@ -5,11 +5,11 @@ readme.txt949ed92fa2450e3011526f95b02c6221size=201date=2026-06-19T06:05:29
 thumbnail.pna4bc728a8cbf3899e0860324a3760d1f8size=4503date=2026-06-19T06:05:30
 thumbnail.png51e3a42f61715c7bcea065a1840c578csize=38841date=2026-06-19T06:05:30
 ghost/master/descript.txt12b307ab365e548d23694f7c53c375b4size=1390date=2026-06-19T18:07:00
-ghost/master/ghost-aitalk.kisd96f656888884285a11ed77d17289269size=18724date=2026-06-21T07:27:51
-ghost/master/ghost-bootend.kis990734595147958f0f5bc0a77a1446a7size=3294date=2026-06-22T19:20:22
-ghost/master/ghost-etc.kis12340002db80fff6796ae383d70fef3bsize=3209date=2026-06-20T05:47:59
-ghost/master/ghost-menu.kis5d477e492ddcc4a3e6f2d8d912edbc70size=8921date=2026-06-22T19:20:22
-ghost/master/ghost-mouse.kis3efadcf3e367bf446994a1074a0fb43asize=2467date=2026-06-22T18:59:21
+ghost/master/ghost-aitalk.kis4322defa3f676f97f4aacb751ceb486esize=8052date=2026-06-23T19:15:17
+ghost/master/ghost-bootend.kisd9d45a3a0d4496ae5c402d59f5c26a1csize=3346date=2026-06-23T19:16:01
+ghost/master/ghost-etc.kisabd08a4f477f771fd5c64372722f7f7asize=3212date=2026-06-23T19:15:26
+ghost/master/ghost-menu.kis5d477e492ddcc4a3e6f2d8d912edbc70size=8921date=2026-06-23T14:19:09
+ghost/master/ghost-mouse.kis941bb7a724080afe65a25b31df50dc57size=2472date=2026-06-23T19:15:20
 ghost/master/ghost-resource.kis057a1a5294decac8a2bfb296ada1adebsize=2524date=2026-06-22T19:21:12
 ghost/master/icon.ico0343ade716a0ae27ba4f560831df2b89size=2462date=2026-06-19T06:05:29
 ghost/master/kawarirc.kisf970be008bb857de6ebf72fb07443979size=754date=2026-06-19T06:05:29
@@ -69,6 +69,6 @@ shell/master/surface6.png27e223a070375827b40489f0b7b96ae0size=29686date=2026-
 shell/master/surface7.pngc06eda3f7e31a6aa09d176a544213e42size=32802date=2026-06-20T10:50:14
 shell/master/surface8.pngd47ccce36f9c4041424b9e4d8bd47a0esize=32498date=2026-06-20T10:48:48
 shell/master/surface9.png53e84dcb2d06ee7d6e3c077e4eab03easize=41670date=2026-06-19T18:33:49
-shell/master/surfaces.txt3135ae581874512dba1954048591a26esize=7272date=2026-06-23T13:53:15
+shell/master/surfaces.txt82129ffc55c2c88b5c39f130a0e44a02size=7300date=2026-06-23T19:15:22
 shell/master/surfacetable.txt9471f64b1da930ed83f376de607fadbbsize=1624date=2026-06-23T12:04:07
 shell/master/thumbnail.png1691ba7750840319d333abf299c96b6asize=91505date=2026-06-19T06:05:30
