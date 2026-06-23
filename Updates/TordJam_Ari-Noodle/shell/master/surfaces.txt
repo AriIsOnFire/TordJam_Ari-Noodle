@@ -51,18 +51,17 @@ collision2,142,264,224,318,Pocket
 
 
 //ill make these into intervals, i just need to have this out rn -noodle 23/6
-//
 element3,overlay,surface1400.png,0,0
 element5,overlay,surface1600.png,0,0
 element6,overlay,surface1700.png,0,0
 
 //--Neutral face
 animation9.interval,runonce
-animation9.pattern0,overlay,1301,0,0,0
+animation9.pattern0,replace,1301,0,0,0
 
 //--Smiling face
 animation8.interval,never
-animation8.pattern0,overlay,1300,0,0,0
+animation8.pattern0,replace,1300,0,0,0
 
 
 //--Blinking animation
@@ -186,26 +185,29 @@ collision2,166,268,233,315,Pocket
 
 //--Animation
 animation11.interval,runonce
-animation11.pattern0,overlay,1205,50,0,0
-animation11.pattern1,overlay,1206,30,0,0
-animation11.pattern2,overlay,1207,70,0,0
-animation11.pattern3,overlay,1208,20,0,0
-animation11.pattern4,overlay,1209,30,0,0
-animation11.pattern5,overlay,1210,40,0,0
-animation11.pattern5,overlay,1211,0,0,0
+animation11.pattern0,overlay,1205,100,0,0
+animation11.pattern1,overlay,-1,0,0,0
+animation11.pattern2,overlay,1206,100,0,0
+animation11.pattern3,overlay,-1,0,0,0
+animation11.pattern4,overlay,1207,100,0,0
+animation11.pattern5,overlay,-1,0,0,0
+animation11.pattern6,overlay,1208,100,0,0
+animation11.pattern7,overlay,-1,0,0,0
+animation11.pattern8,overlay,1209,100,0,0
+animation11.pattern9,overlay,-1,0,0,0
+animation11.pattern10,overlay,1210,100,0,0
+animation11.pattern11,overlay,-1,0,0,0
+animation11.pattern12,overlay,1211,0,0,0
 
 //hopefull eyes animation LMAO
-animation12.interval,runonce
+animation12.interval,runonce+always
 animation12.pattern5,overlay,1433,40,0,0
 animation12.pattern5,overlay,1434,0,0,0
-
-//--Face
-
 
 
 //--Elements
 element0,overlay,surface1003.png,0,0
-element1,overlay,surface1211.png,0,0
+//element1,overlay,surface1211.png,0,0
 element2,overlay,surface1310.png,0,0
 element5,overlay,surface1608.png,0,0
 
