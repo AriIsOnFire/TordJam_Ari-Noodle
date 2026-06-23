@@ -71,7 +71,7 @@ miss : "my robot", "my hat"
 
 sentence : "\0\s[0]Coke is awful, i dont know how Edd can stand to drink that stuff."
 
-sentence : "\0\s[0]Whatever!"
+sentence : "\0\s[0]\i[9]Whatever!"
 
 sentence : "\0\s[0]What should i have for dinner today... Pork...? No, I think I ate all my bacon this morning... Soda? Eugh."
 
