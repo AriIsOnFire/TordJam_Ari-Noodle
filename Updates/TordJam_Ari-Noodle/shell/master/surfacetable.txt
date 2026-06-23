@@ -26,7 +26,6 @@ scope,0
 8,Thinking
 9,Bored
 11,Cocky
-12,Smile
 }
 
 //You can set multiple groups if you'd like.
