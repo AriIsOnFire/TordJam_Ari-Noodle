@@ -304,6 +304,13 @@ animation203.interval,never
 animation203.pattern1,overlay,1501,140,0,0
 animation203.pattern2,overlay,-1,100,0,0
 
+
+//--MISC
+
+//blush
+animation500.interval,never
+animation500.pattern0,overlay,1800,0,0,0
+
 }
 
 //The first line tells the program what this is. To translate from code to plain language: 'animation10' "The 10th animation". "which has an interval of", "randomly choose every second", "with a 1 in 4 chance to play".
@@ -326,58 +333,80 @@ collision0,64,24,189,86,Head
 collision1,92,95,174,158,Face
 collision2,130,259,190,311,Pocket	
 
-//--Embarassed pose base
-animation400.interval,always
-animation400.pattern0,overlay,1702,0,0,0
-animation400.pattern1,overlay,1701,1000,0,0
-animation400.pattern2,overlay,1702,1000,0,0
 
-
-element5,overlay,surface1601.png,0,0
 
 //LEGS
 
 animation1.interval,runonce
 animation1.pattern0,overlay,1001,0,0,0
 
+
 //--BODY 
 
 animation10.interval,runonce
 animation10.pattern0,overlay,1201,0,0,0
 
+
+//--MOUTH
+
 //--Awkward mouth
 animation60.interval,runonce
 animation60.pattern0,overlay,1305,0,0,0
-
 
 //Pursed lips
 animation61.interval,never
 animation61.pattern0,stop,60
 animation61.pattern1,overlay,1303,0,0,0
 
+
+//--EYES
+
 //--Eyes looking away
 animation100.interval,runonce
 animation100.pattern0,overlay,1401,0,0,0
+
+//--BLINKING & Talking
+
+
+//--ARM LEFT
+
+//hand in pocket
+animation300.interval,runonce
+animation300.pattern0,overlay,1601,0,0,0
+
+//--ARM RIGHT
+
+//Embarassed scratching (default)
+animation400.interval,runonce+always
+animation400.pattern0,overlay,1702,0,0,0
+animation400.pattern1,overlay,1701,1000,0,0
+animation400.pattern2,overlay,1702,1000,0,0
+
+
+//--MISC
+
+//blush
+animation500.interval,never
+animation500.pattern0,overlay,1801,0,0,0
+
 
 }
 
 
 surface2
 {
+element0,overlay,surface0.png,0,0
 
 //--Collision 
-
 collision0,53,34,218,111,Head
 collision1,87,126,187,193,Face
 collision2,128,277,199,328,Pocket	
 
 //base standing pose that i will change partially into intervals later i just need to have surface2 things in here rn -noodle 23/6
-element0,overlay,surface0.png,0,0
 
-element2,overlay,surface1304.png,0,0
-element3,overlay,surface1402.png,0,0
-element5,overlay,surface1602.png,0,0
-element6,overlay,surface1703.png,0,0
+
+//element2,overlay,surface1304.png,0,0
+//element3,overlay,surface1402.png,0,0
 
 //LEGS
 
@@ -397,17 +426,33 @@ animation10.pattern0,overlay,1202,0,0,0
 
 //--ARM LEFT
 
+//arm hanging (default)
+animation300.interval,runonce
+animation300.pattern0,overlay,1602,0,0,0
+
 //--ARM RIGHT
+
+//arm hanging (default)
+animation400.interval,runonce
+animation400.pattern0,overlay,1703,0,0,0
+
+//finger pointing up
+animation401.interval,never
+animation401.pattern0,stop,400
+animation401.pattern1,overlay,1704,0,-32,20
 
 //--BOTH Arms 
 
-//--OTHER
+animation301.interval,never
+animation301.pattern0,stop,400
+animation301.pattern1,stop,300
+animation301.pattern2,overlay,1604,0,-27,30
 
+//MISC
 
-
-
-
-
+//blush
+animation500.interval,never
+animation500.pattern0,overlay,1802,0,0,0
 
 
 
@@ -419,6 +464,7 @@ animation10.pattern0,overlay,1202,0,0,0
 
 surface3
 {
+element0,overlay,surface0.png,0,0
 
 //--Collision
   
@@ -451,8 +497,11 @@ animation100.pattern0,overlay,1422,0,0,0
 
 //--ANIMATIONS
 
-//--OTHER
+//MISC
 
+//blush
+animation500.interval,never
+animation500.pattern0,overlay,1803,0,0,0
 
 
 
@@ -469,6 +518,7 @@ animation100.pattern0,overlay,1422,0,0,0
 //--POUTING
 surface4
 {
+element0,overlay,surface0.png,0,0
 
 //--Collision
 
@@ -518,11 +568,11 @@ animation300.pattern0,stop,301
 animation300.pattern1,overlay,1604,0,0,0
 
 
-//--OTHER
+//--MISC
 
-
-
-
+//blush
+animation500.interval,never
+animation500.pattern0,overlay,1804,0,0,0
 
 
 }
@@ -536,6 +586,7 @@ animation300.pattern1,overlay,1604,0,0,0
 //--ONE LEG UP 
 surface5
 {
+element0,overlay,surface0.png,0,0
 
 //--Collision 
 collision0,169,7,299,77,Head
@@ -600,20 +651,22 @@ animation303.pattern2,overlay,1608,0,-2,-2
 //one thats both 302 & 303
 //hopefully eyes animation LMAO
 animation100.interval,runonce+always
-animation100.pattern5,overlay,1433,1000,0,0
-animation100.pattern5,overlay,1434,1000,0,0
+animation100.pattern0,overlay,1434,0,0,0
+animation100.pattern1,overlay,1433,1000,0,0
+animation100.pattern2,overlay,1434,1000,0,0
 
 
 
 
+//--MISC
 
+//blush
+animation500.interval,never
+animation500.pattern0,overlay,1805,0,0,0
 
-
-
-
-
-
-
+//blush 2
+animation501.interval,never
+animation501.pattern0,overlay,1806,0,0,0
 
 }
 
@@ -624,6 +677,7 @@ animation100.pattern5,overlay,1434,1000,0,0
 
 surface6
 {
+//element0,overlay,surface0.png,0,0
 
 //--Collision 
 collision0,123,12,261,97,Head
@@ -652,7 +706,11 @@ collision2,142,264,224,318,Pocket
 
 //--BOTH Arms 
 
-//--OTHER
+//MISC
+
+//blush
+//animation.500.interval,never
+//animation500.pattern0,overlay,1800,0,0,0
 
 
 
@@ -690,7 +748,11 @@ animation1.pattern0,overlay,1001,0,0,0
 
 //--BOTH Arms 
 
-//--OTHER
+//MISC
+
+//blush
+animation500.interval,never
+animation500.pattern0,overlay,1807,0,0,0
 
 
 }
@@ -698,6 +760,7 @@ animation1.pattern0,overlay,1001,0,0,0
 
 surface8
 {
+//element0,overlay,surface0.png,0,0
 
 //--Collision
 collision0,123,12,261,97,Head
@@ -726,8 +789,11 @@ collision2,142,264,224,318,Pocket
 
 //--BOTH Arms 
 
-//--OTHER
+//MISC
 
+//blush
+//animation500.interval,never
+//animation500.pattern0,overlay,1800,0,0,0
 
 
 }
@@ -735,6 +801,8 @@ collision2,142,264,224,318,Pocket
 
 surface9
 {
+//element0,overlay,surface0.png,0,0
+
 
 //--Collision
 collision0,123,12,261,97,Head
@@ -763,7 +831,12 @@ animation1.pattern0,overlay,1001,0,0,0
 
 //--BOTH Arms 
 
-//--OTHER
+
+//MISC
+
+//blush
+animation500.interval,never
+animation500.pattern0,overlay,1808,0,0,0
 
 
 }
