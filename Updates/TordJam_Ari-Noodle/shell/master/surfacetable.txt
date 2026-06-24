@@ -1,46 +1,248 @@
-//This file is used to label surfaces (and their parts) in the Surface Test. Surface Test is a window in the Developer Panel used to view surfaces without having to wait for them to come up naturally or type in the surface or animation number constantly. If you're not planning on using the Surface Test window often, you can safely ignore this file.
-
-
-//You can ignore this. The only important information is the option makes it so surfaces not defined in surfaces.txt don't show up in the Surface Table.
-charset,UTF-8
-version,1
-option,DisableNoDefineSurfaces
-
-
-//You can create groups of different surfaces. The group name will preface the surface nickname in the code, so I suggest you make it short. 
-//The scope is which character these belong to, with 0 being the main character/Sakura, 1 being the side character/Kero, 3 + being other arbitrary characters (called with the \p SakuraScript tag). 
-//Finally, after that, each line has the surface's number (as defined in surfaces.txt) and the nickname you'd like to set for it.
-
-group,Tord
+descript
 {
-scope,0
-
-0,Default
-1,Embarassed
-2,Deadpan
-3,Worried
-4,Pouting
-5,Happy
-6,Content
-7,Angry
-8,Thinking
-9,Bored
-11,Cocky
+  version,1
 }
 
-//You can set multiple groups if you'd like.
+//IMPORTANT:
+//The illustrations provided are intended to be replaced. They are for example purposes only. Please do not redistribute them without permission.
+//We're gonna replace them, don't worry. - Ari, 06/18
+//They've been replaced! -Noodle 6/20
 
-group,DONOTTHETOUCH
+//--
+//Surfaces.txt
+//--
+//This is the coding for the appearance of your Ghost.
+//Surface coding is created in a language called "SERIKO". There's information on all the thing you can do in UkaDoc here: https://ssp.shillest.net/ukadoc/manual/descript_shell_surfaces.html
+//But if you just want to replace the art and move on, don't worry! I've set this up so it's not hard at all to do so.
+//Alternatively, you could replace this entire 'shell' folder with what's called a 'freeshell'. If you're willing to go through machine translation, the Japanese freeshell wiki, https://wikiwiki.jp/feeshell/ (yes, it's 'feeshell'!), has a plentiful selection of free art. Many of these art packs coming with pre-written code for you to use!
+//If you are going to use your own art, keep reading. If you're going to use a freeshell, follow its instructions.
+
+//--Creating images
+//You can replace the images in the shell folder with practically anything. But, there are a few things to keep in mind.
+//Make your images the same size. While you can adjust the positioning of your Ghost's surfaces per pixel, making them all the same size will make your life easier.
+//Draw images that your characters will use the most. Sentinel and Chip are fairly humorous and rib eachother, so I make good use of their smiling, shocked, worried and embarassed surfaces. You should keep in mind what emotions your own characters will often express!
+//Surfaces can be different actions, too, not just expressions. Consider if you want your Ghost to be able to hold something, or sing, or what have you.
+
+//--The Sakura (Main Character)
+//
+
+//surface0 is the default pose. It will have the most animations, usually, but to make this easy to use I have only included two: Blinking and talking. If you don't understand the code, please read it carefully and look at the corrosponding .pngs in the shell\master folder.
+//If you don't care about the animations, and would just like to replace the images and move on, go ahead and comment out (or delete) any line starting with 'animation'.
+//You can create a comment by writing two backslashes, like at the beginning of this sentence.
+//With them commented out, you can delete the images used for animation if you would like, or replace them with something else.
+
+//A surface definition can be used to give the baseware more specific instructions for each surface.
+//This is the definition for surface0. You don't need to define your surfaces unless you want to add onto them.
+//I can't mess with most of these until noodle is done with the surfaces -Ari, 06/18
+//I've begun messing with them knowing DAMN well that i might have to change these later -Noodle 06/20
+
+//standing surface base
+surface0
 {
-scope,1
+element0,overlay,surface1001.png,0,0
+element1,overlay,surface1200.png,0,0
 
-10,Default
+
+//--Collision 
+
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+
+
+//ill make these into intervals, i just need to have this out rn -noodle 23/6
+element3,overlay,surface1400.png,0,0
+element5,overlay,surface1600.png,0,0
+element6,overlay,surface1700.png,0,0
+
+//--Neutral face
+animation9.interval,runonce
+animation9.pattern0,overlay,1301,0,0,0
+
+//--Smiling face
+animation8.interval,never
+animation8.pattern0,overlay,1300,0,0,0
+
+
+//--Blinking animation
+
+animation10.interval,random,4
+animation10.pattern0,overlayfast,1502,50,0,0
+animation10.pattern1,overlayfast,1503,100,0,0
+animation10.pattern2,overlayfast,1504,30,0,0
+animation10.pattern3,overlay,-1,30,0,0
+
+//--Talking Animation
+
+animation1.interval,talk,4
+animation1.pattern0,alternativestart,[2.3.4]
+
+animation2.interval,never
+animation2.pattern0,overlay,1500,100,0,0
+animation2.pattern1,overlay,1501,130,0,0
+animation2.pattern2,overlay,1301,0,0,0
+
+animation3.interval,never
+animation3.pattern0,overlay,1500,140,0,0
+animation3.pattern1,overlay,1300,0,0,0
+
+animation4.interval,never
+animation4.pattern0,overlay,1501,140,0,0
+animation4.pattern1,overlay,1300,0,0,0
+
 }
 
-//You can also disable certain surfaces from appearing by using the '__disabled' group.
-//It functions just like any other group, so you can go ahead and write any parts you don't wish to be visible in the Surface Test here. I put a random non-existant surface in as an example.
+//The first line tells the program what this is. To translate from code to plain language: 'animation10' "The 10th animation". "which has an interval of", "randomly choose every second", "with a 1 in 4 chance to play".
+//The next line is saying: "The 10th animation". "First image is", "Overlaid and clipped to the character", "it is surface1002", "it will be held for 50 miliseconds", "0 offset on the X", "0 offset on the Y". 
+//With that information, you should be able to infer what the other 2 patterns are.
 
-//group,__disabled
-//{
-//1800,armAnim1
-//}
+
+
+
+
+
+
+//im doing a few of these for now, bc i want to play around with him a bit, let a guy have some joy and whimsy, ill remove these once i start working on coloring the surfaces -Noodle 06/20
+//added these Surfaces 1, 2, and 5 so they stopped bringing up notices. Noodle Do that Thang when you can -Ari 6/20
+
+surface1
+{
+//--Collision 
+collision0,64,24,189,86,Head
+collision1,92,95,174,158,Face
+collision2,130,259,190,311,Pocket	
+
+//--Embarassed pose base
+animation5.interval,always
+animation5.pattern0,overlay,1702,0,0,0
+animation5.pattern1,overlay,1701,1000,0,0
+animation5.pattern2,overlay,1702,1000,0,0
+
+element0,overlay,surface1001.png,0,0
+element1,overlay,surface1201.png,0,0  
+element5,overlay,surface1601.png,0,0
+
+//--Awkward mouth
+animation6.interval,never
+animation6.pattern0,overlay,1305,0,0,0
+
+
+//Pursed lips
+animation7.interval,never
+animation7.pattern0,overlay,1303,0,0,0
+
+//--Eyes looking away
+element3,overlay,surface1401.png,0,0,0
+
+}
+
+surface2
+{
+
+//--Collision 
+
+collision0,53,34,218,111,Head
+collision1,87,126,187,193,Face
+collision2,128,277,199,328,Pocket	
+
+//base standing pose that i will change partially into intervals later i just need to have surface2 things in here rn -noodle 23/6
+
+element0,overlay,surface1002.png,0,0
+element1,overlay,surface1202.png,0,0
+element2,overlay,surface1304.png,0,0
+element3,overlay,surface1402.png,0,0
+element5,overlay,surface1602.png,0,0
+element6,overlay,surface1703.png,0,0
+
+}
+
+
+
+
+surface3
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+
+
+surface4
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+
+
+surface5
+{
+//--Collision 
+collision0,169,7,299,77,Head
+collision1,179,82,270,160,Face
+collision2,166,268,233,315,Pocket	
+
+
+//--Animation
+animation11.interval,runonce
+animation11.pattern0,overlay,1205,10,-3,0
+animation11.pattern1,overlay,1206,10,-1,0
+animation11.pattern2,overlay,1207,190,2,0
+animation11.pattern3,overlay,1208,100,0,0
+animation11.pattern4,overlay,1209,190,0,0
+animation11.pattern5,overlay,1211,150,0,0
+animation11.pattern6,overlay,1210,200,0,0
+
+//hopefull eyes animation LMAO
+animation12.interval,never
+animation12.pattern5,overlay,1433,1000,0,0
+animation12.pattern5,overlay,1434,1000,0,0
+
+
+//--Elements
+element0,overlay,surface1003.png,0,0
+//element1,overlay,surface1211.png,0,0
+element2,overlay,surface1310.png,0,0
+element5,overlay,surface1608.png,0,0
+
+}
+
+
+surface6
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+
+
+surface7
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+
+
+surface8
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+
+
+surface9
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
+
+
+surface11
+{
+collision0,123,12,261,97,Head
+collision1,143,81,229,152,Face
+collision2,142,264,224,318,Pocket
+}
