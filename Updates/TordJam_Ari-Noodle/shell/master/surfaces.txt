@@ -450,6 +450,15 @@ animation500.pattern0,overlay,1801,0,0,0
 }
 
 
+
+
+
+
+
+
+
+
+
 surface2
 {
 element0,overlay,surface0.png,0,0
@@ -459,11 +468,6 @@ collision0,53,34,218,111,Head
 collision1,87,126,187,193,Face
 collision2,128,277,199,328,Pocket	
 
-//base standing pose that i will change partially into intervals later i just need to have surface2 things in here rn -noodle 23/6
-
-
-//element2,overlay,surface1304.png,0,0
-//element3,overlay,surface1402.png,0,0
 
 //LEGS
 
@@ -480,6 +484,36 @@ animation10.pattern0,overlay,1202,0,0,0
 // :| (default)
 animation60.interval,runonce
 animation60.pattern0,overlay,1304,0,0,0
+
+//smile
+animation61.interval,never
+animation61.pattern0,stop,60
+animation61.pattern1,overlay,1300,0,-50,40
+
+// uhhhh
+animation62.interval,never
+animation62.pattern0,stop,60
+animation62.pattern1,overlay,1307,0,-50,40
+
+//:\
+animation63.interval,never
+animation63.pattern0,stop,60
+animation63.pattern1,overlay,1308,0,-83,37
+
+// yikes
+animation64.interval,never
+animation64.pattern0,stop,60
+animation64.pattern1,overlay,1312,0,-46,20
+
+// 
+animation65.interval,never
+animation65.pattern0,stop,60
+animation65.pattern1,overlay,1304,0,0,0
+
+// 
+animation66.interval,never
+animation66.pattern0,stop,60
+animation66.pattern1,overlay,1304,0,0,0
 
 
 //--EYES
@@ -552,9 +586,90 @@ animation10.pattern0,overlay,1203,0,0,0
 
 //--MOUTH 
 
-//default
+//down turned (default)
 animation60.interval,runonce
 animation60.pattern0,overlay,1311,0,0,0
+
+//smile
+animation61.interval,never
+animation61.pattern0,stop,60
+animation61.pattern1,overlay,1300,0,0,0
+
+//smile lower
+animation62.interval,never
+animation62.pattern0,stop,60
+animation62.pattern1,overlay,1300,0,0,7
+
+//classic
+animation63.interval,never
+animation63.pattern0,stop,60
+animation63.pattern1,overlay,1301,0,0,7
+
+//nervous smile
+animation64.interval,never
+animation64.pattern0,stop,60
+animation64.pattern1,overlay,1302,0,0,7
+
+//teeth frown
+animation65.interval,never
+animation65.pattern0,stop,60
+animation65.pattern1,overlay,1312,0,0,0
+
+//:`
+animation66.interval,never
+animation66.pattern0,stop,60
+animation66.pattern1,overlay,1313,0,0,0
+
+//o
+animation67.interval,never
+animation67.pattern0,stop,60
+animation67.pattern1,overlay,1314,0,0,0
+
+//:p
+animation68.interval,never
+animation68.pattern0,stop,60
+animation68.pattern1,overlay,1315,0,0,0
+
+//unsure
+animation69.interval,never
+animation69.pattern0,stop,60
+animation69.pattern1,overlay,1316,0,0,0
+
+//awkward grin
+animation70.interval,never
+animation70.pattern0,stop,60
+animation70.pattern1,overlay,1317,0,0,0
+
+//open mouth
+animation71.interval,never
+animation71.pattern0,stop,60
+animation71.pattern1,overlay,1318,0,0,0
+
+//another awkward grin
+animation72.interval,never
+animation72.pattern0,stop,60
+animation72.pattern1,overlay,1319,0,0,0
+
+//yet another awkward grin
+animation73.interval,never
+animation73.pattern0,stop,60
+animation73.pattern1,overlay,1320,0,0,0
+
+//ooh
+animation74.interval,never
+animation74.pattern0,stop,60
+animation74.pattern1,overlay,1321,0,0,0
+
+//.___. mmm
+animation75.interval,never
+animation75.pattern0,stop,60
+animation75.pattern1,overlay,1322,0,0,0
+
+// _.
+animation76.interval,never
+animation76.pattern0,stop,60
+animation76.pattern1,overlay,1323,0,0,0
+
 
 //--EYES
 
