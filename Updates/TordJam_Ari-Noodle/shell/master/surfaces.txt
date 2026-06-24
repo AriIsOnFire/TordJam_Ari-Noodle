@@ -281,10 +281,10 @@ animation68.pattern1,start,62
 //okay, this is beyond me rn i dont want to work on the blinking rn -Noodle 24/06
 //okay nwm i will work on it today i just need to make new files for blinking im STUPIIIIID -Noodle 24/06
 //animation200.interval,random,4
-//animation200.pattern1,overlayfast,1502,50,0,0
-//animation200.pattern2,overlayfast,1503,100,0,0
-//animation200.pattern3,overlayfast,1504,30,0,0
-//animation200.pattern4,overlay,-1,30,0,0
+//animation200.pattern0,overlayfast,1502,50,0,0
+//animation200.pattern1,overlayfast,1503,100,0,0
+//animation200.pattern2,overlayfast,1504,30,0,0
+//animation200.pattern3,overlay,-1,30,0,0
 
 //--Talking Animation
 
@@ -548,12 +548,16 @@ animation10.pattern0,overlay,1204,0,0,0
 //--MOUTH 
 
 animation60.interval,runonce
-animation60.pattern0,overlay,1332,0,27,-3
+animation60.pattern0,overlay,1306,0,4,-2
+
+animation61.interval,never
+animation61.pattern0,stop,60
+animation61.pattern1,overlay,1332,0,27,-3
 
 //--EYES
 
 animation100.interval,runonce
-animation100.pattern0,overlay,1428,0,30,-9
+animation100.pattern0,overlay,1432,0,27,-7
 
 //--ANIMATIONS
 
@@ -737,6 +741,7 @@ collision2,142,264,224,318,Pocket
 
 surface7
 {
+element0,overlay,surface0.png,0,0
 
 //--Collision 
 collision0,123,12,261,97,Head
@@ -750,22 +755,43 @@ animation1.pattern0,overlay,1001,0,0,0
 
 
 //--BODY 
-//animation10.interval,runonce
-//animation10.pattern0,overlay,1200,0,0,0
+animation10.interval,runonce
+animation10.pattern0,overlay,1212,0,0,0
 
 //--MOUTH 
 
+//grrrr
+
+
+
+
 //--EYES
+
+
 
 //--ANIMATIONS
 
+
+
 //--ARM LEFT
+
+animation300.interval,runonce
+animation300.pattern0,overlay,1610,0,0,0
+
+
 
 //--ARM RIGHT
 
+animation400.interval,runonce
+animation400.pattern0,overlay,1706,0,0,0
+
+
+
 //--BOTH Arms 
 
-//MISC
+
+
+//--MISC
 
 //blush
 animation500.interval,never
@@ -818,7 +844,7 @@ collision2,142,264,224,318,Pocket
 
 surface9
 {
-//element0,overlay,surface0.png,0,0
+element0,overlay,surface0.png,0,0
 
 
 //--Collision
@@ -833,18 +859,56 @@ animation1.pattern0,overlay,1001,0,0,0
 
 
 //--BODY 
-//animation10.interval,runonce
-//animation10.pattern0,overlay,1200,0,0,0
+animation10.interval,runonce
+animation10.pattern0,overlay,1213,0,0,0
 
 //--MOUTH 
 
 //--EYES
+animation100.interval,runonce
+animation100.pattern0,overlay,1405,0,-14,-1
 
 //--ANIMATIONS
 
 //--ARM LEFT
 
+//pen grip
+animation300.interval,runonce
+animation300.pattern0,overlay,1611,0,0,0
+
+//pen finger off
+animation301.interval,never
+animation301.pattern0,stop,300
+animation301.pattern1,overlay,1612,0,0,0
+
+//pen finger on
+animation302.interval,never
+animation302.pattern0,stop,300
+animation302.pattern1,overlay,1613,0,0,0
+
+//pen click
+animation303.interval,never
+animation303.pattern0,stop,300
+animation303.pattern1,overlay,1612,0,0,0
+animation303.pattern2,overlay,1612,50,0,0
+animation303.pattern3,overlay,1613,100,0,0
+animation303.pattern4,overlay,1612,200,0,0
+
+//pen click longer
+animation304.interval,never
+animation304.pattern0,stop,300
+animation304.pattern1,overlay,1612,0,0,0
+animation304.pattern2,overlay,1612,50,0,0
+animation304.pattern3,overlay,1613,100,0,0
+animation304.pattern4,overlay,1612,500,0,0
+
+
 //--ARM RIGHT
+
+//holding notebook
+animation400.interval,runonce
+animation400.pattern0,overlay,1708,0,0,0
+
 
 //--BOTH Arms 
 
