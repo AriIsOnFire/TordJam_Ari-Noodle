@@ -32,9 +32,9 @@ descript
 //--Standing
 surface0
 {
+element0,overlay,surface0.png,0,0
 
 //--Collision 
-
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
@@ -57,7 +57,7 @@ animation10.pattern0,overlay,1200,0,0,0
 animation300.interval,runonce
 animation300.pattern0,overlay,1600,0,0,0
 
-//gay hand
+//y'know hand
 animation301.interval,never
 animation301.pattern0,stop,300
 animation301.pattern1,overlay,1603,0,0,0
@@ -69,9 +69,10 @@ animation301.pattern1,overlay,1603,0,0,0
 animation400.interval,runonce
 animation400.pattern0,overlay,1700,0,0,0
 
-
-
-
+//finger pointing up
+animation401.interval,never
+animation401.pattern0,stop,400
+animation401.pattern1,overlay,1704,0,0,0
 
 //--BOTH hands but also technically left
 
@@ -112,16 +113,28 @@ animation105.interval,never
 animation105.pattern0,stop,100
 animation105.pattern1,overlay,1407,0,0,0
 
-//
+//rolling eyes animation but he looks at you
+animation106.interval,never
+animation106.pattern0,stop,100
+animation106.pattern1,overlay,1403,0,0,0
+animation106.pattern2,overlay,1403,40,0,0
+animation106.pattern3,overlay,1407,60,0,0
+animation106.pattern4,overlay,1408,40,0,0
+animation106.pattern5,overlay,1405,100,0,0
+animation106.pattern6,overlay,1409,30,0,0
+animation106.pattern7,overlay,1411,70,0,0
+animation106.pattern8,overlay,1412,100,0,0
 
 //rolling eyes animation
 animation107.interval,never
-animation107.pattern0,overlayfast,1403,100,0,0
-animation107.pattern1,overlayfast,1407,60,0,0
-animation107.pattern2,overlayfast,1408,100,0,0
-animation107.pattern3,overlayfast,1405,100,0,0
-animation107.pattern4,overlayfast,1410,100,0,0
-animation107.pattern5,overlayfast,1409,100,0,0
+animation107.pattern0,stop,100
+animation107.pattern1,overlay,1403,0,0,0
+animation107.pattern2,overlay,1403,50,0,0
+animation107.pattern3,overlay,1407,60,0,0
+animation107.pattern4,overlay,1408,40,0,0
+animation107.pattern5,overlay,1405,100,0,0
+animation107.pattern6,overlay,1410,100,0,0
+animation107.pattern7,overlay,1409,100,0,0
 
 
 //looking away 1
@@ -219,7 +232,7 @@ animation61.pattern1,overlay,1300,0,0,0
 //roblox mouth (full thing in anim)
 animation62.interval,never
 animation62.pattern0,stop,60
-animation62.pattern1,overlay,1300,0,0,0
+animation62.pattern1,overlay,1325,0,0,0
 
 //down curved
 animation63.interval,never
@@ -234,17 +247,17 @@ animation64.pattern1,overlay,1307,0,-37,3
 // :|
 animation65.interval,never
 animation65.pattern0,stop,60
-animation65.pattern1,overlay,1311,0,-37,3
+animation65.pattern1,overlay,1311,0,0,0
 
 // :| but its eddsworld
 animation66.interval,never
 animation66.pattern0,stop,60
-animation66.pattern1,overlay,1307,0,-37,3
+animation66.pattern1,overlay,1308,0,-37,3
 
 // :3
 animation67.interval,never
 animation67.pattern0,stop,60
-animation67.pattern1,overlay,1308,0,-40,9
+animation67.pattern1,overlay,1309,0,-40,9
 
 
 
@@ -256,8 +269,9 @@ animation67.pattern1,overlay,1308,0,-40,9
 //--FULL FACES
 
 //roblox man face
-animation303.interval,never
-animation303.pattern0,alternativestart,(115,62)
+animation68.interval,never
+animation68.pattern0,start,115
+animation68.pattern1,start,62
 
 
 
@@ -306,6 +320,7 @@ animation203.pattern2,overlay,-1,100,0,0
 
 surface1
 {
+element0,overlay,surface0.png,0,0
 //--Collision 
 collision0,64,24,189,86,Head
 collision1,92,95,174,158,Face
@@ -317,9 +332,18 @@ animation400.pattern0,overlay,1702,0,0,0
 animation400.pattern1,overlay,1701,1000,0,0
 animation400.pattern2,overlay,1702,1000,0,0
 
-element0,overlay,surface1001.png,0,0
-element1,overlay,surface1201.png,0,0  
+
 element5,overlay,surface1601.png,0,0
+
+//LEGS
+
+animation1.interval,runonce
+animation1.pattern0,overlay,1001,0,0,0
+
+//--BODY 
+
+animation10.interval,runonce
+animation10.pattern0,overlay,1201,0,0,0
 
 //--Awkward mouth
 animation60.interval,runonce
@@ -348,13 +372,40 @@ collision1,87,126,187,193,Face
 collision2,128,277,199,328,Pocket	
 
 //base standing pose that i will change partially into intervals later i just need to have surface2 things in here rn -noodle 23/6
+element0,overlay,surface0.png,0,0
 
-element0,overlay,surface1002.png,0,0
-element1,overlay,surface1202.png,0,0
 element2,overlay,surface1304.png,0,0
 element3,overlay,surface1402.png,0,0
 element5,overlay,surface1602.png,0,0
 element6,overlay,surface1703.png,0,0
+
+//LEGS
+
+animation1.interval,runonce
+animation1.pattern0,overlay,1002,0,0,0
+
+//--BODY 
+
+animation10.interval,runonce
+animation10.pattern0,overlay,1202,0,0,0
+
+//--MOUTH 
+
+//--EYES
+
+//--ANIMATIONS
+
+//--ARM LEFT
+
+//--ARM RIGHT
+
+//--BOTH Arms 
+
+//--OTHER
+
+
+
+
 
 
 
@@ -375,7 +426,32 @@ collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 
-//--Base standing 
+//LEGS
+
+animation1.interval,runonce
+animation1.pattern0,overlay,1001,0,0,0
+
+//--BODY 
+
+//default
+animation10.interval,runonce
+animation10.pattern0,overlay,1203,0,0,0
+
+//--MOUTH 
+
+//default
+animation60.interval,runonce
+animation60.pattern0,overlay,1311,0,0,0
+
+//--EYES
+
+//default
+animation100.interval,runonce
+animation100.pattern0,overlay,1422,0,0,0
+
+//--ANIMATIONS
+
+//--OTHER
 
 
 
@@ -384,6 +460,13 @@ collision2,142,264,224,318,Pocket
 }
 
 
+
+
+
+
+
+
+//--POUTING
 surface4
 {
 
@@ -393,8 +476,59 @@ collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 
+//LEGS
+
+animation1.interval,runonce
+animation1.pattern0,overlay,1001,0,0,0
+
+//--BODY 
+
+animation10.interval,runonce
+animation10.pattern0,overlay,1204,0,0,0
+
+//--MOUTH 
+
+//--EYES
+
+//--ANIMATIONS
+
+//--ARM LEFT
+
+//arm on hip (default)
+animation301.interval,runonce
+animation301.pattern0,overlay,1605,0,0,0
+
+//arm slightly in air
+animation302.interval,runonce
+animation302.pattern0,stop,301
+animation302.pattern1,overlay,1605,0,0,0
+
+//--ARM RIGHT
+
+//finger in air (default)
+animation303.interval,runonce
+animation303.pattern0,stop,301
+animation303.pattern1,overlay,1704,0,0,0
+
+//--BOTH ARMS 
+
+//crossed arms 
+animation300.interval,never
+animation300.pattern0,stop,301
+animation300.pattern1,overlay,1604,0,0,0
+
+
+//--OTHER
+
+
+
+
+
 
 }
+
+
+
 
 
 
@@ -413,22 +547,22 @@ collision2,166,268,233,315,Pocket
 animation1.interval,runonce
 animation1.pattern0,overlay,1003,0,0,0
 
-
 //--BODY 
-animation10.interval,never
-animation10.pattern0,start,11
+
+animation10.interval,runonce
+animation10.pattern0,overlay,1210,0,0,0
 
 animation11.interval,never
-animation11.pattern0,overlay,1205,0,-2,0
-animation11.pattern1,overlay,1206,10,1,0
-animation11.pattern2,overlay,1207,190,0,0
-animation11.pattern3,overlay,1208,100,0,0
-animation11.pattern4,overlay,1209,190,0,0
-animation11.pattern5,overlay,1211,150,0,0
-animation11.pattern6,overlay,1210,200,0,0
+animation11.pattern0,stop,10
+animation11.pattern1,overlay,1205,0,-2,0
+animation11.pattern2,overlay,1206,10,1,0
+animation11.pattern3,overlay,1207,190,0,0
+animation11.pattern4,overlay,1208,100,0,0
+animation11.pattern5,overlay,1209,190,0,0
+animation11.pattern6,overlay,1211,150,0,0
+animation11.pattern7,overlay,1210,200,0,0
 
-animation12.interval,runonce
-animation12.pattern6,overlay,1210,200,0,0
+
 
 //--HAND LEFT
 
@@ -484,6 +618,10 @@ animation100.pattern5,overlay,1434,1000,0,0
 }
 
 
+
+
+
+
 surface6
 {
 
@@ -492,9 +630,29 @@ collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 
+//LEGS
 
+//animation1.interval,runonce
+//animation1.pattern0,overlay,1002,0,0,0
 
+//--BODY 
 
+//animation10.interval,runonce
+//animation10.pattern0,overlay,1202,0,0,0
+
+//--MOUTH 
+
+//--EYES
+
+//--ANIMATIONS
+
+//--ARM LEFT
+
+//--ARM RIGHT
+
+//--BOTH Arms 
+
+//--OTHER
 
 
 
@@ -520,8 +678,19 @@ animation1.pattern0,overlay,1001,0,0,0
 //animation10.interval,runonce
 //animation10.pattern0,overlay,1200,0,0,0
 
+//--MOUTH 
 
+//--EYES
 
+//--ANIMATIONS
+
+//--ARM LEFT
+
+//--ARM RIGHT
+
+//--BOTH Arms 
+
+//--OTHER
 
 
 }
@@ -535,7 +704,29 @@ collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
 
+//LEGS
 
+//animation1.interval,runonce
+//animation1.pattern0,overlay,1002,0,0,0
+
+//--BODY 
+
+//animation10.interval,runonce
+//animation10.pattern0,overlay,1202,0,0,0
+
+//--MOUTH 
+
+//--EYES
+
+//--ANIMATIONS
+
+//--ARM LEFT
+
+//--ARM RIGHT
+
+//--BOTH Arms 
+
+//--OTHER
 
 
 
@@ -560,6 +751,19 @@ animation1.pattern0,overlay,1001,0,0,0
 //animation10.interval,runonce
 //animation10.pattern0,overlay,1200,0,0,0
 
+//--MOUTH 
+
+//--EYES
+
+//--ANIMATIONS
+
+//--ARM LEFT
+
+//--ARM RIGHT
+
+//--BOTH Arms 
+
+//--OTHER
 
 
 }
