@@ -403,6 +403,8 @@ collision2,142,264,224,318,Pocket
 surface5
 {
 
+//
+
 //--Collision 
 collision0,169,7,299,77,Head
 collision1,179,82,270,160,Face
@@ -415,7 +417,7 @@ animation1.pattern0,overlay,1003,0,0,0
 
 
 //--BODY 
-animation10.interval,runonce
+animation10.interval,never
 animation10.pattern0,start,11
 
 animation11.interval,never
@@ -427,11 +429,8 @@ animation11.pattern4,overlay,1209,190,0,0
 animation11.pattern5,overlay,1211,150,0,0
 animation11.pattern6,overlay,1210,200,0,0
 
-//hopefully eyes animation LMAO
-animation100.interval,runonce+always
-animation100.pattern5,overlay,1433,1000,0,0
-animation100.pattern5,overlay,1434,1000,0,0
-
+animation12.interval,runonce
+animation12.pattern6,overlay,1210,200,0,0
 
 //--Elements
 element2,overlay,surface1310.png,0,0
@@ -467,7 +466,10 @@ animation303.pattern2,overlay,1608,0,-2,-2
 
 
 //one thats both 302 & 303
-
+//hopefully eyes animation LMAO
+animation100.interval,runonce+always
+animation100.pattern5,overlay,1433,1000,0,0
+animation100.pattern5,overlay,1434,1000,0,0
 
 
 
