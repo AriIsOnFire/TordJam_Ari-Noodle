@@ -186,21 +186,15 @@ collision2,166,268,233,315,Pocket
 //--Animation
 animation11.interval,runonce
 animation11.pattern0,overlay,1205,100,0,0
-animation11.pattern1,overlay,-1,0,0,0
 animation11.pattern2,overlay,1206,100,0,0
-animation11.pattern3,overlay,-1,0,0,0
 animation11.pattern4,overlay,1207,100,0,0
-animation11.pattern5,overlay,-1,0,0,0
 animation11.pattern6,overlay,1208,100,0,0
-animation11.pattern7,overlay,-1,0,0,0
 animation11.pattern8,overlay,1209,100,0,0
-animation11.pattern9,overlay,-1,0,0,0
 animation11.pattern10,overlay,1210,100,0,0
-animation11.pattern11,overlay,-1,0,0,0
 animation11.pattern12,overlay,1211,0,0,0
 
 //hopefull eyes animation LMAO
-animation12.interval,runonce+always
+animation12.interval,never+always
 animation12.pattern5,overlay,1433,1000,0,0
 animation12.pattern5,overlay,1434,1000,0,0
 
