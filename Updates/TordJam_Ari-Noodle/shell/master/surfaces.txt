@@ -358,6 +358,20 @@ animation61.interval,never
 animation61.pattern0,stop,60
 animation61.pattern1,overlay,1303,0,0,0
 
+//smile
+animation62.interval,never
+animation62.pattern0,stop,60
+animation62.pattern1,overlay,1300,0,-60,17
+
+//teeth smile
+animation63.interval,never
+animation63.pattern0,stop,60
+animation63.pattern1,overlay,1303,0,-60,10
+
+// :|
+animation64.interval,never
+animation64.pattern0,stop,60
+animation64.pattern1,overlay,1304,0,-9,-30
 
 //--EYES
 
