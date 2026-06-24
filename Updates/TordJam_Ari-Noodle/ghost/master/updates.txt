@@ -6,7 +6,7 @@ file,readme.txt949ed92fa2450e3011526f95b02c6221size=201date=2026-06-19T06:05:
 file,thumbnail.pna4bc728a8cbf3899e0860324a3760d1f8size=4503date=2026-06-19T06:05:30
 file,thumbnail.png51e3a42f61715c7bcea065a1840c578csize=38841date=2026-06-19T06:05:30
 file,ghost/master/descript.txt12b307ab365e548d23694f7c53c375b4size=1390date=2026-06-19T18:07:00
-file,ghost/master/ghost-aitalk.kisad8352d32065411a162b1009afc200e2size=8331date=2026-06-23T22:06:01
+file,ghost/master/ghost-aitalk.kisd5dbf907c333c1535fdb406df206ae7dsize=8336date=2026-06-24T09:46:35
 file,ghost/master/ghost-bootend.kisd9d45a3a0d4496ae5c402d59f5c26a1csize=3346date=2026-06-23T19:16:01
 file,ghost/master/ghost-etc.kisabd08a4f477f771fd5c64372722f7f7asize=3212date=2026-06-23T19:15:26
 file,ghost/master/ghost-menu.kis5d477e492ddcc4a3e6f2d8d912edbc70size=8921date=2026-06-23T14:19:09
@@ -158,6 +158,6 @@ file,shell/master/surface6.png27e223a070375827b40489f0b7b96ae0size=29686date=
 file,shell/master/surface7.pngc06eda3f7e31a6aa09d176a544213e42size=32802date=2026-06-20T10:50:14
 file,shell/master/surface8.pngd47ccce36f9c4041424b9e4d8bd47a0esize=32498date=2026-06-20T10:48:48
 file,shell/master/surface9.png53e84dcb2d06ee7d6e3c077e4eab03easize=41670date=2026-06-19T18:33:49
-file,shell/master/surfaces.txt431ca211bf9569c9986f80fc7f4e00fcsize=7986date=2026-06-24T09:06:37
-file,shell/master/surfacetable.txt9471f64b1da930ed83f376de607fadbbsize=1624date=2026-06-23T12:04:07
+file,shell/master/surfaces.txtbf4ccd319e7ffcd0cab261fffec687b0size=8180date=2026-06-24T09:59:12
+file,shell/master/surfacetable.txta0a57caa96b3ba8a8e04f397c7eb211csize=7979date=2026-06-24T09:44:33
 file,shell/master/thumbnail.png1691ba7750840319d333abf299c96b6asize=91505date=2026-06-19T06:05:30
