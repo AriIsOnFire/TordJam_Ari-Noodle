@@ -420,7 +420,17 @@ animation10.pattern0,overlay,1202,0,0,0
 
 //--MOUTH 
 
+// :| (default)
+animation60.interval,runonce
+animation60.pattern0,overlay,1304,0,0,0
+
+
 //--EYES
+
+//weirded out eyes (default)
+animation100.interval,runonce
+animation100.pattern0,overlay,1402,0,0,0
+
 
 //--ANIMATIONS
 
@@ -521,7 +531,6 @@ surface4
 element0,overlay,surface0.png,0,0
 
 //--Collision
-
 collision0,123,12,261,97,Head
 collision1,143,81,229,152,Face
 collision2,142,264,224,318,Pocket
@@ -538,7 +547,13 @@ animation10.pattern0,overlay,1204,0,0,0
 
 //--MOUTH 
 
+animation60.interval,runonce
+animation60.pattern0,overlay,1332,0,27,-3
+
 //--EYES
+
+animation100.interval,runonce
+animation100.pattern0,overlay,1428,0,30,-9
 
 //--ANIMATIONS
 
@@ -549,23 +564,23 @@ animation301.interval,runonce
 animation301.pattern0,overlay,1605,0,0,0
 
 //arm slightly in air
-animation302.interval,runonce
+animation302.interval,never
 animation302.pattern0,stop,301
-animation302.pattern1,overlay,1605,0,0,0
+animation302.pattern1,overlay,1606,0,0,0
 
 //--ARM RIGHT
 
 //finger in air (default)
-animation303.interval,runonce
-animation303.pattern0,stop,301
-animation303.pattern1,overlay,1704,0,0,0
+animation400.interval,runonce
+animation400.pattern1,overlay,1704,0,0,0
 
 //--BOTH ARMS 
 
 //crossed arms 
 animation300.interval,never
 animation300.pattern0,stop,301
-animation300.pattern1,overlay,1604,0,0,0
+animation300.pattern1,stop,400
+animation300.pattern2,overlay,1604,0,0,0
 
 
 //--MISC
@@ -613,6 +628,19 @@ animation11.pattern5,overlay,1209,190,0,0
 animation11.pattern6,overlay,1211,150,0,0
 animation11.pattern7,overlay,1210,200,0,0
 
+//--MOUTH
+
+animation60.interval,runonce
+animation60.pattern0,overlay,1310,0,0,0
+
+//--EYES
+
+//hopefully eyes animation LMAO (default)
+animation100.interval,runonce+always
+animation100.pattern0,overlay,1434,0,0,0
+animation100.pattern1,overlay,1433,1000,0,0
+animation100.pattern2,overlay,1434,1000,0,0
+
 
 
 //--HAND LEFT
@@ -644,18 +672,7 @@ animation303.pattern0,stop,300
 animation303.pattern1,stop,400
 animation303.pattern2,overlay,1608,0,-2,-2
 
-
-
-
-//--EYES
 //one thats both 302 & 303
-//hopefully eyes animation LMAO
-animation100.interval,runonce+always
-animation100.pattern0,overlay,1434,0,0,0
-animation100.pattern1,overlay,1433,1000,0,0
-animation100.pattern2,overlay,1434,1000,0,0
-
-
 
 
 //--MISC
