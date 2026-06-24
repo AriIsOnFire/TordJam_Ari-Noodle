@@ -202,8 +202,8 @@ animation119.pattern1,overlay,1422,0,2,-4
 animation120.interval,never
 animation120.pattern0,stop,100
 animation120.pattern1,overlay,1422,0,2,-4
-animation120.pattern2,overlay,1423,5,2,-4
-animation120.pattern3,overlay,1424,50,2,-4
+animation120.pattern2,overlay,1423,50,2,-4
+animation120.pattern3,overlay,1424,110,2,-4
 
 //weired out eyes look at you
 animation121.interval,never
