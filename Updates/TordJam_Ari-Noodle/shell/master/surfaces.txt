@@ -403,8 +403,6 @@ collision2,142,264,224,318,Pocket
 surface5
 {
 
-//
-
 //--Collision 
 collision0,169,7,299,77,Head
 collision1,179,82,270,160,Face
@@ -431,9 +429,6 @@ animation11.pattern6,overlay,1210,200,0,0
 
 animation12.interval,runonce
 animation12.pattern6,overlay,1210,200,0,0
-
-//--Elements
-element2,overlay,surface1310.png,0,0
 
 //--HAND LEFT
 
@@ -465,6 +460,9 @@ animation303.pattern1,stop,400
 animation303.pattern2,overlay,1608,0,-2,-2
 
 
+
+
+//--EYES
 //one thats both 302 & 303
 //hopefully eyes animation LMAO
 animation100.interval,runonce+always
@@ -474,7 +472,7 @@ animation100.pattern5,overlay,1434,1000,0,0
 
 
 
-//--EYES
+
 
 
 
