@@ -361,18 +361,60 @@ animation61.pattern1,overlay,1303,0,0,0
 //smile
 animation62.interval,never
 animation62.pattern0,stop,60
-animation62.pattern1,overlay,1300,0,-60,17
+animation62.pattern1,overlay,1300,0,-55,14
 
 //teeth smile
 animation63.interval,never
 animation63.pattern0,stop,60
-animation63.pattern1,overlay,1303,0,-60,10
+animation63.pattern1,overlay,1343,0,-55,14
 
 // :|
 animation64.interval,never
 animation64.pattern0,stop,60
 animation64.pattern1,overlay,1304,0,-9,-30
 
+//:/
+animation65.interval,never
+animation65.pattern0,stop,60
+animation65.pattern1,overlay,1313,0,-60,-5
+
+//oooohhh
+animation66.interval,never
+animation66.pattern0,stop,60
+animation66.pattern1,overlay,1322,0,-55,10
+
+//disturbed yikes
+animation67.interval,never
+animation67.pattern0,stop,60
+animation67.pattern1,overlay,1327,0,-55,14
+
+//mumble mumble
+animation68.interval,never
+animation68.pattern0,stop,60
+animation68.pattern1,start,69
+
+//mumble animation
+animation69.interval,never
+animation69.pattern0,stop,60
+animation69.pattern1,overlay,1330,0,-55,14
+animation69.pattern2,overlay,1331,700,-55,14
+animation69.pattern3,overlay,1330,700,-55,14
+animation69.pattern4,start,68
+
+//:p
+animation70.interval,never
+animation70.pattern0,stop,60
+animation70.pattern1,overlay,1332,0,-55,14
+
+//o
+animation71.interval,never
+animation71.pattern0,stop,60
+animation71.pattern1,overlay,1334,0,-50,6
+
+//bored looking mouth
+animation72.interval,never
+animation72.pattern0,stop,60
+animation72.pattern1,overlay,1342,0,-50,10
 
 //--EYES
 
@@ -385,7 +427,7 @@ animation100.pattern0,overlay,1401,0,0,0
 
 //--ARM LEFT
 
-//hand in pocket
+//hand in pocket (default)
 animation300.interval,runonce
 animation300.pattern0,overlay,1601,0,0,0
 
