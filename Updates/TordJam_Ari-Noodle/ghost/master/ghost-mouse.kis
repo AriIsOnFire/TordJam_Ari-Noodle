@@ -31,7 +31,7 @@ MouseDoubleClick0Pocket : "\0\s[0]Oh, this?\w8 \0\s[2]If Noodle drew this,\w4 I 
 strokeLimit : 40
 
 MouseMove0Head : "\0\s[2]Hey,\w8\w8\s[7] cut that out."
-MouseMove0Head : "\0\s[2]I know my hair is great.\w4.\w4.\w8\n\n[half]\s[3]But do you know how much hair gel I need to keep this up?\w_[400]\n\n[half]\s[5]None!"
+MouseMove0Head : "\0\s[2]I know my hair is great.\w4.\w4.\w8\n\n[half]\s[3]But do you realize how much hair gel I need to keep this up?\w_[400]\n\n[half]\s[5]None!"
 MouseMove0Head : "\0\s[12]Back off."
 
 MouseMove0Face : "\0\s[2]Eh?"
