@@ -6,13 +6,6 @@
 
 # \e stops the current event and script, and any script written after it won't be run.
 
-
-
-
-# This dialogue should choose a random animal from pets1 and pets2, and replace them accordingly.
-# Entries like these are what really allow Ghosts to be more varied and life-like, when used well.
-# You can make entries for a ton of things. They don't just have to be single words, as seen! You can construct some pretty elaborate conversations with them.
-# They're the main draw of Kawari and are supposed to make writing ghosts fun and easy. Play around with them, see what unique things you can come up with.
 # If you would like to learn more, I suggest taking a look at https://okuajub-netspace.neocities.org/CHIPS_code_basics.html
 
 
@@ -32,14 +25,14 @@
 # SP is written as $(SP "singular" "plural"), with the parts in quotes being the singular and plural versions of a word respectively.
 # That probably sounds complicated but it's actually pretty easy to write! Take a look.
 
-sentence : (
-    # 'username' calls the user's name. The user is the subject of the sentence.
-    "\0\s[0] Hey, Sentinel. Do you think "${username}" should use pronouns to refer to the User?"
-    # Here, the entry 'their' is called. It'll choose an appropriate possessive determiner, such as "their", for the subject.
-    "\0\s[0]I think it's "${their}" choice. "
-    # The function 'SP' is used to determine if a word should be singular or plural relative to the last pronoun. 
-    "I've got no idea what "${they}$(SP "'s" "'ve")" got planned."
-)
+//sentence : (
+  //  # 'username' calls the user's name. The user is the subject of the sentence.
+   // "\0\s[0] Hey, Sentinel. Do you think "${username}" should use pronouns to refer to the User?"
+   // # Here, the entry 'their' is called. It'll choose an appropriate possessive determiner, such as "their", for the subject.
+  //  "\0\s[0]I think it's "${their}" choice. "
+  //  # The function 'SP' is used to determine if a word should be singular or plural relative to the last pronoun. 
+   // "I've got no idea what "${they}$(SP "'s" "'ve")" got planned."
+//)
 
 # If you don't plan on acknowledging the User at all in your writing, you don't have to use this. It's just an option, not an expectation!
 # Not all Ghost users actually like being acknowledged in a Ghost. So, maybe consider what kind of Ghost you're writing and who it would appeal to.
@@ -53,9 +46,9 @@ sentence : (
 #-- Dictionary
 
 movies : "'Spider-Edd'", "'Pink Kong'", "'The Day the Earth Stood Still'", "'The Evil Dead'", "'Scooby Doo'", "'Godzilla'", "'King Kong'", "'Jurassic Park'", "'Tom's Tales Of Awesome'", "'The Big Named Monster'"
-games : "'House of the Lead'", "'Fap Fap Revolution'", "'Dunkee Punch'", "'Super Mario Bros'", "'Maniac Mansion'"
+games : "'House of the Lead'", "'Fap Fap Revolution'", "'Dunkee Punch'", "'Super Mario Bros'", "'Maniac Mansion'", "'Stickfight'"
 
-food : "some Pizza Butt", "a Monster", "a cigarette", "a cigar"
+food : "some Pizza Butt", "a Monster", "a cigarette", "a cigar", "bacon"
 
 miss : "my robot", "my hat"
 
@@ -69,55 +62,55 @@ miss : "my robot", "my hat"
 
 #--Dialogue
 
-sentence : "\0\s[0]Coke is awful, i dont know how Edd can stand to drink that stuff."
+sentence : "\0\s[4]\i[300]Coke is awful,\w4\s[2]\i[301] I dont know how Edd can stand to drink that stuff."
 
-sentence : "\0\s[0]\i[9]Whatever!"
+sentence : "\0\s[1]\i[69]Whatever!"
 
-sentence : "\0\s[0]What should i have for dinner today... Pork...? No, I think I ate all my bacon this morning... Soda? Eugh."
+sentence : "\0\s[1]\i[61]What should i have for dinner today.\w4.\w4.\w8 Pork.\w4.\w4.\w4?\w8 \s[2]No,\w4 I think I ate all my bacon this morning.\w4.\w4.\w8 \s[1]\i[61]Soda?\w8 \s[0]\i[110]\i[64]Eugh."
 
-sentence : "\0\s[0]On Fridays, Its funny shirt day! ... \0\s[1]\i[7]I can't remember who i got that from."
+sentence : "\0\s[5]\i[11]On Fridays,\w4 It's funny shirt day!\w8 .\w4.\w4.\w8 \0\s[1]\i[500]I can't remember who I got that from."
 
-sentence : "\0\s[0]\f[sub,true]I wonder if he ever got rid of that stupid bear.\f[default]"
+sentence : "\0\s[1]\i[61]\f[sub,true]I wonder if he ever got rid of that stupid bear.\f[default]"
 
-sentence : "\0\s[0]Where did i leave my revolver..."
+sentence : "\0\s[8]Where did i leave my revolver..."
 
-sentence : "\0\s[0]I was in the army once, did you know?"
+sentence : "\0\s[0]\i[68]I was in the army once, did you know?"
 
-sentence : "\0\s[0]\f[sub,true]I don't know what I've been told... Stainless steel is hard to fold...\f[default]"
+sentence : "\0\s[5]\f[sub,true]I don't know what I've been told... \i[303]Stainless steel is hard to fold...\f[default]"
 
-sentence : "\0\s[0]Let's see.. What do I need to do after work today..."
+sentence : "\0\s[1]\i[61]Let's see.. What do I need to do after work today..."
 
-sentence : "\0\s[5]\f[sub,true] ...Crazy English...\f[default]"
+sentence : "\0\s[0]\i[107]\f[sub,true] ...Crazy English...\f[default]"
 
-sentence : "\0\s[1]\i[7]Hmm... I miss "${miss}"..."
+sentence : "\0\s[1]\i[500]Hmm... I miss "${miss}"..."
 
-sentence : "\0\s[2]I'm in your car, Edward!"
+sentence : "\0\s[1]\i[67]I'm in your car, Edward!"
 
-sentence : "\0\s[2]I should play Maniac Mansion... I still have the deluxe edition..."
+sentence : "\0\s[1]I should play Maniac Mansion... I still have the deluxe edition..."
 
 sentence : "\0\s[2]Ugh. That song."
 
-sentence : "\0\s[2]I have to go to work....."
+sentence : "\0\s[2]\i[301]I have to go to work....."
 
-sentence : "\0\s[2]I'M EMPLOYED!!!"
+sentence : "\0\s[0]\i[401]\i[61]I'M EMPLOYED!!!"
 
-sentence : "\0\s[2]And he wanted me to stay, pfft! As if! Im glad i left because, Ikke faen!"
+sentence : "\0\s[0]\i[118]And he wanted me to stay,\w4 \s[4]\i[300]pfft!\w8 As if!\w8 \s[101]I'm glad I left because,\w4 Ikke faen!"
 
-sentence : "\0\s[2]If only I could have "${food}"... mmmmmm..."
+sentence : "\0\s[1]If only I could have "${food}".\w4.\w4.\w8 mmmmmm.\w4.\w4.\w8"
 
 sentence : "\0\s[2]I need "${food}"."
 
-sentence : "\0\s[2]I wonder where my copy of "${games}"."
+sentence : "\0\s[1]\i[61]I wonder where my copy of "${games}" is."
 
 sentence : "\0\s[2]Are they really planning to make a new "${movies}" movie?"
 
-sentence : "\0\s[2]I thought that "${movies}" was better than "${movies}" just something about it hit harder."
+sentence : "\0\s[3]I thought that "${movies}" was better than "${movies}".\w8 Just something about it hit harder."
 
-sentence : "\0\s[2]Snakker du norsk?"
+sentence : "\0\s[0]\i[67]Snakker du norsk?"
 
 sentence : ( 
     "\0\s[1]I should watch The Return if the Insane Zombie Pirates from Hell\w8.\w8.\w8.\w8\w8\n\n[half]"  
-    "\0\s[1]\f[italic,true]Hell,\f[italic,false] maybe I should just rewatch the whole trilogy! I heard that they're making a new movie, might as well."
+    "\0\s[0]\f[italic,true]Hell,\f[italic,false] maybe I should just rewatch the whole trilogy!\w8 I heard that they're making a new movie,\w4 might as well."
 )
 
 
