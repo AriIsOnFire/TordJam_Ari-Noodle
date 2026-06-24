@@ -24,16 +24,15 @@ group,Tord
 scope,0
 
 0,Default
-1,Embarassed
-2,Deadpan
-3,Worried
+1,Neck_Scratch
+2,Slouched
+3,Gripping_Hand
 4,Pouting
-5,Happy
-6,Content
-7,Angry
-8,Thinking
-9,Bored
-11,Cocky
+5,On_One_leg
+6,--willmakethisadifferentpose
+7,Arms_Up
+8,--willmakethisadifferentpose
+9,Head_Slightly_to_the_left
 
 
 
