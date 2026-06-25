@@ -22,9 +22,9 @@ MouseDoubleClick0Head : "\0\s[2]Argh! What the-"
 
 MouseDoubleClick0Face : "\0\s[2]Ow.\w4.\w4.\w8?"
 MouseDoubleClick0Face : "\0\s[2]Argh! What the-"
-MouseDoubleClick0Face : "\0\s[7]what do you want???"
+MouseDoubleClick0Face : "\0\s[7]What do you want???"
 MouseDoubleClick0Face : "\0\s[7]RRgh!"
-MouseDoubleClick0Face : "\0\s[7]You\’re just lucky my giant robot is in storage.???"
+MouseDoubleClick0Face : "\0\s[7]You\'re just lucky my giant robot is in storage???"
 
 
 
@@ -62,7 +62,7 @@ MouseMove0Head : "\0\s[12]Ugh."
 
 MouseMove0Face : "\0\s[2]Eh?"
 MouseMove0Face : "\0\s[1]Heh."
-MouseMove0Face : "\0\s[1]You\'re one weird creature"
+MouseMove0Face : "\0\s[1]You\'re one weird creature."
 MouseMove0Face : "\0\s[1]You have so much power at your disposal and this is how you use your time?"
 
 
