@@ -21,6 +21,7 @@ OnSakuraMenu : (
     $( if $[ ${lastTalk} ] (\n\![*]\q[Repeat Yourself,OnLastTalk]) )
     \n\n[half]
 	\![*]\q[Ask Something,OnAskQuestion]
+	\n
     \![*]\q[Config Menu,OnConfigMenu]
     \n\n[half]
     \![*]\q[Quit Menu,OnQuit,0]
@@ -40,7 +41,6 @@ OnSakuraMenu : (
 //--
 //When the menu times out, he'll say things about it
 OnBalloonTimeout :
-
 
 //--
 // Asking questions
