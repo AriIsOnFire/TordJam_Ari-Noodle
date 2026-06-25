@@ -55,14 +55,14 @@ talk.OnBoot : "\0\s[2]Just another day in a war without end.\_w[500]\n\n[half]\s
 #chipper dialogue
 talk.OnBoot : "\0\s[2]Hello again."
 talk.OnBoot : "\0\s[2]Hmm.. missing my presence, are you?"
-talk.OnBoot : "\0\s[2]I just knew you’d want to talk to me today <3"
-talk.OnBoot : "\0\s[2]Ah, it’s my favorite computer, lets see what we have here today."
+talk.OnBoot : "\0\s[2]I just knew you\'d want to talk to me today <3"
+talk.OnBoot : "\0\s[2]Ah, it\'s my favorite computer, lets see what we have here today."
 
 # bad bad bad bad 
 talk.OnBoot : "\0\s[2]Augh… what now?."
 talk.OnBoot : "\0\s[2]Must you talk to me now?"
 talk.OnBoot : "\0\s[2]Why do you always feel the need to bother me?"
-talk.OnBoot : "\0\s[2]Ah, it’s my \'favorite computer\', full of trash. Clean up for once."
+talk.OnBoot : "\0\s[2]Ah, it\'s my \'favorite computer\', full of trash. Clean up for once."
 
 
 
