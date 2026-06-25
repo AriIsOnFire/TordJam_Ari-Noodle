@@ -493,7 +493,7 @@ animation61.pattern1,overlay,1300,0,-50,40
 // uhhhh
 animation62.interval,never
 animation62.pattern0,stop,60
-animation62.pattern1,overlay,1307,0,-50,40
+animation62.pattern1,overlay,1307,0,-80,40
 
 //:\
 animation63.interval,never
@@ -847,26 +847,33 @@ animation61.pattern1,overlay,1310,0,0,0
 
 //--EYES
 
-//hopefully eyes animation LMAO (default)
+//half lidded (default)
 animation100.interval,runonce
-animation100.pattern0,overlay,1434,0,0,0
-animation100.pattern1,overlay,1433,1000,0,0
-animation100.pattern2,overlay,1434,1000,0,0
+animation100.pattern1,overlay,1437,0,0,-8
 
-//half lidded
+
+//hopefully eyes animation LMAO
+animation104.interval,never
+animation104.pattern0,stop,100
+animation104.pattern1,overlay,1434,0,0,0
+animation104.pattern2,overlay,1433,1000,0,0
+animation104.pattern3,overlay,1434,1000,0,0
+animation104.pattern4,start,101
+
 animation101.interval,never
 animation101.pattern0,stop,100
-animation101.pattern1,overlay,1437,0,0,0
+animation101.pattern0,start,104
+
 
 //in thought
 animation102.interval,never
 animation102.pattern0,stop,100
-animation102.pattern1,overlay,1438,0,0,0
+animation102.pattern1,overlay,1438,0,-2,-3
 
 //irritated
 animation103.interval,never
 animation103.pattern0,stop,100
-animation103.pattern1,overlay,1439,0,50,0
+animation103.pattern1,overlay,1439,0,50,-8
 
 
 //--HAND LEFT
@@ -949,16 +956,16 @@ collision2,142,264,224,318,Pocket
 
 //--BOTH Arms 
 
-//MISC
+//--MISC
 
 //blush
 //animation.500.interval,never
 //animation500.pattern0,overlay,1800,0,0,0
-
-
-
-
 }
+
+
+
+
 
 
 surface7
@@ -982,13 +989,161 @@ animation10.pattern0,overlay,1212,0,0,0
 
 //--MOUTH 
 
-//grrrr
+//grrrr (default)
+animation60.interval,runonce
+animation60.pattern0,overlay,1339,0,0,0
 
+//smile
+animation61.interval,never
+animation61.pattern0,stop,60
+animation61.pattern1,overlay,1300,0,-10,0
 
+//
+animation62.interval,never
+animation62.pattern0,stop,60
+animation62.pattern1,overlay,1301,0,-10,0
+
+//
+animation63.interval,never
+animation63.pattern0,stop,60
+animation63.pattern1,overlay,1302,0,-10,0
+
+//
+animation64.interval,never
+animation64.pattern0,stop,60
+animation64.pattern1,overlay,1306,0,-43,0
+
+//
+animation65.interval,never
+animation65.pattern0,stop,60
+animation65.pattern1,overlay,1307,0,-48,0
+
+//
+animation66.interval,never
+animation66.pattern0,stop,60
+animation66.pattern1,overlay,1308,0,-48,0
+
+//
+animation67.interval,never
+animation67.pattern0,stop,60
+animation67.pattern1,overlay,1309,0,-48,10
+
+//SUCH A WIDE SMILE
+animation68.interval,never
+animation68.pattern0,stop,60
+animation68.pattern1,overlay,1310,0,-44,7
+
+//
+animation69.interval,never
+animation69.pattern0,stop,60
+animation69.pattern1,overlay,1311,0,-10,0
+
+//
+animation70.interval,never
+animation70.pattern0,stop,60
+animation70.pattern1,overlay,1312,0,-10,-10
+
+//
+animation71.interval,never
+animation71.pattern0,stop,60
+animation71.pattern1,overlay,1313,0,-10,-10
+
+//
+animation72.interval,never
+animation72.pattern0,stop,60
+animation72.pattern1,overlay,1314,0,-14,-4
+
+//
+animation73.interval,never
+animation73.pattern0,stop,60
+animation73.pattern1,overlay,1316,0,-8,0
+
+//
+animation74.interval,never
+animation74.pattern0,stop,60
+animation74.pattern1,overlay,1317,0,-8,0
+
+//
+animation75.interval,never
+animation75.pattern0,stop,60
+animation75.pattern1,overlay,1318,0,-9,-4
+
+//
+animation76.interval,never
+animation76.pattern0,stop,60
+animation76.pattern1,overlay,1319,0,-9,-4
+
+//
+animation77.interval,never
+animation77.pattern0,stop,60
+animation77.pattern1,overlay,1320,0,-8,0
+
+//
+animation78.interval,never
+animation78.pattern0,stop,60
+animation78.pattern1,overlay,1321,0,-6,-19
+
+//
+animation79.interval,never
+animation79.pattern0,stop,60
+animation79.pattern1,overlay,1328,0,-11,0
+
+//
+animation80.interval,never
+animation80.pattern0,stop,60
+animation80.pattern1,overlay,1326,0,-11,0
+
+//
+animation81.interval,never
+animation81.pattern0,stop,60
+animation81.pattern1,overlay,1335,0,-11,0
+
+//
+animation82.interval,never
+animation82.pattern0,stop,60
+animation82.pattern1,overlay,1336,0,-11,0
+
+//
+animation83.interval,never
+animation83.pattern0,stop,60
+animation83.pattern1,overlay,1337,0,-11,0
+
+//
+animation84.interval,never
+animation84.pattern0,stop,60
+animation84.pattern1,overlay,1338,0,-11,0
+
+//
+animation85.interval,never
+animation85.pattern0,stop,60
+animation85.pattern1,overlay,1340,0,0,0
+
+//
+animation86.interval,never
+animation86.pattern0,stop,60
+animation86.pattern1,overlay,1341,0,0,0
+
+//
+animation87.interval,never
+animation87.pattern0,stop,60
+animation87.pattern1,overlay,1342,0,-11,0
 
 
 //--EYES
 
+//default
+animation100.interval,runonce
+animation100.pattern0,overlay,1439,0,0,0
+
+//
+animation101.interval,never
+animation101.pattern0,stop,100
+animation101.pattern1,overlay,1440,0,0,0
+
+//
+animation102.interval,never
+animation102.pattern0,stop,100
+animation102.pattern1,overlay,1441,0,0,0
 
 
 //--ANIMATIONS
@@ -1085,6 +1240,146 @@ animation10.interval,runonce
 animation10.pattern0,overlay,1213,0,0,0
 
 //--MOUTH 
+
+//smile (default)
+animation60.interval,runonce
+animation60.pattern0,overlay,1300,0,-10,0
+
+//grrr
+animation61.interval,never
+animation61.pattern0,stop,60
+animation61.pattern1,overlay,1339,0,0,0
+
+//
+animation62.interval,never
+animation62.pattern0,stop,60
+animation62.pattern1,overlay,1301,0,-10,0
+
+//
+animation63.interval,never
+animation63.pattern0,stop,60
+animation63.pattern1,overlay,1302,0,-10,0
+
+//
+animation64.interval,never
+animation64.pattern0,stop,60
+animation64.pattern1,overlay,1306,0,-43,0
+
+//
+animation65.interval,never
+animation65.pattern0,stop,60
+animation65.pattern1,overlay,1307,0,-48,0
+
+//
+animation66.interval,never
+animation66.pattern0,stop,60
+animation66.pattern1,overlay,1308,0,-48,0
+
+//
+animation67.interval,never
+animation67.pattern0,stop,60
+animation67.pattern1,overlay,1309,0,-48,10
+
+//SUCH A WIDE SMILE
+animation68.interval,never
+animation68.pattern0,stop,60
+animation68.pattern1,overlay,1310,0,-44,7
+
+//
+animation69.interval,never
+animation69.pattern0,stop,60
+animation69.pattern1,overlay,1311,0,-13,-10
+
+//
+animation70.interval,never
+animation70.pattern0,stop,60
+animation70.pattern1,overlay,1312,0,-10,-10
+
+//
+animation71.interval,never
+animation71.pattern0,stop,60
+animation71.pattern1,overlay,1313,0,-13,-10
+
+//
+animation72.interval,never
+animation72.pattern0,stop,60
+animation72.pattern1,overlay,1314,0,-14,-4
+
+//
+animation73.interval,never
+animation73.pattern0,stop,60
+animation73.pattern1,overlay,1316,0,-10,0
+
+//
+animation74.interval,never
+animation74.pattern0,stop,60
+animation74.pattern1,overlay,1317,0,-10,0
+
+//
+animation75.interval,never
+animation75.pattern0,stop,60
+animation75.pattern1,overlay,1318,0,-11,-4
+
+//
+animation76.interval,never
+animation76.pattern0,stop,60
+animation76.pattern1,overlay,1319,0,-11,-4
+
+//
+animation77.interval,never
+animation77.pattern0,stop,60
+animation77.pattern1,overlay,1320,0,-8,0
+
+//
+animation78.interval,never
+animation78.pattern0,stop,60
+animation78.pattern1,overlay,1321,0,-8,-19
+
+//
+animation79.interval,never
+animation79.pattern0,stop,60
+animation79.pattern1,overlay,1328,0,-12,0
+
+//
+animation80.interval,never
+animation80.pattern0,stop,60
+animation80.pattern1,overlay,1326,0,-11,0
+
+//
+animation81.interval,never
+animation81.pattern0,stop,60
+animation81.pattern1,overlay,1335,0,-11,0
+
+//
+animation82.interval,never
+animation82.pattern0,stop,60
+animation82.pattern1,overlay,1336,0,-13,0
+
+//
+animation83.interval,never
+animation83.pattern0,stop,60
+animation83.pattern1,overlay,1337,0,-11,0
+
+//
+animation84.interval,never
+animation84.pattern0,stop,60
+animation84.pattern1,overlay,1338,0,-11,0
+
+//
+animation85.interval,never
+animation85.pattern0,stop,60
+animation85.pattern1,overlay,1340,0,0,0
+
+//
+animation86.interval,never
+animation86.pattern0,stop,60
+animation86.pattern1,overlay,1341,0,0,0
+
+//
+animation87.interval,never
+animation87.pattern0,stop,60
+animation87.pattern1,overlay,1342,0,-11,0
+
 
 //--EYES
 animation100.interval,runonce
