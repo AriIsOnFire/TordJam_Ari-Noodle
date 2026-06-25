@@ -74,7 +74,8 @@ animation304.pattern1,overlay,1605,0,0,0
 
 //pen grip
 animation305.interval,never
-animation305.pattern0,overlay,1611,0,0,0
+animation306.pattern0,stop,300
+animation305.pattern1,overlay,1611,0,0,0
 
 //pen finger off
 animation306.interval,never
