@@ -28,7 +28,7 @@ MouseDoubleClick0Pocket : "\0\s[0]Oh, this?\w8 \0\s[2]If Noodle drew this,\w4 I 
 # That doesn't mean you need to have it (one of my favorite Ghosts doesn't include petting at all), just that users may expect it. Hence it being included.
 
 # Waiting time for petting response. You can adjust this if you feel it is too long or too short.
-strokeLimit : 40
+strokeLimit : 50
 
 MouseMove0Head : "\0\s[2]Hey,\w8\w8\s[7] cut that out."
 MouseMove0Head : "\0\s[2]I know my hair is great.\w4.\w4.\w8\n\n[half]\s[3]But do you realize how much hair gel I need to keep this up?\w_[400]\n\n[half]\s[5]None!"
