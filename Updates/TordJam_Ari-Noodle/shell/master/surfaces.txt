@@ -62,6 +62,50 @@ animation301.interval,never
 animation301.pattern0,stop,300
 animation301.pattern1,overlay,1603,0,0,0
 
+//wonder hand
+animation303.interval,never
+animation303.pattern0,stop,300
+animation303.pattern1,overlay,1606,0,0,0
+
+//hand on hip
+animation304.interval,never
+animation304.pattern0,stop,300
+animation304.pattern1,overlay,1605,0,0,0
+
+//pen grip
+animation305.interval,never
+animation305.pattern0,overlay,1611,0,0,0
+
+//pen finger off
+animation306.interval,never
+animation306.pattern0,stop,300
+animation306.pattern1,overlay,1612,0,0,0
+
+//pen finger on
+animation307.interval,never
+animation307.pattern0,stop,300
+animation307.pattern1,overlay,1613,0,0,0
+
+//pen click
+animation308.interval,never
+animation308.pattern0,stop,300
+animation308.pattern1,overlay,1612,0,0,0
+animation308.pattern2,overlay,1612,50,0,0
+animation308.pattern3,overlay,1613,100,0,0
+animation308.pattern4,overlay,1612,200,0,0
+
+//pen click longer
+animation309.interval,never
+animation309.pattern0,stop,300
+animation309.pattern1,overlay,1612,0,0,0
+animation309.pattern2,overlay,1612,50,0,0
+animation309.pattern3,overlay,1613,100,0,0
+animation309.pattern4,overlay,1612,500,0,0
+
+//lesbian hand
+animation310.interval,never
+animation310.pattern0,stop,300
+animation310.pattern1,overlay,1614,0,0,0
 
 //--HAND RIGHT
 
@@ -73,6 +117,16 @@ animation400.pattern0,overlay,1700,0,0,0
 animation401.interval,never
 animation401.pattern0,stop,400
 animation401.pattern1,overlay,1704,0,0,0
+
+//hand on hip
+animation402.interval,never
+animation402.pattern0,stop,400
+animation402.pattern1,overlay,1707,0,0,0
+
+//notebook
+animation403.interval,never
+animation403.pattern0,stop,400
+animation403.pattern1,overlay,1708,0,0,0
 
 //--BOTH hands but also technically left
 
@@ -862,7 +916,7 @@ animation104.pattern4,start,101
 
 animation101.interval,never
 animation101.pattern0,stop,100
-animation101.pattern0,start,104
+animation101.pattern1,start,104
 
 
 //in thought
