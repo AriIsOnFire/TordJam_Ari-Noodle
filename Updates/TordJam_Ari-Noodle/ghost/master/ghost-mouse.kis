@@ -14,11 +14,25 @@ MouseDoubleClick0Head : "\0\s[3]Something wrong?"
 MouseDoubleClick0Head : "\0\s[0]\i[9]Looking for something?"
 MouseDoubleClick0Head : "\0\s[4]Don't ruin my hair-do!"
 MouseDoubleClick0Head : "\0\s[2]No touching."
+MouseDoubleClick0Head : "\0\s[2]No touching."
+MouseDoubleClick0Head : "\0\s[2]Argh! What the-"
+
+
+
 
 MouseDoubleClick0Face : "\0\s[2]Ow.\w4.\w4.\w8?"
+MouseDoubleClick0Face : "\0\s[2]Argh! What the-"
 MouseDoubleClick0Face : "\0\s[7]what do you want???"
+MouseDoubleClick0Face : "\0\s[7]RRgh!"
+MouseDoubleClick0Face : "\0\s[7]You\’re just lucky my giant robot is in storage.???"
+
+
+
+
 # At this point im just having fun -Noodle 06/20
-MouseDoubleClick0Pocket : "\0\s[0]Oh, this?\w8 \0\s[2]If Noodle drew this,\w4 I would pull out my guns,\n\n[half]\w4 but\s[12] see, Noodle is doing other things\w4 \s[11]and\w4 is\w4 \s[7]PROCRASTINATING!!"
+MouseDoubleClick0Pocket : "\0\s[0]Oh, this?\w8 \0\s[2]its empty. I forgot my guns at home. Crazy, I know. I love my guns."
+MouseDoubleClick0Pocket : "\0\s[0]Not today, my friend"
+
 
 
 # The favorite part of any Ghost, petting.
@@ -31,11 +45,26 @@ MouseDoubleClick0Pocket : "\0\s[0]Oh, this?\w8 \0\s[2]If Noodle drew this,\w4 I 
 strokeLimit : 50
 
 MouseMove0Head : "\0\s[2]Hey,\w8\w8\s[7] cut that out."
-MouseMove0Head : "\0\s[2]I know my hair is great.\w4.\w4.\w8\n\n[half]\s[3]But do you realize how much hair gel I need to keep this up?\w_[400]\n\n[half]\s[5]None!"
+MouseMove0Head : "\0\s[2]I know my hair is great.\w4.\w4.\w8\n\n[half]\s[3]But do you realize how much hair gel I need to keep this up?\w_[400]\n\n[half]\s[5]Actually, none!"
 MouseMove0Head : "\0\s[12]Back off."
+MouseMove0Head : "\0\s[12]Stop that."
+MouseMove0Head : "\0\s[12]You are real lucky theres a screen separating us."
+MouseMove0Head : "\0\s[12]Hands off."
+MouseMove0Head : "\0\s[12]What are you doing...?"
+MouseMove0Head : "\0\s[12]Is this really what you do in your free time?"
+MouseMove0Head : "\0\s[12]I see you sure are busy."
+MouseMove0Head : "\0\s[12]Let me guess, unemployed?"
+MouseMove0Head : "\0\s[12]DON\'T... touch me. stop that."
+MouseMove0Head : "\0\s[12]Anyone ever teach you of personal space? No?"
+MouseMove0Head : "\0\s[12]Ugh."
+
+
 
 MouseMove0Face : "\0\s[2]Eh?"
 MouseMove0Face : "\0\s[1]Heh."
+MouseMove0Face : "\0\s[1]You\'re one weird creature"
+MouseMove0Face : "\0\s[1]You have so much power at your disposal and this is how you use your time?"
 
 
 MouseMove0Pocket : "\0\s[11]Many interesting things in that pocket,\w4 eh?"
+MouseMove0Pocket : "\0\s[11]What\'s in here? Wouldn't you like to know computer boi."

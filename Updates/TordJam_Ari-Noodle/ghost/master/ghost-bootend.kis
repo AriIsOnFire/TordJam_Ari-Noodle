@@ -52,6 +52,21 @@ talk.OnBoot : "\0\s[7]Hva faen!\w12\s[2]\n\n[half]oh."
 talk.OnBoot : "\0\s[2]This better be quick! \w4\w4\w4\s[9]I have unfinished business."
 talk.OnBoot : "\0\s[2]Just another day in a war without end.\_w[500]\n\n[half]\s[9]On your desktop again?"
 
+#chipper dialogue
+talk.OnBoot : "\0\s[2]Hello again."
+talk.OnBoot : "\0\s[2]Hmm.. missing my presence, are you?"
+talk.OnBoot : "\0\s[2]I just knew you’d want to talk to me today <3"
+talk.OnBoot : "\0\s[2]Ah, it’s my favorite computer, lets see what we have here today."
+
+# bad bad bad bad 
+talk.OnBoot : "\0\s[2]Augh… what now?."
+talk.OnBoot : "\0\s[2]Must you talk to me now?"
+talk.OnBoot : "\0\s[2]Why do you always feel the need to bother me?"
+talk.OnBoot : "\0\s[2]Ah, it’s my \'favorite computer\', full of trash. Clean up for once."
+
+
+
+
 talk.OnClose : "\0\s[0]Be seeing you."
 talk.OnClose : "\0\s[0]Another time."
 talk.OnClose : "\0\s[0]Goodbye, old friend\w4.\w4.\w4."
