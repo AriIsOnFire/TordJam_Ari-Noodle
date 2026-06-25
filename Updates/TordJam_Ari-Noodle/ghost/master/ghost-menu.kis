@@ -15,29 +15,18 @@ OnSakuraMenu : (
 
     # The menu starts. Autoscroll disable is to prevent the menu from getting set to the bottom should the User not having a large enough balloon.
     # If you want to add any new menu options for the Sakura, this is there you would do so.
-    \t\*\b2${MenuDialogue}\_q\![set,autoscroll,disable]
+    \t\b2${MenuDialogue}\_q\![set,autoscroll,disable]
     \n\n[half]
     \![*]\q[Say Something,OnAITalk]
     $( if $[ ${lastTalk} ] (\n\![*]\q[Repeat Yourself,OnLastTalk]) )
     \n\n[half]
+	\![*]\q[Ask Something,OnAskQuestion]
     \![*]\q[Config Menu,OnConfigMenu]
     \n\n[half]
     \![*]\q[Quit Menu,OnQuit,0]
     \n\n
 
     #--
-    # This part is pretty script heavy, so if you're not confident you can just leave it alone.
-
-    # Talkrate Assignment
-    $(setstr @interval ${talkinterval})
-    $( if $[ ${@interval} == 'Never' ] $(setstr @form "") else if $[ ${@interval} > 59 ] $( setstr @interval $[ ${@interval} / 60 ]; setstr @form minutes ) else $( setstr @form seconds ) )
-    $(if $[${@interval} == 1] $(setstr @form minute))
-
-    # Talkrate Display
-    "\f[italic,true]Talkrate:" ${@interval} ${@form}\n\f[italic,default]
-    \![*]\q[30s,OnAssignTalkRate,30] \![*]\q[1m,OnAssignTalkRate,60] \![*]\q[3m,OnAssignTalkRate,180]
-    "\![*]\q[5m,OnAssignTalkRate,300] \![*]\q[10m,OnAssignTalkRate,600] \![*]\q[15m,OnAssignTalkRate,900] \![*]\q[Never,OnAssignTalkRate,Never]"
-    \n\n[half]
 
     # Retrieves info about the present time
     $(setstr @weekday $(if $[$(date %w) == 0] "Sun" else if $[$(date %w) == 1] "Mon" else if $[$(date %w) == 2] "Tues" else if $[$(date %w) == 3] "Weds" else if $[$(date %w) == 4] "Thurs" else if $[$(date %w) == 5] "Fri" else if $[$(date %w) == 6] "Sat"))
@@ -46,6 +35,171 @@ OnSakuraMenu : (
     # Displays the time
     \f[italic,true]${@weekday}", %month/%day, "${@hour}":"${@minute}\f[italic,default]
 )
+//--
+// Balloon Timeout
+//--
+//When the menu times out, he'll say things about it
+OnBalloonTimeout :
+
+
+//--
+// Asking questions
+//--
+//This is just a bunch of stuff you can ask Tord about lol
+AskQuestionTalk : "\0\s[0]Hm?\n\![set,serikotalk,false](Ask about...)", "\0\s[0]What do you wanna know?\n\![set,serikotalk,false](Ask about...)", "\0\s[0]Curious about something?\n\![set,serikotalk,false](Ask about...)"
+
+OnAskQuestion : (
+	//woohoo menu start its p barebones but it'll work out
+	\t\b2${AskQuestionTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[His goals,OnAskGoals]
+	\n
+	\![*]\q[His morals,OnAskMorals]
+	\n
+	\![*]\q[Cola,OnAskCola]
+	\n
+	\![*]\q[Robots,OnAskRobots]
+	\n
+	\![*]\q[Being here,OnAskHere]
+	\n
+	\![*]\q[His friends...?,OnAskFriends]
+	\n\n[half]
+	\![*]\q[Go back,OnSakuraMenu]
+	\n
+	\![*]\q[Quit Menus,OnQuit,0]
+	
+)
+
+AskGoalsTalk :
+
+OnAskGoals : (
+	\t\b2${AskGoalsTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Something Different,OnAskQuestion]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskMoralsTalk:
+
+OnAskMorals : (
+	\t\b2${AskMoralsTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Something Different,OnAskQuestion]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskColaTalk :
+
+OnAskCola : (
+	\t\b2${AskColaTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Something Different,OnAskQuestion]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskRobotsTalk :
+
+OnAskRobots : (
+	\t\b2${AskRobotsTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Something Different,OnAskQuestion]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskHereTalk :
+
+OnAskHere : (
+	\t\b2${AskHereTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Something Different,OnAskQuestion]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskFriendsTalk : 
+
+OnAskFriends : (
+	\t\b2${AskFriendsTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Edd,OnAskEdd]
+	\n
+	\![*]\q[Matt,OnAskMatt]
+	\n
+	\![*]\q[Tom,OnAskTom]
+	\n
+	\![*]\q[Paul,OnAskPaul]
+	\n
+	\![*]\q[Patryk,OnAskPat]
+	\n
+	\![*]\q[...?,OnAskMystery]
+	\n\n[half]
+	\![*]\q[Ask about something different,OnAskQuestion]
+)
+
+AskEddTalk : 
+
+OnAskEdd : (
+	\t\b2${AskEddTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Someone Different,OnAskFriends]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskMattTalk : 
+
+OnAskMatt : (
+	\t\b2${AskMattTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Someone Different,OnAskFriends]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskTomTalk : 
+
+OnAskTom : (
+	\t\b2${AskTomTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Someone Different,OnAskFriends]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskPaulTalk : 
+
+OnPaulEdd : (
+	\t\b2${AskPaulTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Someone Different,OnAskFriends]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskPatTalk : 
+
+OnAskPat : (
+	\t\b2${AskPatTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Someone Different,OnAskFriends]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
+AskMysteryTalk : 
+
+OnAskMystery : (
+	\t\b2${AskMysteryTalk}\w4\_q\![set,autoscroll,disable]
+	\n\n[half]
+	\![*]\q[Ask About Someone Different,OnAskFriends]
+	\n
+	\![*]\q[Done Asking,OnQuit,0]
+)
+
 
 #--
 # Config Menu
@@ -64,6 +218,18 @@ OnConfigMenu : (
     \![*]\q[Change Pronouns,OnChangePronouns]
     \n
     \![*]"Uninstall: "\q[$( if $[${vanishFlag} == 1] $(echo "ON") else $(echo "OFF") ),OnToggleVanish]
+    \n\n[half]
+	# This part is pretty script heavy, so if you're not confident you can just leave it alone.
+
+    # Talkrate Assignment
+    $(setstr @interval ${talkinterval})
+    $( if $[ ${@interval} == 'Never' ] $(setstr @form "") else if $[ ${@interval} > 59 ] $( setstr @interval $[ ${@interval} / 60 ]; setstr @form minutes ) else $( setstr @form seconds ) )
+    $(if $[${@interval} == 1] $(setstr @form minute))
+
+    # Talkrate Display
+    "\f[italic,true]Talkrate:" ${@interval} ${@form}\n\f[italic,default]
+    \![*]\q[30s,OnAssignTalkRate,30] \![*]\q[1m,OnAssignTalkRate,60] \![*]\q[3m,OnAssignTalkRate,180]
+    "\![*]\q[5m,OnAssignTalkRate,300] \![*]\q[10m,OnAssignTalkRate,600] \![*]\q[15m,OnAssignTalkRate,900] \![*]\q[Never,OnAssignTalkRate,Never]"
     \n\n[half]
     \![*]\q[Back,OnSakuraMenu]
 )
@@ -135,7 +301,7 @@ talk.OnTestPronouns : (
 
 OnAssignTalkRate : (
     $( setstr talkinterval $(Reference 0); set @dialogue $(Reference 1) )
-    "\![raise,OnSakuraMenu,1]"
+    "\![raise,OnConfigMenu,1]"
 )
 
 # This handles quitting dialogue.
