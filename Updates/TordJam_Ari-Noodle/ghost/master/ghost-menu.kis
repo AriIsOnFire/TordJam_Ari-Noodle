@@ -46,11 +46,12 @@ OnBalloonTimeout :
 // Asking questions
 //--
 //This is just a bunch of stuff you can ask Tord about lol
-AskQuestionTalk : "\0\s[0]Hm?\n\![set,serikotalk,false](Ask about...)", "\0\s[0]What do you wanna know?\n\![set,serikotalk,false](Ask about...)", "\0\s[0]Curious about something?\n\![set,serikotalk,false](Ask about...)"
+AskQuestionTalk : "\0\s[0]Hm?", "\0\s[0]What do you wanna know?", "\0\s[0]Curious about something?"
 
 OnAskQuestion : (
  # woohoo menu start its p barebones but it'll work out
-	\t\b2${AskQuestionTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskQuestionTalk}\w4\_q\![set,autoscroll,disable] 
+	\n\![set,serikotalk,false]"(Ask about...)"
 	\n\n[half]
 	\![*]\q[His goals,OnAskGoals]
 	\n
@@ -73,7 +74,7 @@ OnAskQuestion : (
 AskGoalsTalk :
 
 OnAskGoals : (
-	\t\b2${AskGoalsTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskGoalsTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Something Different,OnAskQuestion]
 	\n
@@ -83,7 +84,7 @@ OnAskGoals : (
 AskMoralsTalk:
 
 OnAskMorals : (
-	\t\b2${AskMoralsTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskMoralsTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Something Different,OnAskQuestion]
 	\n
@@ -93,7 +94,7 @@ OnAskMorals : (
 AskColaTalk :
 
 OnAskCola : (
-	\t\b2${AskColaTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskColaTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Something Different,OnAskQuestion]
 	\n
@@ -103,7 +104,7 @@ OnAskCola : (
 AskRobotsTalk :
 
 OnAskRobots : (
-	\t\b2${AskRobotsTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskRobotsTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Something Different,OnAskQuestion]
 	\n
@@ -114,7 +115,7 @@ AskHereTalk :
 
 OnAskHere : (
 	\t\b2${AskHereTalk}\w4\_q\![set,autoscroll,disable]
-	\n\n[half]
+	\n\n[half]\![set,serikotalk,false]
 	\![*]\q[Ask About Something Different,OnAskQuestion]
 	\n
 	\![*]\q[Done Asking,OnQuit,0]
@@ -123,7 +124,7 @@ OnAskHere : (
 AskFriendsTalk : 
 
 OnAskFriends : (
-	\t\b2${AskFriendsTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskFriendsTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Edd,OnAskEdd]
 	\n
@@ -143,7 +144,7 @@ OnAskFriends : (
 AskEddTalk : 
 
 OnAskEdd : (
-	\t\b2${AskEddTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskEddTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Someone Different,OnAskFriends]
 	\n
@@ -153,7 +154,7 @@ OnAskEdd : (
 AskMattTalk : 
 
 OnAskMatt : (
-	\t\b2${AskMattTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskMattTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Someone Different,OnAskFriends]
 	\n
@@ -163,7 +164,7 @@ OnAskMatt : (
 AskTomTalk : 
 
 OnAskTom : (
-	\t\b2${AskTomTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskTomTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Someone Different,OnAskFriends]
 	\n
@@ -173,7 +174,7 @@ OnAskTom : (
 AskPaulTalk : 
 
 OnPaulEdd : (
-	\t\b2${AskPaulTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskPaulTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Someone Different,OnAskFriends]
 	\n
@@ -183,7 +184,7 @@ OnPaulEdd : (
 AskPatTalk : 
 
 OnAskPat : (
-	\t\b2${AskPatTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskPatTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Someone Different,OnAskFriends]
 	\n
@@ -193,7 +194,7 @@ OnAskPat : (
 AskMysteryTalk : 
 
 OnAskMystery : (
-	\t\b2${AskMysteryTalk}\w4\_q\![set,autoscroll,disable]
+	\t\b2${AskMysteryTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
 	\![*]\q[Ask About Someone Different,OnAskFriends]
 	\n
@@ -211,7 +212,7 @@ OnAskMystery : (
 ConfigMenuTalk : "\0\s[0]Configuration, huh?"
 
 OnConfigMenu : (
-    \t\*\b2${ConfigMenuTalk}\w4\_q\![set,autoscroll,disable]
+    \t\*\b2${ConfigMenuTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
     \n\n[half]
     \![*]\q[Change Name,OnChangeName]
     \n
