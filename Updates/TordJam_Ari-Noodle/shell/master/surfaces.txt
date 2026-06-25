@@ -719,17 +719,41 @@ animation10.pattern0,overlay,1204,0,0,0
 
 //--MOUTH 
 
+//pout
 animation60.interval,runonce
-animation60.pattern0,overlay,1306,0,4,-2
+animation60.pattern0,overlay,1344,0,4,-2
 
+// .__.
 animation61.interval,never
 animation61.pattern0,stop,60
-animation61.pattern1,overlay,1332,0,27,-3
+animation61.pattern1,overlay,1340,0,45,-3
+
+//teeth
+animation62.interval,never
+animation62.pattern0,stop,60
+animation62.pattern1,overlay,1335,0,34,-10
+
+// :\
+animation63.interval,never
+animation63.pattern0,stop,60
+animation63.pattern1,overlay,1326,0,40,-15
+
+// :\ even poutier
+animation64.interval,never
+animation64.pattern0,stop,60
+animation64.pattern1,overlay,1323,0,25,-5
+
 
 //--EYES
 
+//closed eyes
 animation100.interval,runonce
-animation100.pattern0,overlay,1432,0,27,-7
+animation100.pattern0,overlay,1445,0,0,0
+
+//one eye open
+animation101.interval,never
+animation101.pattern0,stop,100
+animation101.pattern1,overlay,1446,0,0,0
 
 //--ANIMATIONS
 
@@ -806,17 +830,43 @@ animation11.pattern7,overlay,1210,200,0,0
 
 //--MOUTH
 
+//smile wide (default)
 animation60.interval,runonce
 animation60.pattern0,overlay,1310,0,0,0
+
+//smile small
+animation61.interval,runonce
+animation61.pattern0,stop,60
+animation61.pattern1,overlay,1310,0,0,0
+
+
+
+
+
+
 
 //--EYES
 
 //hopefully eyes animation LMAO (default)
-animation100.interval,runonce+always
+animation100.interval,runonce
 animation100.pattern0,overlay,1434,0,0,0
 animation100.pattern1,overlay,1433,1000,0,0
 animation100.pattern2,overlay,1434,1000,0,0
 
+//half lidded
+animation101.interval,never
+animation101.pattern0,stop,100
+animation101.pattern1,overlay,1437,0,0,0
+
+//in thought
+animation102.interval,never
+animation102.pattern0,stop,100
+animation102.pattern1,overlay,1438,0,0,0
+
+//irritated
+animation103.interval,never
+animation103.pattern0,stop,100
+animation103.pattern1,overlay,1439,0,50,0
 
 
 //--HAND LEFT
