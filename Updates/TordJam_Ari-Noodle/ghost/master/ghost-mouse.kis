@@ -10,28 +10,28 @@ MouseDoubleClick0     : ${OnSakuraMenu}
 
 # You can specify a hotspot/collision (as defined in surfaces.txt) of the character, so that they say something unique when the user double clicks there.
 # In some Ghosts, this is used to hit them. It might also be used to ask about an accessory, or as a button. But in this example dialogue it doesn't mean anything in particular.
-MouseDoubleClick0Head : "\0\s[3]Something wrong?"
+
+#MouseDoubleClick0Head : "\0\s[3]Something wrong?"
 MouseDoubleClick0Head : "\0\s[0]\i[9]Looking for something?"
 MouseDoubleClick0Head : "\0\s[4]Don't ruin my hair-do!"
-MouseDoubleClick0Head : "\0\s[2]No touching."
-MouseDoubleClick0Head : "\0\s[2]No touching."
-MouseDoubleClick0Head : "\0\s[2]Argh! What the-"
+#MouseDoubleClick0Head : "\0\s[2]No touching."
+MouseDoubleClick0Head : "\0\s[7]Argh! What the-"
 
 
 
 
 MouseDoubleClick0Face : "\0\s[2]Ow.\w4.\w4.\w8?"
-MouseDoubleClick0Face : "\0\s[2]Argh! What the-"
-MouseDoubleClick0Face : "\0\s[7]What do you want???"
+MouseDoubleClick0Face : "\0\s[7]Argh! What the-"
+MouseDoubleClick0Face : "\0\s[2]What do you want???"
 MouseDoubleClick0Face : "\0\s[7]RRgh!"
-MouseDoubleClick0Face : "\0\s[7]You\'re just lucky my giant robot is in storage???"
+MouseDoubleClick0Face : "\0\s[7]\i[11]\i[71]You\'re.\w8.\w8.\w8 just lucky my giant robot is in storage."
 
 
 
 
 # At this point im just having fun -Noodle 06/20
 MouseDoubleClick0Pocket : "\0\s[0]Oh, this?\w8 \0\s[2]its empty. I forgot my guns at home. Crazy, I know. I love my guns."
-MouseDoubleClick0Pocket : "\0\s[0]Not today, my friend"
+MouseDoubleClick0Pocket : "\0\s[0]\i[69]\i[117]Not today, my friend"
 
 
 
@@ -44,27 +44,27 @@ MouseDoubleClick0Pocket : "\0\s[0]Not today, my friend"
 # Waiting time for petting response. You can adjust this if you feel it is too long or too short.
 strokeLimit : 50
 
-MouseMove0Head : "\0\s[2]Hey,\w8\w8\s[7] cut that out."
-MouseMove0Head : "\0\s[2]I know my hair is great.\w4.\w4.\w8\n\n[half]\s[3]But do you realize how much hair gel I need to keep this up?\w_[400]\n\n[half]\s[5]Actually, none!"
-MouseMove0Head : "\0\s[12]Back off."
-MouseMove0Head : "\0\s[12]Stop that."
-MouseMove0Head : "\0\s[12]You are real lucky theres a screen separating us."
-MouseMove0Head : "\0\s[12]Hands off."
-MouseMove0Head : "\0\s[12]What are you doing...?"
-MouseMove0Head : "\0\s[12]Is this really what you do in your free time?"
-MouseMove0Head : "\0\s[12]I see you sure are busy."
-MouseMove0Head : "\0\s[12]Let me guess, unemployed?"
-MouseMove0Head : "\0\s[12]DON\'T... touch me. stop that."
-MouseMove0Head : "\0\s[12]Anyone ever teach you of personal space? No?"
-MouseMove0Head : "\0\s[12]Ugh."
+MouseMove0Head : "\0\s[2]Hey,\w8\w8\s[7]\i[80] cut that out."
+MouseMove0Head : "\0\s[2]I know my hair is great.\w4.\w4.\w8\n\n[half]\s[3]\i[125]But do you realize how much hair gel I need to keep this up?\w_[400]\n\n[half]Actually,\w8\w8\w8\s[5]\i[11]\i[303]\i[101] none!"
+MouseMove0Head : "\0\s[3]\i[11]\i[104]Back off."
+#MouseMove0Head : "\0\s[3]Stop that."
+MouseMove0Head : "\0\s[2]\i[11]You are real lucky theres a screen separating us."
+#MouseMove0Head : "\0\s[3]\i[11]Hands off."
+MouseMove0Head : "\0\s[3]\i[11]\i[104]\i[65]What are you doing...?"
+#MouseMove0Head : "\0\s[2]Is this really what you do in your free time?"
+MouseMove0Head : "\0\s[2]I see you sure are busy."
+MouseMove0Head : "\0\s[4]\i[300]\i[62]\i[101]Let me guess.\w8.\w8.\w8 \0\s[0]\i[304]\i[402]\i[129]unemployed?"
+#MouseMove0Head : "\0\s[2]DON\'T... touch me. stop that."
+#MouseMove0Head : "\0\s[3]\i[133]\[111]Anyone ever teach you of personal space? No?"
+MouseMove0Head : "\0\s[2]\i[2]Ugh."
 
 
 
 MouseMove0Face : "\0\s[2]Eh?"
-MouseMove0Face : "\0\s[1]Heh."
-MouseMove0Face : "\0\s[1]You\'re one weird creature."
-MouseMove0Face : "\0\s[1]You have so much power at your disposal and this is how you use your time?"
+MouseMove0Face : "\0\s[1]\i[63]\i[500]Heh."
+MouseMove0Face : "\0\s[0]\i[111]\i[66]You\'re one weird creature."
+MouseMove0Face : "\0\s[1]\i[65]You have so much power at your disposal \w8\w8 \0\s[1]\i[11]\i[66]and this is how you use your time?"
 
 
-MouseMove0Pocket : "\0\s[11]Many interesting things in that pocket,\w4 eh?"
-MouseMove0Pocket : "\0\s[11]What\'s in here? Wouldn't you like to know computer boi."
+MouseMove0Pocket : "\0\s[0]\i[402]\i[310]\i[129]\i[69]Many interesting things in that pocket,\w4 eh?"
+MouseMove0Pocket : "\0\s[0]\i[402]\i[310]\i[129]\i[69]What\'s in here? Wouldn't you like to know computer boi."

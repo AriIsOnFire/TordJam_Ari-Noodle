@@ -8,7 +8,7 @@
 # E.G. you could delete any event that names a specific Ghost.
 
 talk.OnFirstBoot   : (
-    "\0\s[0]\t\w4Hey.\0\s[9]\w8\w8This boot script is a work in progress, so.\w4.\w4.\w8 \s[2]Bug Ari and Noodle to do it.\w8 \s[8]You can mess with your name and pronouns my menu by double clicking my arm.\w8"
+    "\0\s[0]\t\0\s[2]\w8\w8\s[7]WHY AM I HERE???.\w4.\w4.\w8 \w8..."
 )
 talk.OnReinstall   : "\0\s[2]Reinstalling?"
 talk.OnLotsInstall : "\0\s[9]You sure are reinstalling me a lot."
@@ -47,16 +47,16 @@ talk.OnWindowStateRestore : "\0\s[0]I can finally stretch my back again!"
 
 talk.OnBoot : "\0\s[0]Hey."
 talk.OnBoot : "\0\s[0]Hello,\w4\w4 old friend."
-talk.OnBoot : "\0\s[0]Hello, again!"
-talk.OnBoot : "\0\s[7]Hva faen!\w12\s[2]\n\n[half]oh."
-talk.OnBoot : "\0\s[2]This better be quick! \w4\w4\w4\s[9]I have unfinished business."
-talk.OnBoot : "\0\s[2]Just another day in a war without end.\_w[500]\n\n[half]\s[9]On your desktop again?"
+#talk.OnBoot : "\0\s[0]Hello, again!"
+#talk.OnBoot : "\0\s[7]Hva faen!\w12\s[2]\n\n[half]oh."
+#talk.OnBoot : "\0\s[2]This better be quick! \w4\w4\w4\s[9]I have unfinished business."
+#talk.OnBoot : "\0\s[2]Just another day in a war without end.\_w[500]\n\n[half]\s[9]On your desktop again?"
 
 #chipper dialogue
 talk.OnBoot : "\0\s[2]Hello again."
-talk.OnBoot : "\0\s[2]Hmm.. missing my presence, are you?"
-talk.OnBoot : "\0\s[2]I just knew you\'d want to talk to me today <3"
-talk.OnBoot : "\0\s[2]Ah, it\'s my favorite computer, lets see what we have here today."
+#talk.OnBoot : "\0\s[2]Hmm.. missing my presence, are you?"
+#talk.OnBoot : "\0\s[2]I just knew you\'d want to talk to me today <3"
+#talk.OnBoot : "\0\s[2]Ah, it\'s my favorite computer, lets see what we have here today."
 
 # bad bad bad bad 
 talk.OnBoot : "\0\s[2]Augh… what now?."
@@ -67,9 +67,9 @@ talk.OnBoot : "\0\s[2]Ah, it\'s my \'favorite computer\', full of trash. Clean u
 
 
 
-talk.OnClose : "\0\s[0]Be seeing you."
-talk.OnClose : "\0\s[0]Another time."
+#talk.OnClose : "\0\s[0]Be seeing you."
+#talk.OnClose : "\0\s[0]Another time."
 talk.OnClose : "\0\s[0]Goodbye, old friend\w4.\w4.\w4."
-talk.OnClose : "\0\s[0]Time to wrap things up."
-talk.OnClose : "\0\s[0]Leaving so soon? \_w[500]See you."
+#talk.OnClose : "\0\s[0]Time to wrap things up."
+#talk.OnClose : "\0\s[0]Leaving so soon? \_w[500]See you."
 

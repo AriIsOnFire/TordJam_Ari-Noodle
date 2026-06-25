@@ -72,11 +72,11 @@ sentence : "\0\s[5]\i[11]On Fridays,\w4 It's funny shirt day!\w8 .\w4.\w4.\w8 \0
 
 sentence : "\0\s[1]\i[61]\f[sub,true]I wonder if he ever got rid of that stupid bear.\f[default]"
 
-sentence : "\0\s[8]Where did i leave my revolver..."
+sentence : "\0\s[0]\i[310]\i[118]\i[402]Where did i leave my revolver..."
 
 sentence : "\0\s[0]\i[68]I was in the army once, did you know?"
 
-sentence : "\0\s[5]\f[sub,true]I don't know what I've been told... \i[303]Stainless steel is hard to fold...\f[default]"
+sentence : "\0\s[5]\i[11]\f[sub,true]I don't know what I've been told... \i[303]Stainless steel is hard to fold...\f[default]"
 
 sentence : "\0\s[1]\i[61]Let's see.. What do I need to do after work today..."
 
@@ -84,7 +84,7 @@ sentence : "\0\s[0]\i[107]\f[sub,true] ...Crazy English...\f[default]"
 
 sentence : "\0\s[1]\i[500]Hmm... I miss "${miss}"..."
 
-sentence : "\0\s[1]\i[67]I'm in your car, Edward!"
+sentence : "\0\s[1]\i[68]I'm in your car, Edward!"
 
 sentence : "\0\s[1]I should play Maniac Mansion... I still have the deluxe edition..."
 
@@ -94,7 +94,7 @@ sentence : "\0\s[2]\i[301]I have to go to work....."
 
 sentence : "\0\s[0]\i[401]\i[61]I'M EMPLOYED!!!"
 
-sentence : "\0\s[0]\i[118]And he wanted me to stay,\w4 \s[4]\i[300]pfft!\w8 As if!\w8 \s[101]I'm glad I left because,\w4 Ikke faen!"
+sentence : "\0\s[0]\i[118]And he wanted me to stay,\w4 \s[4]\i[300]pfft!\w8 As if!\w8 \s[101]I'm glad I left because,\0\s[0]\i[107]\w4 Ikke faen!"
 
 sentence : "\0\s[1]If only I could have "${food}".\w4.\w4.\w8 mmmmmm.\w4.\w4.\w8"
 
@@ -112,10 +112,10 @@ sentence : "\0\s[0]\i[110]\i[403]\i[309]\w8\w8\w8hm\w4\w4.\![anim,clear,309]\i[3
 
 
 
-sentence : ( 
-    "\0\s[1]I should watch The Return if the Insane Zombie Pirates from Hell\w8.\w8.\w8.\w8\w8\n\n[half]"  
-    "\0\s[0]\f[italic,true]Hell,\f[italic,false] maybe I should just rewatch the whole trilogy!\w8 I heard that they're making a new movie,\w4 might as well."
-)
+#sentence : ( 
+    #"\0\s[1]I should watch The Return if the Insane Zombie Pirates from Hell\w8.\w8.\w8.\w8\w8\n\n[half]"  
+    #"\0\s[0]\f[italic,true]Hell,\f[italic,false] maybe I should just rewatch the whole trilogy!\w8 I heard that they're making a new movie,\w4 might as well."
+#)
 
 
 # Putting them all together, this one dialogue has a possibility of 360 different variations. Isn't that helpful? Even discounting the media entry call, that's still 60 different variations!
@@ -127,7 +127,7 @@ sentence : (
 #)
 
 # Also, here's the hour roll-over event. It's in the 24-hour format. Be aware it doesn't always go off exactly on the hour. If you don't want it, just erase it or comment it.
-talk.OnHourTimeSignal : $(setstr @minute $(date %M)) "\0\s[0]It's %hour:"${@minute}"."
+talk.OnHourTimeSignal : $(setstr @minute $(date %M)) "\0\s[0]It's %hour:"${@minute}". Just another hour here\w8.\w8.\w8."
 
 #--
 # IMPORTANT, DO NOT DELETE
