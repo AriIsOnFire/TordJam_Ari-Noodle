@@ -20,8 +20,8 @@ OnSakuraMenu : (
     \![*]\q[Say Something,OnAITalk]
     $( if $[ ${lastTalk} ] (\n\![*]\q[Repeat Yourself,OnLastTalk]) )
     \n\n[half]
-	\![*]\q[Ask Something,OnAskQuestion]
-	\n
+#	\![*]\q[Ask Something,OnAskQuestion]
+#	\n
     \![*]\q[Config Menu,OnConfigMenu]
     \n\n[half]
     \![*]\q[Quit Menu,OnQuit,0]
