@@ -110,6 +110,11 @@ animation310.interval,never
 animation310.pattern0,stop,300
 animation310.pattern1,overlay,1614,0,0,0
 
+//hand in hair
+animation311.interval,never
+animation311.pattern0,stop,300
+animation311.pattern1,overlay,1610,0,5,0
+
 //--HAND RIGHT
 
 //pocket (default)
@@ -131,13 +136,36 @@ animation403.interval,never
 animation403.pattern0,stop,400
 animation403.pattern1,overlay,1708,0,0,0
 
+//hand down
+animation404.interval,never
+animation404.pattern0,stop,400
+animation404.pattern1,overlay,1703,0,20,-10
+
+//hand in hair 
+animation405.interval,never
+animation405.pattern0,stop,400
+animation405.pattern1,overlay,1706,0,20,-10
+
 //--BOTH hands but also technically left
 
 //crossed
-animation302.interval,never
-animation302.pattern0,stop,300
-animation302.pattern1,stop,400
-animation302.pattern2,overlay,1604,0,-2,-2
+animation312.interval,never
+animation312.pattern0,stop,300
+animation312.pattern1,stop,400
+animation312.pattern2,overlay,1604,0,-2,-2
+
+//close
+animation313.interval,never
+animation313.pattern0,stop,300
+animation313.pattern1,stop,400
+animation313.pattern2,overlay,1607,0,-2,-2
+
+
+//clasped far
+animation314.interval,never
+animation314.pattern0,stop,300
+animation314.pattern1,stop,400
+animation314.pattern2,overlay,1608,0,-2,-2
 
 //--EYES
 
@@ -269,9 +297,70 @@ animation121.pattern1,overlay,1424,0,2,-4
 
 //weirded out eyes look away
 //will do -Noodle
+//animation122
 
 //looking side to side
 //will do -Noodle
+animation123.interval,never
+animation123.pattern0,stop,100
+animation123.pattern1,overlay,1422,0,0,0
+animation123.pattern2,overlay,1422,50,0,0
+animation123.pattern3,overlay,1426,50,0,0
+animation123.pattern4,overlay,1425,70,0,0
+animation123.pattern5,overlay,1423,400,0,0
+animation123.pattern6,overlay,1422,70,0,0
+
+
+//----------------------------
+
+//force blink
+animation125.interval,never
+animation125.pattern0,stop,100
+animation125.pattern1,overlay,1427,0,0,0
+animation125.pattern2,overlay,1428,80,0,0
+animation125.pattern3,overlay,1429,200,0,0
+animation125.pattern4,overlay,1429,0,0,0
+
+//half lidded eyes
+animation126.interval,never
+animation126.pattern0,stop,100
+animation126.pattern1,overlay,1435,0,-40,5
+
+//angry eyes
+animation127.interval,never
+animation127.pattern0,stop,100
+animation127.pattern1,overlay,1439,0,10,0
+
+//wild eyes
+animation128.interval,never
+animation128.pattern0,stop,100
+animation128.pattern1,overlay,1441,0,12,0
+
+//really half lidded eyes
+animation129.interval,never
+animation129.pattern0,stop,100
+animation129.pattern1,overlay,1442,0,-2,-4
+
+//looking up
+animation130.interval,never
+animation130.pattern0,stop,100
+animation130.pattern1,overlay,1443,0,-2,-4
+
+//confused kinda
+animation131.interval,never
+animation131.pattern0,stop,100
+animation131.pattern1,overlay,1444,0,0,0
+
+//bugs when you lift up a rock
+animation132.interval,never
+animation132.pattern0,stop,100
+animation132.pattern1,overlay,1430,0,5,0
+
+//ooh yikes you messed up type shit
+animation133.interval,never
+animation133.pattern0,stop,100
+animation133.pattern1,overlay,1431,0,0,-4
+
 
 
 //--MOUTHS
@@ -316,9 +405,20 @@ animation67.interval,never
 animation67.pattern0,stop,60
 animation67.pattern1,overlay,1309,0,-40,9
 
+//but grin
+animation69.interval,never
+animation69.pattern0,stop,60
+animation69.pattern1,overlay,1324,0,-10,0
 
+//but frown
+animation70.interval,never
+animation70.pattern0,stop,60
+animation70.pattern1,overlay,1329,0,-10,0
 
-
+//tongue
+animation71.interval,never
+animation71.pattern0,stop,60
+animation71.pattern1,overlay,1333,0,0,0
 
 
 
@@ -1466,8 +1566,186 @@ animation87.pattern1,overlay,1342,0,-11,0
 
 
 //--EYES
+//open (default)
 animation100.interval,runonce
-animation100.pattern0,overlay,1405,0,-14,-1
+animation100.pattern0,overlay,1400,0,-14,0
+
+//angry
+animation101.interval,never
+animation101.pattern0,stop,100
+animation101.pattern1,overlay,1403,0,-14,0
+
+//angrier
+animation102.interval,never
+animation102.pattern0,stop,100
+animation102.pattern1,overlay,1404,0,-14,0
+
+//whatever
+animation103.interval,never
+animation103.pattern0,stop,100
+animation103.pattern1,overlay,1405,0,-14,0
+
+//scary open
+animation104.interval,never
+animation104.pattern0,stop,100
+animation104.pattern1,overlay,1406,0,-14,0
+
+//looking up
+animation105.interval,never
+animation105.pattern0,stop,100
+animation105.pattern1,overlay,1407,0,-14,0
+
+//looking away 1
+animation108.interval,never
+animation108.pattern0,stop,100
+animation108.pattern1,overlay,1409,0,-14,0
+
+//looking away more closed 2
+
+animation109.interval,never
+animation109.pattern0,stop,100
+animation109.pattern1,overlay,1410,0,-14,0
+
+//looking down ehh 
+animation110.interval,never
+animation110.pattern0,stop,100
+animation110.pattern1,overlay,1411,0,-14,0
+
+//looking at you ehh
+animation111.interval,never
+animation111.pattern0,stop,100
+animation111.pattern1,overlay,1412,0,-14,0
+
+//dumfounded
+animation112.interval,never
+animation112.pattern0,stop,100
+animation112.pattern1,overlay,1413,0,-14,0
+
+//dumfounded looking away
+animation113.interval,never
+animation113.pattern0,stop,100
+animation113.pattern1,overlay,1414,0,-14,0
+
+//dumfounded looking down
+animation114.interval,never
+animation114.pattern0,stop,100
+animation114.pattern1,overlay,1415,0,-14,0
+
+//roblox eyes (only eyes full face is in anim)
+animation115.interval,never
+animation115.pattern0,stop,100
+animation115.pattern1,overlay,1416,0,-14,0
+
+//big half eyes look away
+animation116.interval,never
+animation116.pattern0,stop,100
+animation116.pattern1,overlay,1417,0,-14,0
+
+//big half eyes looking forward
+animation117.interval,never
+animation117.pattern0,stop,100
+animation117.pattern1,overlay,1418,0,-14,0
+
+//big half eyes looking up
+animation118.interval,never
+animation118.pattern0,stop,100
+animation118.pattern1,overlay,1419,0,-14,0
+
+//weired out eyes look away
+animation119.interval,never
+animation119.pattern0,stop,100
+animation119.pattern1,overlay,1422,0,-10,0
+
+//anim between these two
+animation120.interval,never
+animation120.pattern0,stop,100
+animation120.pattern1,overlay,1422,0,-10,0
+animation120.pattern2,overlay,1423,50,-10,0
+animation120.pattern3,overlay,1424,110,-10,0
+
+//weired out eyes look at you
+animation121.interval,never
+animation121.pattern0,stop,100
+animation121.pattern1,overlay,1424,0,-10,0
+
+//weirded out eyes look away
+//will do -Noodle
+//animation122
+
+//looking side to side
+//will do -Noodle
+animation123.interval,never
+animation123.pattern0,stop,100
+animation123.pattern1,overlay,1422,0,-10,0
+animation123.pattern2,overlay,1422,50,-10,0
+animation123.pattern3,overlay,1426,50,-10,0
+animation123.pattern4,overlay,1425,70,-10,0
+animation123.pattern5,overlay,1423,400,-10,0
+animation123.pattern6,overlay,1422,70,-10,0
+
+
+//----------------------------
+
+//force blink
+animation125.interval,never
+animation125.pattern0,stop,100
+animation125.pattern1,overlay,1427,0,-10,0
+animation125.pattern2,overlay,1428,80,-10,0
+animation125.pattern3,overlay,1429,200,-10,0
+animation125.pattern4,overlay,1429,0,-10,0
+
+//half lidded eyes
+animation126.interval,never
+animation126.pattern0,stop,100
+animation126.pattern1,overlay,1435,0,-50,5
+
+//angry eyes
+animation127.interval,never
+animation127.pattern0,stop,100
+animation127.pattern1,overlay,1439,0,0,0
+
+//wild eyes
+animation128.interval,never
+animation128.pattern0,stop,100
+animation128.pattern1,overlay,1441,0,0,0
+
+//really half lidded eyes
+animation129.interval,never
+animation129.pattern0,stop,100
+animation129.pattern1,overlay,1442,0,-15,-4
+
+//looking up
+animation130.interval,never
+animation130.pattern0,stop,100
+animation130.pattern1,overlay,1443,0,-15,-4
+
+//confused kinda
+animation131.interval,never
+animation131.pattern0,stop,100
+animation131.pattern1,overlay,1444,0,-15,0
+
+//rolling eyes animation but he looks at you
+animation106.interval,never
+animation106.pattern0,stop,100
+animation106.pattern1,overlay,1403,0,-14,0
+animation106.pattern2,overlay,1403,40,-14,0
+animation106.pattern3,overlay,1407,60,-14,0
+animation106.pattern4,overlay,1408,40,-14,0
+animation106.pattern5,overlay,1405,100,-14,0
+animation106.pattern6,overlay,1409,30,-14,0
+animation106.pattern7,overlay,1411,70,-14,0
+animation106.pattern8,overlay,1412,100,-14,0
+
+//rolling eyes animation
+animation107.interval,never
+animation107.pattern0,stop,100
+animation107.pattern1,overlay,1403,0,-14,0
+animation107.pattern2,overlay,1403,50,-14,0
+animation107.pattern3,overlay,1407,60,-14,0
+animation107.pattern4,overlay,1408,40,-14,0
+animation107.pattern5,overlay,1405,100,-14,0
+animation107.pattern6,overlay,1410,100,-14,0
+animation107.pattern7,overlay,1409,100,-14,0
 
 //--ANIMATIONS
 

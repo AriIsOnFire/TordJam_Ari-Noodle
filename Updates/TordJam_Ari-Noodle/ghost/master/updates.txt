@@ -3,10 +3,9 @@ file,CHIPS_Readme.txtb1f5ce84e405e074f82f0aedcf368e30size=6795date=2026-06-19
 file,developer_options.txtaaf3a89f0cce694866c9cd3a0b8e25easize=224date=2026-06-19T06:05:29
 file,install.txte7ab05d19a3ab65ac22155f2ccafecd5size=344date=2026-06-19T06:05:29
 file,readme.txt949ed92fa2450e3011526f95b02c6221size=201date=2026-06-19T06:05:29
-file,thumbnail.pna4bc728a8cbf3899e0860324a3760d1f8size=4503date=2026-06-19T06:05:30
-file,thumbnail.png68ced4f19fb97017da26774a6c594bc3size=46291date=2026-06-25T13:17:50
+file,thumbnail.png1533beded908f070891085ab115b5feesize=49700date=2026-06-25T13:53:51
 file,ghost/master/descript.txt12b307ab365e548d23694f7c53c375b4size=1390date=2026-06-19T18:07:00
-file,ghost/master/ghost-aitalk.kisf6d857333557101b6df35485868b9a46size=8120date=2026-06-24T21:47:54
+file,ghost/master/ghost-aitalk.kis9d6966b07b477e893cbca3b9211c3141size=8308date=2026-06-25T14:14:50
 file,ghost/master/ghost-bootend.kisd9d45a3a0d4496ae5c402d59f5c26a1csize=3346date=2026-06-23T19:16:01
 file,ghost/master/ghost-etc.kis93d8e66ce15b3a5bec954affe0e00b1bsize=3449date=2026-06-25T05:56:56
 file,ghost/master/ghost-menu.kis5d477e492ddcc4a3e6f2d8d912edbc70size=8921date=2026-06-23T14:19:09
@@ -117,8 +116,6 @@ file,shell/master/surface1416.pngc4b6b2a6cccac146930300de81df5d62size=2257dat
 file,shell/master/surface1417.png3d1d4b0393e7baf73f4158d7a46779b5size=2116date=2026-06-23T19:38:24
 file,shell/master/surface1418.png51cf2eb58845e82a0ca7e365ffe13a4csize=2219date=2026-06-23T19:38:24
 file,shell/master/surface1419.png92a0e08c42cd3f3dc317a937cfb6a709size=2121date=2026-06-23T19:38:24
-file,shell/master/surface1420.png4e275ecd68e8866c76b77d20929a5ee8size=2167date=2026-06-23T19:38:24
-file,shell/master/surface1421.pnga0618ee7ef9bfaf97453580501c4d5fbsize=2383date=2026-06-23T19:38:25
 file,shell/master/surface1422.png7f37c387f25c8ef988bdefbcab1e8ab8size=2234date=2026-06-23T19:38:27
 file,shell/master/surface1423.png0ef79b276e01d76bab46abb6553da072size=2270date=2026-06-23T19:38:27
 file,shell/master/surface1424.png16dda57ad227429657d38918eb7ef9a7size=2194date=2026-06-23T19:38:27
@@ -132,7 +129,6 @@ file,shell/master/surface1431.png5d96c7396b53579276ada79feb876014size=2044dat
 file,shell/master/surface1433.png04ef719f361b1b791f2cffd4a598a0bdsize=2279date=2026-06-23T19:38:30
 file,shell/master/surface1434.png0d7cc1316b793d3399c90349a23beacfsize=2097date=2026-06-23T19:38:30
 file,shell/master/surface1435.png5a72fb972d995a095528f1af3dd35d8esize=1996date=2026-06-23T19:38:30
-file,shell/master/surface1436.png74a44c4c89518637476afb26f10e7d48size=1226date=2026-06-23T19:38:30
 file,shell/master/surface1437.png8897a9cc65edf7016a8765c74baca8ccsize=1941date=2026-06-23T19:38:31
 file,shell/master/surface1438.png6ee5029d4ec2711a19ae4af762f9bdecsize=2254date=2026-06-23T19:38:31
 file,shell/master/surface1439.pngf216b3651e457ae4ca04f1050bcfd631size=2137date=2026-06-24T20:56:24
@@ -145,9 +141,6 @@ file,shell/master/surface1445.png3954de7a50fdf2f310d2fc2dbdc3f64csize=1297dat
 file,shell/master/surface1446.pngb5654b09f4a86b79f30e9bb3ace4cf60size=1505date=2026-06-24T23:03:03
 file,shell/master/surface1500.pngcef00f152a8d3b0473406e32b5f96d72size=2706date=2026-06-21T20:32:07
 file,shell/master/surface1501.png17998ba213cc837fbe8116787afdfdb3size=2597date=2026-06-21T20:32:20
-file,shell/master/surface1502.pngef7f0c766319f248e793144a44e9c3bcsize=4145date=2026-06-24T21:17:30
-file,shell/master/surface1503.png5b97f4ddb5ca23d1a6f5cf62eea661d9size=3845date=2026-06-24T21:17:47
-file,shell/master/surface1504.png6131eb0d03b1c26c81aafda4dfdaa8d2size=4477date=2026-06-24T21:18:05
 file,shell/master/surface1600.pngb04c395144a66c1ab30ea5ff4f27511fsize=3993date=2026-06-21T11:14:31
 file,shell/master/surface1601.pngffe18df64a646a8ff9a8b921e7691600size=3730date=2026-06-21T19:34:22
 file,shell/master/surface1602.png7755f49c928a634e25ecf695e28fdd3asize=3906date=2026-06-22T22:18:17
@@ -184,6 +177,6 @@ file,shell/master/surface1808.pnge8c5a32955f8afc76f699ca5c011cf53size=1957dat
 file,shell/master/surface1809.png32b3835ee32450261f08badbc27c1a0fsize=1822date=2026-06-22T22:10:51
 file,shell/master/surface6.png27e223a070375827b40489f0b7b96ae0size=29686date=2026-06-20T11:09:54
 file,shell/master/surface8.pngd47ccce36f9c4041424b9e4d8bd47a0esize=32498date=2026-06-20T10:48:48
-file,shell/master/surfaces.txt5efb14156b5f9d1b86625b7d3f4ccd6esize=31105date=2026-06-25T12:32:34
+file,shell/master/surfaces.txt66ff1ea1ebfa9ccfcdc0cfecd0ff690fsize=38698date=2026-06-25T15:30:35
 file,shell/master/surfacetable.txtaf829c48f2e243dbc2ef889c0698e836size=1735date=2026-06-24T15:07:00
-file,shell/master/thumbnail.png3cbfb644ec1e70283cb2dc0cf7abb06csize=90078date=2026-06-25T13:12:02
+file,shell/master/thumbnail.png14b6bf1244ac063e30c5733bac60b26esize=103369date=2026-06-25T13:52:05
