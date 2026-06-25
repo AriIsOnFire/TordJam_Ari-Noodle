@@ -49,7 +49,9 @@ animation1.pattern0,overlay,1001,0,0,0
 animation10.interval,runonce
 animation10.pattern0,overlay,1200,0,0,0
 
-
+animation11.interval,never
+animation11.pattern0,stop,10
+animation11.pattern1,overlay,1214,0,0,0
 
 //--HAND LEFT
 
@@ -401,6 +403,9 @@ animation1.pattern0,overlay,1001,0,0,0
 animation10.interval,runonce
 animation10.pattern0,overlay,1201,0,0,0
 
+animation11.interval,never
+animation11.pattern0,stop,10
+animation11.pattern1,overlay,1215,0,0,0
 
 //--MOUTH
 
@@ -534,6 +539,10 @@ animation1.pattern0,overlay,1002,0,0,0
 animation10.interval,runonce
 animation10.pattern0,overlay,1202,0,0,0
 
+animation11.interval,never
+animation11.pattern0,stop,10
+animation11.pattern1,overlay,1216,0,0,0
+
 //--MOUTH 
 
 // :| (default)
@@ -638,6 +647,10 @@ animation1.pattern0,overlay,1001,0,0,0
 //default
 animation10.interval,runonce
 animation10.pattern0,overlay,1203,0,0,0
+
+animation11.interval,never
+animation11.pattern0,stop,10
+animation11.pattern1,overlay,1217,0,0,0
 
 //--MOUTH 
 
@@ -772,6 +785,10 @@ animation1.pattern0,overlay,1001,0,0,0
 animation10.interval,runonce
 animation10.pattern0,overlay,1204,0,0,0
 
+animation11.interval,never
+animation11.pattern0,stop,10
+animation11.pattern1,overlay,1218,0,0,0
+
 //--MOUTH 
 
 //pout
@@ -872,6 +889,10 @@ animation1.pattern0,overlay,1003,0,0,0
 
 animation10.interval,runonce
 animation10.pattern0,overlay,1210,0,0,0
+
+animation12.interval,never
+animation12.pattern0,stop,10
+animation12.pattern1,overlay,1219,0,0,0
 
 animation11.interval,never
 animation11.pattern0,stop,10
@@ -1041,6 +1062,10 @@ animation1.pattern0,overlay,1001,0,0,0
 //--BODY 
 animation10.interval,runonce
 animation10.pattern0,overlay,1212,0,0,0
+
+animation11.interval,never
+animation11.pattern0,stop,10
+animation11.pattern1,overlay,1220,0,0,0
 
 //--MOUTH 
 
@@ -1293,6 +1318,10 @@ animation1.pattern0,overlay,1001,0,0,0
 //--BODY 
 animation10.interval,runonce
 animation10.pattern0,overlay,1213,0,0,0
+
+animation11.interval,never
+animation11.pattern0,stop,10
+animation11.pattern1,overlay,1221,0,0,0
 
 //--MOUTH 
 
