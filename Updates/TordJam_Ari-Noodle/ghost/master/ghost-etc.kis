@@ -22,7 +22,7 @@ talk.OnUpdateComplete : "\0\s[5]\i[11]\i[101]\i[302]New and \![anim,clear,302]\i
 # When the Ghost is up to date
 talk.OnUpdateNone     : "\0\s[2]No new files? Ugh,\w8 \f[sub,true]\s[9]\i[86]Lazy sons of a.\![anim,clear,86]\i[85]\w4.\w4."
 # Reference 0 is the reason for failure, such as '404' or 'md5 mismatch'.
-talk.OnUpdateFailure  : "\0\s[0]\i[113]\i[302]The update failed.\w8 '"$(Reference 0)"'\0\s[9]\i[81]\i[302]is the reason\i[304],\w4 \0\s[0]\i[103]\i[403]\i[306]\iso maybe the engineers were dumb,\![anim,clear,103]\i[107]\w4 or something."
+talk.OnUpdateFailure  : "\0\s[0]\i[113]\i[302]The update failed.\w8 '"$(Reference 0)"'\0\s[9]\i[81]\i[302] is the reason\i[304],\w4 \0\s[0]\i[103]\i[403]\i[306]so maybe the engineers were dumb,\![anim,clear,103]\i[107]\w4 or something."
 
 # These play for the NTP Time Sync, which fixes the User's clock.
 # Reference 0 is the server name.
