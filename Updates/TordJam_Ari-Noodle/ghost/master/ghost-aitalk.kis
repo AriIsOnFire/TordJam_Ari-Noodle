@@ -25,14 +25,14 @@
 # SP is written as $(SP "singular" "plural"), with the parts in quotes being the singular and plural versions of a word respectively.
 # That probably sounds complicated but it's actually pretty easy to write! Take a look.
 
-//sentence : (
-  //  # 'username' calls the user's name. The user is the subject of the sentence.
-   // "\0\s[0] Hey, Sentinel. Do you think "${username}" should use pronouns to refer to the User?"
-   // # Here, the entry 'their' is called. It'll choose an appropriate possessive determiner, such as "their", for the subject.
-  //  "\0\s[0]I think it's "${their}" choice. "
-  //  # The function 'SP' is used to determine if a word should be singular or plural relative to the last pronoun. 
-   // "I've got no idea what "${they}$(SP "'s" "'ve")" got planned."
-//)
+#sentence : (
+  # 'username' calls the user's name. The user is the subject of the sentence.
+ #"\0\s[0] Hey, Sentinel. Do you think "${username}" should use pronouns to refer to the User?"
+ # Here, the entry 'their' is called. It'll choose an appropriate possessive determiner, such as "their", for the subject.
+  #"\0\s[0]I think it's "${their}" choice. "
+  # The function 'SP' is used to determine if a word should be singular or plural relative to the last pronoun. 
+   # "I've got no idea what "${they}$(SP "'s" "'ve")" got planned."
+#)
 
 # If you don't plan on acknowledging the User at all in your writing, you don't have to use this. It's just an option, not an expectation!
 # Not all Ghost users actually like being acknowledged in a Ghost. So, maybe consider what kind of Ghost you're writing and who it would appeal to.
