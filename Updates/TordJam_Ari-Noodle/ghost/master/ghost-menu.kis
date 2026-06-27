@@ -20,7 +20,7 @@ OnSakuraMenu : (
     \![*]\q[Say Something,OnAITalk]
     $( if $[ ${lastTalk} ] (\n\![*]\q[Repeat Yourself,OnLastTalk]) )
     \n\n[half]
-#	\![*]\q[Ask Something,OnAskQuestion]
+	\![*]\q[Ask Something,OnAskQuestion]
 #	\n
     \![*]\q[Config Menu,OnConfigMenu]
     \n\n[half]
@@ -40,13 +40,18 @@ OnSakuraMenu : (
 // Balloon Timeout
 //--
 //When the menu times out, he'll say things about it
-OnBalloonTimeout :
+OnBalloonTimeout : "\0\s[0] Fine, keep your secrets"
 
 //--
 // Asking questions
 //--
 //This is just a bunch of stuff you can ask Tord about lol
-AskQuestionTalk : "\0\s[0]Hm?", "\0\s[0]What do you wanna know?", "\0\s[0]Curious about something?"
+AskQuestionTalk : "\0\s[0]Hm?"
+AskQuestionTalk : "\0\s[0]What do you wanna know?"
+AskQuestionTalk : "\0\s[0]Curious about something?"
+AskQuestionTalk : "\0\s[0]Whats up?
+
+
 
 OnAskQuestion : (
  # woohoo menu start its p barebones but it'll work out
@@ -71,7 +76,11 @@ OnAskQuestion : (
 	
 )
 
-AskGoalsTalk :
+AskGoalsTalk : "\0\s[0]World domination."
+AskGoalsTalk : "\0\s[0]Look. You might think I\'m some sort of heartless megalomaniac, but you have to see things from my point of view!"
+AskGoalsTalk : "\0\s[0]I\'m just being practical! With how chaotic the world is, think about how much better things would be with one strong leader!"
+AskGoalsTalk : "\0\s[0]People would finally be able to see my vision…"
+
 
 OnAskGoals : (
 	\t\b2${AskGoalsTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
@@ -81,7 +90,10 @@ OnAskGoals : (
 	\![*]\q[Done Asking,OnQuit,0]
 )
 
-AskMoralsTalk:
+AskMoralsTalk : "\0\s[0]Morals? I do what I have to do to achieve my goals. It\'s simple."
+AskMoralsTalk : "\0\s[0]Progress is not always pretty"
+
+
 
 OnAskMorals : (
 	\t\b2${AskMoralsTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
@@ -91,7 +103,12 @@ OnAskMorals : (
 	\![*]\q[Done Asking,OnQuit,0]
 )
 
-AskColaTalk :
+
+AskColaTalk : "\0\s[0]Oh. Why are you asking me about that stuff?"
+AskColaTalk : "\0\s[0]It\'s a disgrace to beverages!"
+AskColaTalk : "\0\s[0]When I finally rule the world, the first thing I\'m going to do is outlaw it globally."
+AskColaTalk : "\0\s[0]Edd wouldn\'t be happy about that, but I\'m sure he\'d live. What\'s the worst that could happen?"
+
 
 OnAskCola : (
 	\t\b2${AskColaTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
@@ -101,7 +118,10 @@ OnAskCola : (
 	\![*]\q[Done Asking,OnQuit,0]
 )
 
-AskRobotsTalk :
+AskRobotsTalk : "\0\s[0]What isn\'t there to love about robots! I\'ve always been an inventor"
+AskRobotsTalk : "\0\s[0]You\'d think they were my passion, but actually I\'m particularly adept at biotechnology!"
+AskRobotsTalk : ("\0\s[0]There\'s just some things you can accomplish with living things that are impossible with tech alone… 
+\n\n[half]\0\s[0]Eeeeven if sometimes those living experiments might be a little less than… ethical… heh!")
 
 OnAskRobots : (
 	\t\b2${AskRobotsTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
@@ -111,7 +131,12 @@ OnAskRobots : (
 	\![*]\q[Done Asking,OnQuit,0]
 )
 
-AskHereTalk :
+AskHereTalk : "\0\s[0]im bored"
+AskHereTalk : "\0\s[0]im hungry"
+AskHereTalk : "\0\s[0]What\'s it like being stuck here? Ehh… ",
+AskHereTalk : "\0\s[0]I can\'t say it\'s the best experience.. It\'s delaying my plans of world domination… but I suppose it isn\'t all bad…"
+AskHereTalk : "\0\s[0]I do get to snoop through all your files while I'm here… ehehe… that\'s a joy."
+AskHereTalk : "\0\s[0]I trust my engineers will find a way to get me out… eventually"
 
 OnAskHere : (
 	\t\b2${AskHereTalk}\w4\_q\![set,autoscroll,disable]
@@ -121,7 +146,9 @@ OnAskHere : (
 	\![*]\q[Done Asking,OnQuit,0]
 )
 
-AskFriendsTalk : 
+AskFriendsTalk : "\0\s[0]Friends?, sure, hit me with it"
+AskFriendsTalk : "\0\s[0]Who?"
+
 
 OnAskFriends : (
 	\t\b2${AskFriendsTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
@@ -143,6 +170,9 @@ OnAskFriends : (
 
 AskEddTalk : 
 
+
+
+
 OnAskEdd : (
 	\t\b2${AskEddTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]
 	\n\n[half]
@@ -152,6 +182,7 @@ OnAskEdd : (
 )
 
 AskMattTalk : 
+
 
 OnAskMatt : (
 	\t\b2${AskMattTalk}\w4\_q\![set,autoscroll,disable]\![set,serikotalk,false]

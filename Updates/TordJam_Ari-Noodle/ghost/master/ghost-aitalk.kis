@@ -112,19 +112,19 @@ sentence : "\0\s[0]\i[110]\i[403]\i[309]\w8\w8\w8hm\w4\w4.\![anim,clear,309]\i[3
 
 
 
-#sentence : ( 
-    #"\0\s[1]I should watch The Return if the Insane Zombie Pirates from Hell\w8.\w8.\w8.\w8\w8\n\n[half]"  
-    #"\0\s[0]\f[italic,true]Hell,\f[italic,false] maybe I should just rewatch the whole trilogy!\w8 I heard that they're making a new movie,\w4 might as well."
-#)
+sentence : ( 
+    "\0\s[1]I should watch The Return of the Insane Zombie Pirates from Hell\w8.\w8.\w8.\w8\w8\n\n[half]"  
+    "\0\s[0]\f[italic,true]Hell,\f[italic,false] maybe I should just rewatch the whole trilogy!\w8 I heard that they're making a new movie,\w4 might as well."
+)
 
 
-# Putting them all together, this one dialogue has a possibility of 360 different variations. Isn't that helpful? Even discounting the media entry call, that's still 60 different variations!
-#sentence : (
-    #"\0\s[0]So, Sentinel, what'd you think of "${media}"?\n\n[half]"
-    #"\0\s[8]Hmm. I liked it. But.. "${mediaCritiques}"\n\n[half]"
-   # "\0\s[0]"${mediaDefense}
-   # "\0\s[6]Suit yourself."
-#)
+ Putting them all together, this one dialogue has a possibility of 360 different variations. Isn't that helpful? Even discounting the media entry call, that's still 60 different variations!
+sentence : (
+    "\0\s[0]So, Sentinel, what'd you think of "${media}"?\n\n[half]"
+    "\0\s[8]Hmm. I liked it. But.. "${mediaCritiques}"\n\n[half]"
+    "\0\s[0]"${mediaDefense}
+    "\0\s[6]Suit yourself."
+)
 
 # Also, here's the hour roll-over event. It's in the 24-hour format. Be aware it doesn't always go off exactly on the hour. If you don't want it, just erase it or comment it.
 talk.OnHourTimeSignal : $(setstr @minute $(date %M)) "\0\s[0]It's %hour:"${@minute}". Just another hour here\w8.\w8.\w8."
