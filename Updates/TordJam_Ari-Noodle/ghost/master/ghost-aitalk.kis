@@ -118,13 +118,13 @@ sentence : (
 )
 
 
- Putting them all together, this one dialogue has a possibility of 360 different variations. Isn't that helpful? Even discounting the media entry call, that's still 60 different variations!
-sentence : (
-    "\0\s[0]So, Sentinel, what'd you think of "${media}"?\n\n[half]"
-    "\0\s[8]Hmm. I liked it. But.. "${mediaCritiques}"\n\n[half]"
-    "\0\s[0]"${mediaDefense}
-    "\0\s[6]Suit yourself."
-)
+# Putting them all together, this one dialogue has a possibility of 360 different variations. Isn't that helpful? Even discounting the media entry call, that's still 60 different variations!
+#sentence : (
+#    "\0\s[0]So, Sentinel, what'd you think of "${media}"?\n\n[half]"
+#    "\0\s[8]Hmm. I liked it. But.. "${mediaCritiques}"\n\n[half]"
+#    "\0\s[0]"${mediaDefense}
+#    "\0\s[6]Suit yourself."
+#)
 
 # Also, here's the hour roll-over event. It's in the 24-hour format. Be aware it doesn't always go off exactly on the hour. If you don't want it, just erase it or comment it.
 talk.OnHourTimeSignal : $(setstr @minute $(date %M)) "\0\s[0]It's %hour:"${@minute}". Just another hour here\w8.\w8.\w8."
